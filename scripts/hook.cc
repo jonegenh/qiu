@@ -195,7 +195,8 @@ int nanosleep(const struct timespec *req, struct timespec *rem){
     int timeout_ms = req->tv_sec * 1000 + req->tv_nsec / 1000 / 1000;
     qiu::Fiber::ptr fiber = qiu::Fiber::GetThis();
     qiu::IOManager* iom = qiu::IOManager::GetThis();
-    iom->addTimer(timeout_ms, std::bind(&qiu::IOManager::schedule, iom, fiber));
+    iom->addTimer(timeout_ms, std::bind((void(qiu::Scheduler::*)
+    (qiu::Fiber::ptr, int thread))&qiu::IOManager::schedule,iom,fiber,-1));  
     // iom->addTimer(timeout_ms,[iom, fiber](){
     //     iom->schedule(fiber);
     // });
