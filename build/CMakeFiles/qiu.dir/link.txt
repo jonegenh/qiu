@@ -1,0 +1,1 @@
+/bin/x86_64-linux-gnu-g++-9 -fPIC  -rdynamic -O3 -g -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -g  -shared -Wl,-soname,libqiu.so -o ../lib/libqiu.so CMakeFiles/qiu.dir/scripts/log.cc.o 
