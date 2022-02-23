@@ -193,8 +193,23 @@ Timer -> addTimer() -->cancel()
 sleep,
 usleep
 
+socket 相关的(socket, connect, accept)
+io相关 (read, write, send, recv, ...)
+fd相关 (fcntl, ioctl, ...)
+
 ## socket函数库
 
+
+          [UnixAddress]
+                |
+            ---------                    |--[IPv4Address] 
+            |Address|  --- [IPAddress] --|
+            ---------                    |--[IPv6Address]
+                |
+                |
+            ---------
+            | Socket|
+            ---------
 ## http协议开发
 
 ## 分布协议
