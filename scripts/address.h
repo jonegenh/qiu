@@ -94,7 +94,7 @@ private:
 class UnknownAddress : public Address{
 public:
     typedef std::shared_ptr<UnknownAddress> ptr;
-    UnknownAddress();
+    UnknownAddress(int family);
     const sockaddr* getAddr() const override;
     socklen_t getAddrLen() const override;
     std::ostream& insert(std::ostream& os) const override;

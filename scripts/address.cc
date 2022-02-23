@@ -184,23 +184,30 @@ socklen_t UnixAddress::getAddrLen() const {
 }
 
 std::ostream& UnixAddress::insert(std::ostream& os) const {
-    
+    if(m_length > offsetof(sockaddr_un, sun_path)
+    && m_addr.sun_path[0] == '\0'){
+        return os << "\\0" << std::string(m_addr.sun_path + 1,
+        m_length - offsetof(sockaddr_un, sun_path) - 1);
+    }
+    return os << m_addr.sun_path;
 }
 
-UnknownAddress::UnknownAddress(){
-
+UnknownAddress::UnknownAddress(int family){
+    memset(&m_addr, 0, sizeof(m_addr));
+    m_addr.sa_family = family;
 }
 
 const sockaddr* UnknownAddress::getAddr() const {
-
+    return &m_addr;
 }
 
 socklen_t UnknownAddress::getAddrLen() const {
-
+    return sizeof(m_addr);
 }
 
 std::ostream& UnknownAddress::insert(std::ostream& os) const {
-
+    os << "[UnknownAddress family=" << m_addr.sa_family << "]";
+    return os;
 }
 
 
