@@ -204,8 +204,6 @@ int nanosleep(const struct timespec *req, struct timespec *rem){
     return 0;
 }
 
-
-
 int socket(int domain, int type, int protocol){
     if(!qiu::t_hook_enable){
         return socket_f(domain, type, protocol);
