@@ -41,6 +41,11 @@
 },
 {
   "directory": "/home/qiu/cppws/Myproject/build",
+  "command": "/bin/x86_64-linux-gnu-g++-9  -Dscripts_EXPORTS -D__FILE__=\\\"scripts/address.cc\\\" -I/home/qiu/cppws/Myproject/. -I/home/qiu/include   -rdynamic -O0 -ggdb -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -g -fPIC   -o CMakeFiles/scripts.dir/scripts/address.cc.o -c /home/qiu/cppws/Myproject/scripts/address.cc",
+  "file": "/home/qiu/cppws/Myproject/scripts/address.cc"
+},
+{
+  "directory": "/home/qiu/cppws/Myproject/build",
   "command": "/bin/x86_64-linux-gnu-g++-9  -Dscripts_EXPORTS -D__FILE__=\\\"scripts/config.cc\\\" -I/home/qiu/cppws/Myproject/. -I/home/qiu/include   -rdynamic -O0 -ggdb -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -g -fPIC   -o CMakeFiles/scripts.dir/scripts/config.cc.o -c /home/qiu/cppws/Myproject/scripts/config.cc",
   "file": "/home/qiu/cppws/Myproject/scripts/config.cc"
 },

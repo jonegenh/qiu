@@ -1,6 +1,7 @@
 file(REMOVE_RECURSE
   "../lib/libscripts.pdb"
   "../lib/libscripts.so"
+  "CMakeFiles/scripts.dir/scripts/address.cc.o"
   "CMakeFiles/scripts.dir/scripts/config.cc.o"
   "CMakeFiles/scripts.dir/scripts/fd_manager.cc.o"
   "CMakeFiles/scripts.dir/scripts/fiber.cc.o"

@@ -4,6 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
+  "/home/qiu/cppws/Myproject/scripts/address.cc" "/home/qiu/cppws/Myproject/build/CMakeFiles/scripts.dir/scripts/address.cc.o"
   "/home/qiu/cppws/Myproject/scripts/config.cc" "/home/qiu/cppws/Myproject/build/CMakeFiles/scripts.dir/scripts/config.cc.o"
   "/home/qiu/cppws/Myproject/scripts/fd_manager.cc" "/home/qiu/cppws/Myproject/build/CMakeFiles/scripts.dir/scripts/fd_manager.cc.o"
   "/home/qiu/cppws/Myproject/scripts/fiber.cc" "/home/qiu/cppws/Myproject/build/CMakeFiles/scripts.dir/scripts/fiber.cc.o"

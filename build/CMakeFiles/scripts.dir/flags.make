@@ -8,6 +8,8 @@ CXX_DEFINES = -Dscripts_EXPORTS
 
 CXX_INCLUDES = -I/home/qiu/cppws/Myproject/. -I/home/qiu/include 
 
+# Custom defines: CMakeFiles/scripts.dir/scripts/address.cc.o_DEFINES = __FILE__="scripts/address.cc"
+
 # Custom defines: CMakeFiles/scripts.dir/scripts/config.cc.o_DEFINES = __FILE__="scripts/config.cc"
 
 # Custom defines: CMakeFiles/scripts.dir/scripts/fd_manager.cc.o_DEFINES = __FILE__="scripts/fd_manager.cc"

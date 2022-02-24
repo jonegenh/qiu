@@ -14,6 +14,7 @@ find_library(YAMLCPP yaml-cpp)
 message("***", ${LIB_LIB})
 
 set(LIB_SRC
+	scripts/address.cc
 	scripts/config.cc
 	scripts/fd_manager.cc
 	scripts/fiber.cc

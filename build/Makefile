@@ -227,6 +227,33 @@ scripts/fast:
 	$(MAKE) -f CMakeFiles/scripts.dir/build.make CMakeFiles/scripts.dir/build
 .PHONY : scripts/fast
 
+scripts/address.o: scripts/address.cc.o
+
+.PHONY : scripts/address.o
+
+# target to build an object file
+scripts/address.cc.o:
+	$(MAKE) -f CMakeFiles/scripts.dir/build.make CMakeFiles/scripts.dir/scripts/address.cc.o
+.PHONY : scripts/address.cc.o
+
+scripts/address.i: scripts/address.cc.i
+
+.PHONY : scripts/address.i
+
+# target to preprocess a source file
+scripts/address.cc.i:
+	$(MAKE) -f CMakeFiles/scripts.dir/build.make CMakeFiles/scripts.dir/scripts/address.cc.i
+.PHONY : scripts/address.cc.i
+
+scripts/address.s: scripts/address.cc.s
+
+.PHONY : scripts/address.s
+
+# target to generate assembly for a file
+scripts/address.cc.s:
+	$(MAKE) -f CMakeFiles/scripts.dir/build.make CMakeFiles/scripts.dir/scripts/address.cc.s
+.PHONY : scripts/address.cc.s
+
 scripts/config.o: scripts/config.cc.o
 
 .PHONY : scripts/config.o
@@ -730,6 +757,9 @@ help:
 	@echo "... test_thread"
 	@echo "... test"
 	@echo "... scripts"
+	@echo "... scripts/address.o"
+	@echo "... scripts/address.i"
+	@echo "... scripts/address.s"
 	@echo "... scripts/config.o"
 	@echo "... scripts/config.i"
 	@echo "... scripts/config.s"

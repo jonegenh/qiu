@@ -57,9 +57,22 @@ include CMakeFiles/scripts.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/scripts.dir/flags.make
 
+CMakeFiles/scripts.dir/scripts/address.cc.o: CMakeFiles/scripts.dir/flags.make
+CMakeFiles/scripts.dir/scripts/address.cc.o: ../scripts/address.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/qiu/cppws/Myproject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/scripts.dir/scripts/address.cc.o"
+	/bin/x86_64-linux-gnu-g++-9  $(CXX_DEFINES) -D__FILE__=\"scripts/address.cc\" $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/scripts.dir/scripts/address.cc.o -c /home/qiu/cppws/Myproject/scripts/address.cc
+
+CMakeFiles/scripts.dir/scripts/address.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/scripts.dir/scripts/address.cc.i"
+	/bin/x86_64-linux-gnu-g++-9 $(CXX_DEFINES) -D__FILE__=\"scripts/address.cc\" $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/qiu/cppws/Myproject/scripts/address.cc > CMakeFiles/scripts.dir/scripts/address.cc.i
+
+CMakeFiles/scripts.dir/scripts/address.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/scripts.dir/scripts/address.cc.s"
+	/bin/x86_64-linux-gnu-g++-9 $(CXX_DEFINES) -D__FILE__=\"scripts/address.cc\" $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/qiu/cppws/Myproject/scripts/address.cc -o CMakeFiles/scripts.dir/scripts/address.cc.s
+
 CMakeFiles/scripts.dir/scripts/config.cc.o: CMakeFiles/scripts.dir/flags.make
 CMakeFiles/scripts.dir/scripts/config.cc.o: ../scripts/config.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/qiu/cppws/Myproject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/scripts.dir/scripts/config.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/qiu/cppws/Myproject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/scripts.dir/scripts/config.cc.o"
 	/bin/x86_64-linux-gnu-g++-9  $(CXX_DEFINES) -D__FILE__=\"scripts/config.cc\" $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/scripts.dir/scripts/config.cc.o -c /home/qiu/cppws/Myproject/scripts/config.cc
 
 CMakeFiles/scripts.dir/scripts/config.cc.i: cmake_force
@@ -72,7 +85,7 @@ CMakeFiles/scripts.dir/scripts/config.cc.s: cmake_force
 
 CMakeFiles/scripts.dir/scripts/fd_manager.cc.o: CMakeFiles/scripts.dir/flags.make
 CMakeFiles/scripts.dir/scripts/fd_manager.cc.o: ../scripts/fd_manager.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/qiu/cppws/Myproject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/scripts.dir/scripts/fd_manager.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/qiu/cppws/Myproject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/scripts.dir/scripts/fd_manager.cc.o"
 	/bin/x86_64-linux-gnu-g++-9  $(CXX_DEFINES) -D__FILE__=\"scripts/fd_manager.cc\" $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/scripts.dir/scripts/fd_manager.cc.o -c /home/qiu/cppws/Myproject/scripts/fd_manager.cc
 
 CMakeFiles/scripts.dir/scripts/fd_manager.cc.i: cmake_force
@@ -85,7 +98,7 @@ CMakeFiles/scripts.dir/scripts/fd_manager.cc.s: cmake_force
 
 CMakeFiles/scripts.dir/scripts/fiber.cc.o: CMakeFiles/scripts.dir/flags.make
 CMakeFiles/scripts.dir/scripts/fiber.cc.o: ../scripts/fiber.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/qiu/cppws/Myproject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/scripts.dir/scripts/fiber.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/qiu/cppws/Myproject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/scripts.dir/scripts/fiber.cc.o"
 	/bin/x86_64-linux-gnu-g++-9  $(CXX_DEFINES) -D__FILE__=\"scripts/fiber.cc\" $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/scripts.dir/scripts/fiber.cc.o -c /home/qiu/cppws/Myproject/scripts/fiber.cc
 
 CMakeFiles/scripts.dir/scripts/fiber.cc.i: cmake_force
@@ -98,7 +111,7 @@ CMakeFiles/scripts.dir/scripts/fiber.cc.s: cmake_force
 
 CMakeFiles/scripts.dir/scripts/hook.cc.o: CMakeFiles/scripts.dir/flags.make
 CMakeFiles/scripts.dir/scripts/hook.cc.o: ../scripts/hook.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/qiu/cppws/Myproject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/scripts.dir/scripts/hook.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/qiu/cppws/Myproject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/scripts.dir/scripts/hook.cc.o"
 	/bin/x86_64-linux-gnu-g++-9  $(CXX_DEFINES) -D__FILE__=\"scripts/hook.cc\" $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/scripts.dir/scripts/hook.cc.o -c /home/qiu/cppws/Myproject/scripts/hook.cc
 
 CMakeFiles/scripts.dir/scripts/hook.cc.i: cmake_force
@@ -111,7 +124,7 @@ CMakeFiles/scripts.dir/scripts/hook.cc.s: cmake_force
 
 CMakeFiles/scripts.dir/scripts/iomanager.cc.o: CMakeFiles/scripts.dir/flags.make
 CMakeFiles/scripts.dir/scripts/iomanager.cc.o: ../scripts/iomanager.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/qiu/cppws/Myproject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/scripts.dir/scripts/iomanager.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/qiu/cppws/Myproject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/scripts.dir/scripts/iomanager.cc.o"
 	/bin/x86_64-linux-gnu-g++-9  $(CXX_DEFINES) -D__FILE__=\"scripts/iomanager.cc\" $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/scripts.dir/scripts/iomanager.cc.o -c /home/qiu/cppws/Myproject/scripts/iomanager.cc
 
 CMakeFiles/scripts.dir/scripts/iomanager.cc.i: cmake_force
@@ -124,7 +137,7 @@ CMakeFiles/scripts.dir/scripts/iomanager.cc.s: cmake_force
 
 CMakeFiles/scripts.dir/scripts/log.cc.o: CMakeFiles/scripts.dir/flags.make
 CMakeFiles/scripts.dir/scripts/log.cc.o: ../scripts/log.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/qiu/cppws/Myproject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/scripts.dir/scripts/log.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/qiu/cppws/Myproject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/scripts.dir/scripts/log.cc.o"
 	/bin/x86_64-linux-gnu-g++-9  $(CXX_DEFINES) -D__FILE__=\"scripts/log.cc\" $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/scripts.dir/scripts/log.cc.o -c /home/qiu/cppws/Myproject/scripts/log.cc
 
 CMakeFiles/scripts.dir/scripts/log.cc.i: cmake_force
@@ -137,7 +150,7 @@ CMakeFiles/scripts.dir/scripts/log.cc.s: cmake_force
 
 CMakeFiles/scripts.dir/scripts/scheduler.cc.o: CMakeFiles/scripts.dir/flags.make
 CMakeFiles/scripts.dir/scripts/scheduler.cc.o: ../scripts/scheduler.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/qiu/cppws/Myproject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/scripts.dir/scripts/scheduler.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/qiu/cppws/Myproject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/scripts.dir/scripts/scheduler.cc.o"
 	/bin/x86_64-linux-gnu-g++-9  $(CXX_DEFINES) -D__FILE__=\"scripts/scheduler.cc\" $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/scripts.dir/scripts/scheduler.cc.o -c /home/qiu/cppws/Myproject/scripts/scheduler.cc
 
 CMakeFiles/scripts.dir/scripts/scheduler.cc.i: cmake_force
@@ -150,7 +163,7 @@ CMakeFiles/scripts.dir/scripts/scheduler.cc.s: cmake_force
 
 CMakeFiles/scripts.dir/scripts/timer.cc.o: CMakeFiles/scripts.dir/flags.make
 CMakeFiles/scripts.dir/scripts/timer.cc.o: ../scripts/timer.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/qiu/cppws/Myproject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/scripts.dir/scripts/timer.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/qiu/cppws/Myproject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/scripts.dir/scripts/timer.cc.o"
 	/bin/x86_64-linux-gnu-g++-9  $(CXX_DEFINES) -D__FILE__=\"scripts/timer.cc\" $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/scripts.dir/scripts/timer.cc.o -c /home/qiu/cppws/Myproject/scripts/timer.cc
 
 CMakeFiles/scripts.dir/scripts/timer.cc.i: cmake_force
@@ -163,7 +176,7 @@ CMakeFiles/scripts.dir/scripts/timer.cc.s: cmake_force
 
 CMakeFiles/scripts.dir/scripts/thread.cc.o: CMakeFiles/scripts.dir/flags.make
 CMakeFiles/scripts.dir/scripts/thread.cc.o: ../scripts/thread.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/qiu/cppws/Myproject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/scripts.dir/scripts/thread.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/qiu/cppws/Myproject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/scripts.dir/scripts/thread.cc.o"
 	/bin/x86_64-linux-gnu-g++-9  $(CXX_DEFINES) -D__FILE__=\"scripts/thread.cc\" $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/scripts.dir/scripts/thread.cc.o -c /home/qiu/cppws/Myproject/scripts/thread.cc
 
 CMakeFiles/scripts.dir/scripts/thread.cc.i: cmake_force
@@ -176,7 +189,7 @@ CMakeFiles/scripts.dir/scripts/thread.cc.s: cmake_force
 
 CMakeFiles/scripts.dir/scripts/util.cc.o: CMakeFiles/scripts.dir/flags.make
 CMakeFiles/scripts.dir/scripts/util.cc.o: ../scripts/util.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/qiu/cppws/Myproject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/scripts.dir/scripts/util.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/qiu/cppws/Myproject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/scripts.dir/scripts/util.cc.o"
 	/bin/x86_64-linux-gnu-g++-9  $(CXX_DEFINES) -D__FILE__=\"scripts/util.cc\" $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/scripts.dir/scripts/util.cc.o -c /home/qiu/cppws/Myproject/scripts/util.cc
 
 CMakeFiles/scripts.dir/scripts/util.cc.i: cmake_force
@@ -189,6 +202,7 @@ CMakeFiles/scripts.dir/scripts/util.cc.s: cmake_force
 
 # Object files for target scripts
 scripts_OBJECTS = \
+"CMakeFiles/scripts.dir/scripts/address.cc.o" \
 "CMakeFiles/scripts.dir/scripts/config.cc.o" \
 "CMakeFiles/scripts.dir/scripts/fd_manager.cc.o" \
 "CMakeFiles/scripts.dir/scripts/fiber.cc.o" \
@@ -203,6 +217,7 @@ scripts_OBJECTS = \
 # External object files for target scripts
 scripts_EXTERNAL_OBJECTS =
 
+../lib/libscripts.so: CMakeFiles/scripts.dir/scripts/address.cc.o
 ../lib/libscripts.so: CMakeFiles/scripts.dir/scripts/config.cc.o
 ../lib/libscripts.so: CMakeFiles/scripts.dir/scripts/fd_manager.cc.o
 ../lib/libscripts.so: CMakeFiles/scripts.dir/scripts/fiber.cc.o
@@ -215,7 +230,7 @@ scripts_EXTERNAL_OBJECTS =
 ../lib/libscripts.so: CMakeFiles/scripts.dir/scripts/util.cc.o
 ../lib/libscripts.so: CMakeFiles/scripts.dir/build.make
 ../lib/libscripts.so: CMakeFiles/scripts.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/qiu/cppws/Myproject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Linking CXX shared library ../lib/libscripts.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/qiu/cppws/Myproject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Linking CXX shared library ../lib/libscripts.so"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/scripts.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
