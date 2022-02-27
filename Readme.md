@@ -210,6 +210,10 @@ fd相关 (fcntl, ioctl, ...)
             ---------
             | Socket|
             ---------
+
+connect,
+accept
+read/write/close
 ## http协议开发
 
 ## 分布协议
