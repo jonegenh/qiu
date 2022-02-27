@@ -7,7 +7,7 @@
 namespace qiu
 {
 
-qiu::Logger::ptr g_logger = QIU_LOG_NAME("system");
+static qiu::Logger::ptr g_logger = QIU_LOG_NAME("system");
 
 pid_t GetThreadId(){
     return syscall(SYS_gettid);
