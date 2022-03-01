@@ -2,12 +2,16 @@
 #include<thread>
 #include"../scripts/log.h"
 #include"../scripts/util.h"
+#include <string.h>
 
+class A{
+public:
+const int a = 1;
+};
 
 int main(int argc, char** argv){
     qiu::Logger::ptr logger(new qiu::Logger);
     logger->addAppender(qiu::LogAppender::ptr(new qiu::StdoutLogAppender));
-
     qiu::FileLogAppender::ptr file_appender(new qiu::FileLogAppender("./log.txt"));
     qiu::LogFormatter::ptr fmt(new qiu::LogFormatter("%d%T%p%T%m%n"));
     file_appender->setFormatter(fmt);
