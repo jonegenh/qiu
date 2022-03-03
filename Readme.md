@@ -214,8 +214,40 @@ fd相关 (fcntl, ioctl, ...)
 connect,
 accept
 read/write/close
-## http协议开发
 
+## 序列化bytearray
+
+write(int, float, int64, ...)
+read(int, float, int64, ...)
+
+// 压缩算法->类似protobuf
+// 无符号 有符号整型映射-> Zigzag算法
+
+
+## http协议开发
+HTPP/1.1 - API
+
+
+HttpRequest;
+HttpResponse;
+
+GET / HTTP/1.1
+host: www.baidu.com
+
+HTTP/1.1 200 OK
+Accept-Ranges: bytes
+Cache-Control: no-cache
+Connection: keep-alive
+Content-Length: 9508
+Content-Type: text/html
+
+uri: http://www.baidu.com:80/page/xxx?id=10&v=20#fr
+    http, 协议
+    www.baidu.com, host
+    80 端口
+    /page/xxx, path
+    id=10&v=20 param
+    fr fragment
 ## 分布协议
 
 ## 推荐系统

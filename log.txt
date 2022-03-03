@@ -12,3 +12,15 @@
 2021-12-30 15:22:41	ERROR	test macro fmt error aasdasa
 2021-12-30 23:00:53	ERROR	test macro error
 2021-12-30 23:00:53	ERROR	test macro fmt error aasdasa
+2022-02-28 20:55:02	ERROR	test macro error
+2022-02-28 20:55:02	ERROR	test macro fmt error aasdasa
+2022-02-28 20:55:46	ERROR	test macro error
+2022-02-28 20:55:46	ERROR	test macro fmt error aasdasa
+2022-02-28 20:56:27	ERROR	test macro error
+2022-02-28 20:56:27	ERROR	test macro fmt error aasdasa
+2022-02-28 20:58:01	ERROR	test macro error
+2022-02-28 20:58:01	ERROR	test macro fmt error aasdasa
+2022-02-28 20:58:23	ERROR	test macro error
+2022-02-28 20:58:23	ERROR	test macro fmt error aasdasa
+2022-02-28 21:14:06	ERROR	test macro error
+2022-02-28 21:14:06	ERROR	test macro fmt error aasdasa
