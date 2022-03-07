@@ -17,7 +17,7 @@ int main(int argc, char** argv){
     file_appender->setFormatter(fmt);
     file_appender->setLevel(qiu::LogLevel::ERROR);
     logger->addAppender(file_appender);
-
+    
     //qiu::LogEvent::ptr event(new qiu::LogEvent(__FILE__, __LINE__ , 0, qiu::GetThreadId(), qiu::GetFiberId(), time(0)));
     //event->getSS() << "hello qiu log";
     //logger->log(qiu::LogLevel::DEBUG,event);

@@ -16,7 +16,7 @@ static thread_local Fiber* t_fiber = nullptr;
 static thread_local Fiber::ptr t_threadFiber = nullptr;
 
 static ConfigVar<uint32_t>::ptr g_fiber_stack_size = 
-    Config::Lookup<uint32_t>("fiber.stack_size", 1024 * 1024, "fiber stack size");
+    Config::Lookup<uint32_t>("fiber.stack_size", 128 * 1024, "fiber stack size");
 
 class MallocStackAllocator {
 public:
@@ -49,7 +49,7 @@ Fiber::Fiber(){
 
     ++s_fiber_count;
 
-    QIU_LOG_DEBUG(g_logger) << "Fiber::Fiber";
+    QIU_LOG_DEBUG(g_logger) << "Fiber::Fiber main";
 }
 
 Fiber::Fiber(std::function<void()> cb, size_t stacksize, bool use_caller)
@@ -74,6 +74,7 @@ Fiber::Fiber(std::function<void()> cb, size_t stacksize, bool use_caller)
 
     QIU_LOG_DEBUG(g_logger) << "Fiber::Fiber id=" << m_id;
 }
+
 Fiber::~Fiber(){
     --s_fiber_count;
     if(m_stack){
@@ -157,7 +158,6 @@ void Fiber::YieldToReady(){
     Fiber::ptr cur = GetThis();
     cur->m_state = READY;
     cur->swapOut();
-
 }
 
 void Fiber::YieldToHold(){
@@ -191,7 +191,7 @@ void Fiber::MainFunc(){
         << std::endl
         << qiu::BacktraceToString();
     }
-    
+
     auto raw_ptr = cur.get();
     cur.reset();
     raw_ptr->swapOut();

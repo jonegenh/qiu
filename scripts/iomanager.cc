@@ -257,13 +257,12 @@ void IOManager::tickle(){
     QIU_ASSERT(rt == 1);
 }
 
-bool IOManager::stopping(uint64_t timeout){
+bool IOManager::stopping(uint64_t& timeout){
     timeout = getNextTimer();
     return timeout == ~0ull
     && m_pendingEventCount == 0
     && Scheduler::stopping();
 }
-
 
 bool IOManager::stopping(){
     uint64_t timeout = 0;
