@@ -19,6 +19,7 @@ set(LIB_SRC
 	scripts/config.cc
 	scripts/fd_manager.cc
 	scripts/fiber.cc
+	scripts/http/http.cc
 	scripts/hook.cc
 	scripts/iomanager.cc
 	scripts/log.cc
@@ -94,6 +95,11 @@ add_executable(test_bytearray tests/test_bytearray.cc)
 add_dependencies(test_bytearray scripts)
 force_redefine_file_macro_for_sources(test_bytearray) # __FILE__
 target_link_libraries(test_bytearray ${LIB_LIB}) 
+
+add_executable(test_http tests/test_http.cc)
+add_dependencies(test_http scripts)
+force_redefine_file_macro_for_sources(test_http) # __FILE__
+target_link_libraries(test_http ${LIB_LIB}) 
 
 SET(EXECUTABLE_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/bin)
 SET(LIBRARY_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/lib)
