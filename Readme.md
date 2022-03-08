@@ -248,6 +248,8 @@ uri: http://www.baidu.com:80/page/xxx?id=10&v=20#fr
     /page/xxx, path
     id=10&v=20 param
     fr fragment
+
+ragel mongrel2
 ## 分布协议
 
 ## 推荐系统

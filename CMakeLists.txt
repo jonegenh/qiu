@@ -20,6 +20,9 @@ set(LIB_SRC
 	scripts/fd_manager.cc
 	scripts/fiber.cc
 	scripts/http/http.cc
+	scripts/http/http_parser.cc
+	scripts/http/http11_parser.rl.cc
+	scripts/http/httpclient_parser.rl.cc
 	scripts/hook.cc
 	scripts/iomanager.cc
 	scripts/log.cc
