@@ -264,11 +264,12 @@ bool IOManager::stopping(uint64_t& timeout){
     && Scheduler::stopping();
 }
 
+
 bool IOManager::stopping(){
     uint64_t timeout = 0;
     return stopping(timeout);
 }
-
+               
 void IOManager::idle(){
     epoll_event* events = new epoll_event[64]();
     std::shared_ptr<epoll_event> shared_events(events,[](epoll_event* ptr){

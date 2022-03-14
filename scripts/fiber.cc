@@ -111,7 +111,7 @@ void Fiber::reset(std::function<void()> cb){
 void Fiber::call(){
     SetThis(this);
     m_state = EXEC;
-    QIU_LOG_ERROR(g_logger) << getId();
+    // QIU_LOG_ERROR(g_logger) << getId();
     if(swapcontext(&t_threadFiber->m_ctx,&m_ctx)){
         QIU_ASSERT2(false, "swapcontext");
     }

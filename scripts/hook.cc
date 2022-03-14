@@ -134,9 +134,9 @@ retry:
             }
             return -1;
         }else {
-            QIU_LOG_DEBUG(g_logger) << "do_io<" << hook_fun_name << ">";
+            // QIU_LOG_DEBUG(g_logger) << "do_io<" << hook_fun_name << ">";
             qiu::Fiber::YieldToHold();
-            QIU_LOG_DEBUG(g_logger) << "do_io<" << hook_fun_name << ">";
+            // QIU_LOG_DEBUG(g_logger) << "do_io<" << hook_fun_name << ">";
             if(timer){
                 timer->cancel();
             }

@@ -111,6 +111,7 @@ public:
     uint64_t getWriteBuffers(std::vector<iovec>& buffers, uint64_t len);
 
     size_t getSize() const {return m_size;}
+    
 private:
     void addCapacity(size_t size);
     size_t getCapacity() const {return m_capacity - m_position;}
