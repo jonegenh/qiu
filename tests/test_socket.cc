@@ -1,6 +1,6 @@
-#include "../scripts/socket.h"
-#include "../scripts/scripts.h"
-#include "../scripts/iomanager.h"
+#include "scripts/socket.h"
+#include "scripts/scripts.h"
+#include "scripts/iomanager.h"
 static qiu::Logger::ptr g_logger = QIU_LOG_ROOT();
 
 void test_socket(){

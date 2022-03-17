@@ -1,5 +1,5 @@
-#include "../scripts/scripts.h"
-#include "../scripts/iomanager.h"
+#include "scripts/scripts.h"
+#include "scripts/iomanager.h"
 #include <sys/types.h>
 #include <unistd.h>
 #include <sys/socket.h>

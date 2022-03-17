@@ -1,5 +1,5 @@
-#include "../scripts/config.h"
-#include "../scripts/log.h"
+#include "scripts/config.h"
+#include "scripts/log.h"
 #include<yaml-cpp/yaml.h>
 
 #if 1

@@ -1,5 +1,5 @@
-#include "../scripts/http/http.h"
-#include "../scripts/log.h"
+#include "scripts/http/http.h"
+#include "scripts/log.h"
 
 void test_request(){
     qiu::http::HttpRequest::ptr req(new qiu::http::HttpRequest);

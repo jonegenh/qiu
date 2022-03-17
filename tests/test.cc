@@ -1,7 +1,7 @@
 #include<iostream>
 #include<thread>
-#include"../scripts/log.h"
-#include"../scripts/util.h"
+#include"scripts/log.h"
+#include"scripts/util.h"
 #include <string.h>
 
 class A{

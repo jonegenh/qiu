@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 2.8)
+cmake_minimum_required(VERSION 3.0)
 project(qiu)
 
 include(cmake/utils.cmake)
@@ -21,6 +21,8 @@ set(LIB_SRC
 	scripts/fiber.cc
 	scripts/http/http.cc
 	scripts/http/http_parser.cc
+	scripts/http/http_session.cc
+	scripts/http/http_server.cc
 	scripts/http/http11_parser.rl.cc
 	scripts/http/httpclient_parser.rl.cc
 	scripts/hook.cc
@@ -28,6 +30,8 @@ set(LIB_SRC
 	scripts/log.cc
 	scripts/scheduler.cc
 	scripts/socket.cc
+	scripts/socket_stream.cc
+	scripts/stream.cc
 	scripts/tcp_server.cc
 	scripts/timer.cc
 	scripts/thread.cc
@@ -119,6 +123,11 @@ add_executable(echo_server examples/echo_server.cc)
 add_dependencies(echo_server scripts)
 force_redefine_file_macro_for_sources(echo_server) # __FILE__
 target_link_libraries(echo_server ${LIB_LIB}) 
+
+add_executable(test_http_server tests/test_http_server.cc)
+add_dependencies(test_http_server scripts)
+force_redefine_file_macro_for_sources(test_http_server) # __FILE__
+target_link_libraries(test_http_server ${LIB_LIB}) 
 
 SET(EXECUTABLE_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/bin)
 SET(LIBRARY_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/lib)

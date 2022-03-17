@@ -1,4 +1,4 @@
-#include "../scripts/scripts.h"
+#include "scripts/scripts.h"
 
 qiu::Logger::ptr g_logger = QIU_LOG_ROOT();
 

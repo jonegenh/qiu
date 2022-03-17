@@ -1,6 +1,6 @@
-#include "../scripts/hook.h"
-#include "../scripts/iomanager.h"
-#include "../scripts/log.h"
+#include "scripts/hook.h"
+#include "scripts/iomanager.h"
+#include "scripts/log.h"
 #include <sys/socket.h>
 #include <arpa/inet.h>
 #include <string.h>

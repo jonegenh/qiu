@@ -1,5 +1,5 @@
-#include "../scripts/address.h"
-#include "../scripts/log.h"
+#include "scripts/address.h"
+#include "scripts/log.h"
 
 qiu::Logger::ptr g_logger = QIU_LOG_ROOT();
 

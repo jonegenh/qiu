@@ -250,6 +250,19 @@ uri: http://www.baidu.com:80/page/xxx?id=10&v=20#fr
     fr fragment
 
 ragel mongrel2
+
+## TcpServer封装
+基于TcpServer实现了一个EchoServer
+
+## Stream 针对文件/socket封装
+read/write/readFixSize/writeFixSize
+
+
+## HttpSession/HttpConnection
+Server.accept, socket -> session
+client connect socket -> Connection
+
+HttpServer : TcpServer
 ## 分布协议
 
 ## 推荐系统

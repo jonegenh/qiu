@@ -86,7 +86,6 @@ static ssize_t do_io(int fd, OriginFun fun, const char* hook_fun_name,
         return fun(fd, std::forward<Args>(args)...);
     }
 
-
     qiu::FdCtx::ptr ctx = qiu::FdMgr::GetInstance()->get(fd);
     if(!ctx) {
         return fun(fd, std::forward<Args>(args)...);
