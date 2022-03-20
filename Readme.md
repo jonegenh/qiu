@@ -263,6 +263,12 @@ Server.accept, socket -> session
 client connect socket -> Connection
 
 HttpServer : TcpServer
+
+          Servlet <---- FunctionServlet
+            |
+            |
+            v
+          ServletDispatch
 ## 分布协议
 
 ## 推荐系统

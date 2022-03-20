@@ -9,6 +9,19 @@ void run(){
     while(!server->bind(addr)){
         sleep(2);
     }
+    auto sd = server->getServletDispatch();
+    
+    sd->addServlet("/qiu/xx", [](qiu::http::HttpRequest::ptr req, 
+    qiu::http::HttpResponse::ptr rsp, qiu::http::HttpSession::ptr session){
+        rsp->setBody(req->toString());
+        return 0;
+    });
+
+    sd->addGlobServlet("/qiu/*", [](qiu::http::HttpRequest::ptr req, 
+    qiu::http::HttpResponse::ptr rsp, qiu::http::HttpSession::ptr session){
+        rsp->setBody("Glob:\r\n" + req->toString());
+        return 0;
+    });
     server->start();
 }
 

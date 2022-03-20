@@ -4,11 +4,6 @@
 #include"scripts/util.h"
 #include <string.h>
 
-class A{
-public:
-const int a = 1;
-};
-
 int main(int argc, char** argv){
     qiu::Logger::ptr logger(new qiu::Logger);
     logger->addAppender(qiu::LogAppender::ptr(new qiu::StdoutLogAppender));

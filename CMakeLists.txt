@@ -25,6 +25,7 @@ set(LIB_SRC
 	scripts/http/http_server.cc
 	scripts/http/http11_parser.rl.cc
 	scripts/http/httpclient_parser.rl.cc
+	scripts/http/servlet.cc
 	scripts/hook.cc
 	scripts/iomanager.cc
 	scripts/log.cc
