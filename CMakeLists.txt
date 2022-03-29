@@ -20,11 +20,10 @@ set(LIB_SRC
 	scripts/fd_manager.cc
 	scripts/fiber.cc
 	scripts/http/http.cc
+	scripts/http/http_connection.cc
 	scripts/http/http_parser.cc
 	scripts/http/http_session.cc
 	scripts/http/http_server.cc
-	scripts/http/http11_parser.rl.cc
-	scripts/http/httpclient_parser.rl.cc
 	scripts/http/servlet.cc
 	scripts/hook.cc
 	scripts/iomanager.cc
@@ -38,6 +37,11 @@ set(LIB_SRC
 	scripts/thread.cc
 	scripts/util.cc
 	)
+
+ragelmaker(scripts/http/http11_parser.rl LIB_SRC ${CMAKE_CURRENT_SOURCE_DIR}/scripts/http)
+ragelmaker(scripts/http/httpclient_parser.rl LIB_SRC ${CMAKE_CURRENT_SOURCE_DIR}/scripts/http)
+
+ragelmaker(scripts/uri.rl LIB_SRC ${CMAKE_CURRENT_SOURCE_DIR}/scripts)
 
 add_library(scripts SHARED ${LIB_SRC})
 force_redefine_file_macro_for_sources(scripts) # __FILE__
@@ -129,6 +133,16 @@ add_executable(test_http_server tests/test_http_server.cc)
 add_dependencies(test_http_server scripts)
 force_redefine_file_macro_for_sources(test_http_server) # __FILE__
 target_link_libraries(test_http_server ${LIB_LIB}) 
+
+add_executable(test_http_connection tests/test_http_connection.cc)
+add_dependencies(test_http_connection scripts)
+force_redefine_file_macro_for_sources(test_http_connection) # __FILE__
+target_link_libraries(test_http_connection ${LIB_LIB}) 
+
+add_executable(test_uri tests/test_uri.cc)
+add_dependencies(test_uri scripts)
+force_redefine_file_macro_for_sources(test_uri) # __FILE__
+target_link_libraries(test_uri ${LIB_LIB}) 
 
 SET(EXECUTABLE_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/bin)
 SET(LIBRARY_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/lib)

@@ -24,12 +24,12 @@ void HttpServer::handleClient(Socket::ptr client) {
             break;
         }
         HttpResponse::ptr rsp(new HttpResponse(req->getVersion(), req->isClose() || !m_isKeepalive));
+        rsp->setHeader("Server", getName());
         m_dispatch->handle(req, rsp, session);
         // rsp->setBody("hello qiu");
 
         // QIU_LOG_INFO(g_logger) << "request:" << std::endl
         // << *req;
-
         // QIU_LOG_INFO(g_logger) << "request:" << std::endl
         // << *rsp;
         session->sendResponse(rsp);

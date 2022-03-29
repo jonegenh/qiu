@@ -1,5 +1,5 @@
 
-#line 1 "http11_parser.rl"
+#line 1 "/home/qiu/cppws/Myproject/scripts/http/http11_parser.rl"
 /**
  *
  * Copyright (c) 2010, Zed A. Shaw and Mongrel2 Project Contributors.
@@ -49,12 +49,12 @@
 /** Machine **/
 
 
-#line 255 "http11_parser.rl"
+#line 255 "/home/qiu/cppws/Myproject/scripts/http/http11_parser.rl"
 
 
 /** Data **/
 
-#line 58 "http11_parser.rl.cc"
+#line 58 "/home/qiu/cppws/Myproject/scripts/http/http11_parser.rl.cc"
 static const int http_parser_start = 1;
 static const int http_parser_first_final = 348;
 static const int http_parser_error = 0;
@@ -62,17 +62,17 @@ static const int http_parser_error = 0;
 static const int http_parser_en_main = 1;
 
 
-#line 259 "http11_parser.rl"
+#line 259 "/home/qiu/cppws/Myproject/scripts/http/http11_parser.rl"
 
 int http_parser_init(http_parser *parser) {
   int cs = 0;
   
-#line 71 "http11_parser.rl.cc"
+#line 71 "/home/qiu/cppws/Myproject/scripts/http/http11_parser.rl.cc"
 	{
 	cs = http_parser_start;
 	}
 
-#line 263 "http11_parser.rl"
+#line 263 "/home/qiu/cppws/Myproject/scripts/http/http11_parser.rl"
   parser->cs = cs;
   parser->body_start = 0;
   parser->content_len = 0;
@@ -107,7 +107,7 @@ size_t http_parser_execute(http_parser *parser, const char *buffer, size_t len, 
   assert(pe - p == (int)len - (int)off && "pointers aren't same distance");
 
   
-#line 111 "http11_parser.rl.cc"
+#line 111 "/home/qiu/cppws/Myproject/scripts/http/http11_parser.rl.cc"
 	{
 	short _widec;
 	if ( p == pe )
@@ -129,14 +129,14 @@ st0:
 cs = 0;
 	goto _out;
 tr0:
-#line 53 "http11_parser.rl"
+#line 53 "/home/qiu/cppws/Myproject/scripts/http/http11_parser.rl"
 	{MARK(mark, p); }
 	goto st2;
 st2:
 	if ( ++p == pe )
 		goto _test_eof2;
 case 2:
-#line 140 "http11_parser.rl.cc"
+#line 140 "/home/qiu/cppws/Myproject/scripts/http/http11_parser.rl.cc"
 	if ( (*p) == 32 )
 		goto tr4;
 	if ( (*p) > 57 ) {
@@ -146,7 +146,7 @@ case 2:
 		goto st175;
 	goto st0;
 tr4:
-#line 69 "http11_parser.rl"
+#line 69 "/home/qiu/cppws/Myproject/scripts/http/http11_parser.rl"
 	{ 
     if(parser->request_method != NULL) 
       parser->request_method(parser->data, PTR_TO(mark), LEN(mark, p));
@@ -156,26 +156,26 @@ st3:
 	if ( ++p == pe )
 		goto _test_eof3;
 case 3:
-#line 160 "http11_parser.rl.cc"
+#line 160 "/home/qiu/cppws/Myproject/scripts/http/http11_parser.rl.cc"
 	_widec = (*p);
 	if ( (*p) < 123 ) {
 		if ( 94 <= (*p) && (*p) <= 94 ) {
 			_widec = (short)(128 + ((*p) - -128));
 			if ( 
-#line 129 "http11_parser.rl"
+#line 129 "/home/qiu/cppws/Myproject/scripts/http/http11_parser.rl"
  parser->uri_relaxed  ) _widec += 256;
 		}
 	} else if ( (*p) > 123 ) {
 		if ( 125 <= (*p) && (*p) <= 125 ) {
 			_widec = (short)(128 + ((*p) - -128));
 			if ( 
-#line 129 "http11_parser.rl"
+#line 129 "/home/qiu/cppws/Myproject/scripts/http/http11_parser.rl"
  parser->uri_relaxed  ) _widec += 256;
 		}
 	} else {
 		_widec = (short)(128 + ((*p) - -128));
 		if ( 
-#line 129 "http11_parser.rl"
+#line 129 "/home/qiu/cppws/Myproject/scripts/http/http11_parser.rl"
  parser->uri_relaxed  ) _widec += 256;
 	}
 	switch( _widec ) {
@@ -204,68 +204,68 @@ case 3:
 		goto tr12;
 	goto st0;
 tr6:
-#line 53 "http11_parser.rl"
+#line 53 "/home/qiu/cppws/Myproject/scripts/http/http11_parser.rl"
 	{MARK(mark, p); }
-#line 95 "http11_parser.rl"
+#line 95 "/home/qiu/cppws/Myproject/scripts/http/http11_parser.rl"
 	{
     if(parser->request_path != NULL)
       parser->request_path(parser->data, PTR_TO(mark), LEN(mark,p));
   }
-#line 74 "http11_parser.rl"
+#line 74 "/home/qiu/cppws/Myproject/scripts/http/http11_parser.rl"
 	{ 
     if(parser->request_uri != NULL)
       parser->request_uri(parser->data, PTR_TO(mark), LEN(mark, p));
   }
 	goto st4;
 tr37:
-#line 95 "http11_parser.rl"
+#line 95 "/home/qiu/cppws/Myproject/scripts/http/http11_parser.rl"
 	{
     if(parser->request_path != NULL)
       parser->request_path(parser->data, PTR_TO(mark), LEN(mark,p));
   }
-#line 74 "http11_parser.rl"
+#line 74 "/home/qiu/cppws/Myproject/scripts/http/http11_parser.rl"
 	{ 
     if(parser->request_uri != NULL)
       parser->request_uri(parser->data, PTR_TO(mark), LEN(mark, p));
   }
 	goto st4;
 tr43:
-#line 53 "http11_parser.rl"
+#line 53 "/home/qiu/cppws/Myproject/scripts/http/http11_parser.rl"
 	{MARK(mark, p); }
-#line 79 "http11_parser.rl"
+#line 79 "/home/qiu/cppws/Myproject/scripts/http/http11_parser.rl"
 	{
     if(parser->fragment != NULL)
       parser->fragment(parser->data, PTR_TO(mark), LEN(mark, p));
   }
 	goto st4;
 tr46:
-#line 79 "http11_parser.rl"
+#line 79 "/home/qiu/cppws/Myproject/scripts/http/http11_parser.rl"
 	{
     if(parser->fragment != NULL)
       parser->fragment(parser->data, PTR_TO(mark), LEN(mark, p));
   }
 	goto st4;
 tr53:
-#line 84 "http11_parser.rl"
+#line 84 "/home/qiu/cppws/Myproject/scripts/http/http11_parser.rl"
 	{MARK(query_start, p); }
-#line 85 "http11_parser.rl"
+#line 85 "/home/qiu/cppws/Myproject/scripts/http/http11_parser.rl"
 	{ 
     if(parser->query_string != NULL)
       parser->query_string(parser->data, PTR_TO(query_start), LEN(query_start, p));
   }
-#line 74 "http11_parser.rl"
+#line 74 "/home/qiu/cppws/Myproject/scripts/http/http11_parser.rl"
 	{ 
     if(parser->request_uri != NULL)
       parser->request_uri(parser->data, PTR_TO(mark), LEN(mark, p));
   }
 	goto st4;
 tr57:
-#line 85 "http11_parser.rl"
+#line 85 "/home/qiu/cppws/Myproject/scripts/http/http11_parser.rl"
 	{ 
     if(parser->query_string != NULL)
       parser->query_string(parser->data, PTR_TO(query_start), LEN(query_start, p));
   }
-#line 74 "http11_parser.rl"
+#line 74 "/home/qiu/cppws/Myproject/scripts/http/http11_parser.rl"
 	{ 
     if(parser->request_uri != NULL)
       parser->request_uri(parser->data, PTR_TO(mark), LEN(mark, p));
@@ -275,19 +275,19 @@ st4:
 	if ( ++p == pe )
 		goto _test_eof4;
 case 4:
-#line 279 "http11_parser.rl.cc"
+#line 279 "/home/qiu/cppws/Myproject/scripts/http/http11_parser.rl.cc"
 	if ( (*p) == 72 )
 		goto tr13;
 	goto st0;
 tr13:
-#line 53 "http11_parser.rl"
+#line 53 "/home/qiu/cppws/Myproject/scripts/http/http11_parser.rl"
 	{MARK(mark, p); }
 	goto st5;
 st5:
 	if ( ++p == pe )
 		goto _test_eof5;
 case 5:
-#line 291 "http11_parser.rl.cc"
+#line 291 "/home/qiu/cppws/Myproject/scripts/http/http11_parser.rl.cc"
 	if ( (*p) == 84 )
 		goto st6;
 	goto st0;
@@ -343,16 +343,16 @@ case 12:
 	}
 	goto st0;
 tr21:
-#line 90 "http11_parser.rl"
+#line 90 "/home/qiu/cppws/Myproject/scripts/http/http11_parser.rl"
 	{	
     if(parser->http_version != NULL)
       parser->http_version(parser->data, PTR_TO(mark), LEN(mark, p));
   }
 	goto st13;
 tr30:
-#line 61 "http11_parser.rl"
+#line 61 "/home/qiu/cppws/Myproject/scripts/http/http11_parser.rl"
 	{ MARK(mark, p); }
-#line 63 "http11_parser.rl"
+#line 63 "/home/qiu/cppws/Myproject/scripts/http/http11_parser.rl"
 	{
     if(parser->http_field != NULL) {
       parser->http_field(parser->data, PTR_TO(field_start), parser->field_len, PTR_TO(mark), LEN(mark, p));
@@ -360,7 +360,7 @@ tr30:
   }
 	goto st13;
 tr33:
-#line 63 "http11_parser.rl"
+#line 63 "/home/qiu/cppws/Myproject/scripts/http/http11_parser.rl"
 	{
     if(parser->http_field != NULL) {
       parser->http_field(parser->data, PTR_TO(field_start), parser->field_len, PTR_TO(mark), LEN(mark, p));
@@ -371,7 +371,7 @@ st13:
 	if ( ++p == pe )
 		goto _test_eof13;
 case 13:
-#line 375 "http11_parser.rl.cc"
+#line 375 "/home/qiu/cppws/Myproject/scripts/http/http11_parser.rl.cc"
 	switch( (*p) ) {
 		case 10: goto tr24;
 		case 13: goto tr25;
@@ -404,14 +404,14 @@ case 13:
 		goto tr23;
 	goto st0;
 tr23:
-#line 56 "http11_parser.rl"
+#line 56 "/home/qiu/cppws/Myproject/scripts/http/http11_parser.rl"
 	{ MARK(field_start, p); }
 	goto st14;
 st14:
 	if ( ++p == pe )
 		goto _test_eof14;
 case 14:
-#line 415 "http11_parser.rl.cc"
+#line 415 "/home/qiu/cppws/Myproject/scripts/http/http11_parser.rl.cc"
 	switch( (*p) ) {
 		case 33: goto st14;
 		case 58: goto tr27;
@@ -443,20 +443,20 @@ case 14:
 		goto st14;
 	goto st0;
 tr27:
-#line 57 "http11_parser.rl"
+#line 57 "/home/qiu/cppws/Myproject/scripts/http/http11_parser.rl"
 	{ 
     parser->field_len = LEN(field_start, p);
   }
 	goto st15;
 tr29:
-#line 61 "http11_parser.rl"
+#line 61 "/home/qiu/cppws/Myproject/scripts/http/http11_parser.rl"
 	{ MARK(mark, p); }
 	goto st15;
 st15:
 	if ( ++p == pe )
 		goto _test_eof15;
 case 15:
-#line 460 "http11_parser.rl.cc"
+#line 460 "/home/qiu/cppws/Myproject/scripts/http/http11_parser.rl.cc"
 	switch( (*p) ) {
 		case 0: goto st0;
 		case 9: goto tr29;
@@ -467,14 +467,14 @@ case 15:
 	}
 	goto tr28;
 tr28:
-#line 61 "http11_parser.rl"
+#line 61 "/home/qiu/cppws/Myproject/scripts/http/http11_parser.rl"
 	{ MARK(mark, p); }
 	goto st16;
 st16:
 	if ( ++p == pe )
 		goto _test_eof16;
 case 16:
-#line 478 "http11_parser.rl.cc"
+#line 478 "/home/qiu/cppws/Myproject/scripts/http/http11_parser.rl.cc"
 	switch( (*p) ) {
 		case 0: goto st0;
 		case 10: goto tr33;
@@ -483,16 +483,16 @@ case 16:
 	}
 	goto st16;
 tr22:
-#line 90 "http11_parser.rl"
+#line 90 "/home/qiu/cppws/Myproject/scripts/http/http11_parser.rl"
 	{	
     if(parser->http_version != NULL)
       parser->http_version(parser->data, PTR_TO(mark), LEN(mark, p));
   }
 	goto st17;
 tr31:
-#line 61 "http11_parser.rl"
+#line 61 "/home/qiu/cppws/Myproject/scripts/http/http11_parser.rl"
 	{ MARK(mark, p); }
-#line 63 "http11_parser.rl"
+#line 63 "/home/qiu/cppws/Myproject/scripts/http/http11_parser.rl"
 	{
     if(parser->http_field != NULL) {
       parser->http_field(parser->data, PTR_TO(field_start), parser->field_len, PTR_TO(mark), LEN(mark, p));
@@ -500,7 +500,7 @@ tr31:
   }
 	goto st17;
 tr34:
-#line 63 "http11_parser.rl"
+#line 63 "/home/qiu/cppws/Myproject/scripts/http/http11_parser.rl"
 	{
     if(parser->http_field != NULL) {
       parser->http_field(parser->data, PTR_TO(field_start), parser->field_len, PTR_TO(mark), LEN(mark, p));
@@ -511,14 +511,14 @@ st17:
 	if ( ++p == pe )
 		goto _test_eof17;
 case 17:
-#line 515 "http11_parser.rl.cc"
+#line 515 "/home/qiu/cppws/Myproject/scripts/http/http11_parser.rl.cc"
 	if ( (*p) == 10 )
 		goto st13;
 	goto st0;
 tr24:
-#line 56 "http11_parser.rl"
+#line 56 "/home/qiu/cppws/Myproject/scripts/http/http11_parser.rl"
 	{ MARK(field_start, p); }
-#line 100 "http11_parser.rl"
+#line 100 "/home/qiu/cppws/Myproject/scripts/http/http11_parser.rl"
 	{
       if(parser->xml_sent || parser->json_sent) {
         parser->body_start = PTR_TO(mark) - buffer;
@@ -535,7 +535,7 @@ tr24:
   }
 	goto st348;
 tr36:
-#line 100 "http11_parser.rl"
+#line 100 "/home/qiu/cppws/Myproject/scripts/http/http11_parser.rl"
 	{
       if(parser->xml_sent || parser->json_sent) {
         parser->body_start = PTR_TO(mark) - buffer;
@@ -555,7 +555,7 @@ st348:
 	if ( ++p == pe )
 		goto _test_eof348;
 case 348:
-#line 559 "http11_parser.rl.cc"
+#line 559 "/home/qiu/cppws/Myproject/scripts/http/http11_parser.rl.cc"
 	switch( (*p) ) {
 		case 33: goto st14;
 		case 58: goto tr27;
@@ -587,14 +587,14 @@ case 348:
 		goto st14;
 	goto st0;
 tr25:
-#line 56 "http11_parser.rl"
+#line 56 "/home/qiu/cppws/Myproject/scripts/http/http11_parser.rl"
 	{ MARK(field_start, p); }
 	goto st18;
 st18:
 	if ( ++p == pe )
 		goto _test_eof18;
 case 18:
-#line 598 "http11_parser.rl.cc"
+#line 598 "/home/qiu/cppws/Myproject/scripts/http/http11_parser.rl.cc"
 	switch( (*p) ) {
 		case 10: goto tr36;
 		case 33: goto st14;
@@ -627,33 +627,33 @@ case 18:
 		goto st14;
 	goto st0;
 tr7:
-#line 53 "http11_parser.rl"
+#line 53 "/home/qiu/cppws/Myproject/scripts/http/http11_parser.rl"
 	{MARK(mark, p); }
 	goto st19;
 st19:
 	if ( ++p == pe )
 		goto _test_eof19;
 case 19:
-#line 638 "http11_parser.rl.cc"
+#line 638 "/home/qiu/cppws/Myproject/scripts/http/http11_parser.rl.cc"
 	_widec = (*p);
 	if ( (*p) < 123 ) {
 		if ( 94 <= (*p) && (*p) <= 94 ) {
 			_widec = (short)(128 + ((*p) - -128));
 			if ( 
-#line 129 "http11_parser.rl"
+#line 129 "/home/qiu/cppws/Myproject/scripts/http/http11_parser.rl"
  parser->uri_relaxed  ) _widec += 256;
 		}
 	} else if ( (*p) > 123 ) {
 		if ( 125 <= (*p) && (*p) <= 125 ) {
 			_widec = (short)(128 + ((*p) - -128));
 			if ( 
-#line 129 "http11_parser.rl"
+#line 129 "/home/qiu/cppws/Myproject/scripts/http/http11_parser.rl"
  parser->uri_relaxed  ) _widec += 256;
 		}
 	} else {
 		_widec = (short)(128 + ((*p) - -128));
 		if ( 
-#line 129 "http11_parser.rl"
+#line 129 "/home/qiu/cppws/Myproject/scripts/http/http11_parser.rl"
  parser->uri_relaxed  ) _widec += 256;
 	}
 	switch( _widec ) {
@@ -681,52 +681,52 @@ case 19:
 		goto st19;
 	goto st0;
 tr8:
-#line 53 "http11_parser.rl"
+#line 53 "/home/qiu/cppws/Myproject/scripts/http/http11_parser.rl"
 	{MARK(mark, p); }
-#line 95 "http11_parser.rl"
+#line 95 "/home/qiu/cppws/Myproject/scripts/http/http11_parser.rl"
 	{
     if(parser->request_path != NULL)
       parser->request_path(parser->data, PTR_TO(mark), LEN(mark,p));
   }
-#line 74 "http11_parser.rl"
+#line 74 "/home/qiu/cppws/Myproject/scripts/http/http11_parser.rl"
 	{ 
     if(parser->request_uri != NULL)
       parser->request_uri(parser->data, PTR_TO(mark), LEN(mark, p));
   }
 	goto st20;
 tr39:
-#line 95 "http11_parser.rl"
+#line 95 "/home/qiu/cppws/Myproject/scripts/http/http11_parser.rl"
 	{
     if(parser->request_path != NULL)
       parser->request_path(parser->data, PTR_TO(mark), LEN(mark,p));
   }
-#line 74 "http11_parser.rl"
+#line 74 "/home/qiu/cppws/Myproject/scripts/http/http11_parser.rl"
 	{ 
     if(parser->request_uri != NULL)
       parser->request_uri(parser->data, PTR_TO(mark), LEN(mark, p));
   }
 	goto st20;
 tr55:
-#line 84 "http11_parser.rl"
+#line 84 "/home/qiu/cppws/Myproject/scripts/http/http11_parser.rl"
 	{MARK(query_start, p); }
-#line 85 "http11_parser.rl"
+#line 85 "/home/qiu/cppws/Myproject/scripts/http/http11_parser.rl"
 	{ 
     if(parser->query_string != NULL)
       parser->query_string(parser->data, PTR_TO(query_start), LEN(query_start, p));
   }
-#line 74 "http11_parser.rl"
+#line 74 "/home/qiu/cppws/Myproject/scripts/http/http11_parser.rl"
 	{ 
     if(parser->request_uri != NULL)
       parser->request_uri(parser->data, PTR_TO(mark), LEN(mark, p));
   }
 	goto st20;
 tr59:
-#line 85 "http11_parser.rl"
+#line 85 "/home/qiu/cppws/Myproject/scripts/http/http11_parser.rl"
 	{ 
     if(parser->query_string != NULL)
       parser->query_string(parser->data, PTR_TO(query_start), LEN(query_start, p));
   }
-#line 74 "http11_parser.rl"
+#line 74 "/home/qiu/cppws/Myproject/scripts/http/http11_parser.rl"
 	{ 
     if(parser->request_uri != NULL)
       parser->request_uri(parser->data, PTR_TO(mark), LEN(mark, p));
@@ -736,26 +736,26 @@ st20:
 	if ( ++p == pe )
 		goto _test_eof20;
 case 20:
-#line 740 "http11_parser.rl.cc"
+#line 740 "/home/qiu/cppws/Myproject/scripts/http/http11_parser.rl.cc"
 	_widec = (*p);
 	if ( (*p) < 123 ) {
 		if ( 94 <= (*p) && (*p) <= 94 ) {
 			_widec = (short)(128 + ((*p) - -128));
 			if ( 
-#line 129 "http11_parser.rl"
+#line 129 "/home/qiu/cppws/Myproject/scripts/http/http11_parser.rl"
  parser->uri_relaxed  ) _widec += 256;
 		}
 	} else if ( (*p) > 123 ) {
 		if ( 125 <= (*p) && (*p) <= 125 ) {
 			_widec = (short)(128 + ((*p) - -128));
 			if ( 
-#line 129 "http11_parser.rl"
+#line 129 "/home/qiu/cppws/Myproject/scripts/http/http11_parser.rl"
  parser->uri_relaxed  ) _widec += 256;
 		}
 	} else {
 		_widec = (short)(128 + ((*p) - -128));
 		if ( 
-#line 129 "http11_parser.rl"
+#line 129 "/home/qiu/cppws/Myproject/scripts/http/http11_parser.rl"
  parser->uri_relaxed  ) _widec += 256;
 	}
 	switch( _widec ) {
@@ -779,33 +779,33 @@ case 20:
 		goto tr44;
 	goto st0;
 tr44:
-#line 53 "http11_parser.rl"
+#line 53 "/home/qiu/cppws/Myproject/scripts/http/http11_parser.rl"
 	{MARK(mark, p); }
 	goto st21;
 st21:
 	if ( ++p == pe )
 		goto _test_eof21;
 case 21:
-#line 790 "http11_parser.rl.cc"
+#line 790 "/home/qiu/cppws/Myproject/scripts/http/http11_parser.rl.cc"
 	_widec = (*p);
 	if ( (*p) < 123 ) {
 		if ( 94 <= (*p) && (*p) <= 94 ) {
 			_widec = (short)(128 + ((*p) - -128));
 			if ( 
-#line 129 "http11_parser.rl"
+#line 129 "/home/qiu/cppws/Myproject/scripts/http/http11_parser.rl"
  parser->uri_relaxed  ) _widec += 256;
 		}
 	} else if ( (*p) > 123 ) {
 		if ( 125 <= (*p) && (*p) <= 125 ) {
 			_widec = (short)(128 + ((*p) - -128));
 			if ( 
-#line 129 "http11_parser.rl"
+#line 129 "/home/qiu/cppws/Myproject/scripts/http/http11_parser.rl"
  parser->uri_relaxed  ) _widec += 256;
 		}
 	} else {
 		_widec = (short)(128 + ((*p) - -128));
 		if ( 
-#line 129 "http11_parser.rl"
+#line 129 "/home/qiu/cppws/Myproject/scripts/http/http11_parser.rl"
  parser->uri_relaxed  ) _widec += 256;
 	}
 	switch( _widec ) {
@@ -829,14 +829,14 @@ case 21:
 		goto st21;
 	goto st0;
 tr45:
-#line 53 "http11_parser.rl"
+#line 53 "/home/qiu/cppws/Myproject/scripts/http/http11_parser.rl"
 	{MARK(mark, p); }
 	goto st22;
 st22:
 	if ( ++p == pe )
 		goto _test_eof22;
 case 22:
-#line 840 "http11_parser.rl.cc"
+#line 840 "/home/qiu/cppws/Myproject/scripts/http/http11_parser.rl.cc"
 	if ( (*p) < 65 ) {
 		if ( 48 <= (*p) && (*p) <= 57 )
 			goto st23;
@@ -860,14 +860,14 @@ case 23:
 		goto st21;
 	goto st0;
 tr9:
-#line 53 "http11_parser.rl"
+#line 53 "/home/qiu/cppws/Myproject/scripts/http/http11_parser.rl"
 	{MARK(mark, p); }
 	goto st24;
 st24:
 	if ( ++p == pe )
 		goto _test_eof24;
 case 24:
-#line 871 "http11_parser.rl.cc"
+#line 871 "/home/qiu/cppws/Myproject/scripts/http/http11_parser.rl.cc"
 	if ( (*p) < 65 ) {
 		if ( 48 <= (*p) && (*p) <= 57 )
 			goto st25;
@@ -891,33 +891,33 @@ case 25:
 		goto st19;
 	goto st0;
 tr203:
-#line 53 "http11_parser.rl"
+#line 53 "/home/qiu/cppws/Myproject/scripts/http/http11_parser.rl"
 	{MARK(mark, p); }
 	goto st26;
 st26:
 	if ( ++p == pe )
 		goto _test_eof26;
 case 26:
-#line 902 "http11_parser.rl.cc"
+#line 902 "/home/qiu/cppws/Myproject/scripts/http/http11_parser.rl.cc"
 	_widec = (*p);
 	if ( (*p) < 123 ) {
 		if ( 94 <= (*p) && (*p) <= 94 ) {
 			_widec = (short)(128 + ((*p) - -128));
 			if ( 
-#line 129 "http11_parser.rl"
+#line 129 "/home/qiu/cppws/Myproject/scripts/http/http11_parser.rl"
  parser->uri_relaxed  ) _widec += 256;
 		}
 	} else if ( (*p) > 123 ) {
 		if ( 125 <= (*p) && (*p) <= 125 ) {
 			_widec = (short)(128 + ((*p) - -128));
 			if ( 
-#line 129 "http11_parser.rl"
+#line 129 "/home/qiu/cppws/Myproject/scripts/http/http11_parser.rl"
  parser->uri_relaxed  ) _widec += 256;
 		}
 	} else {
 		_widec = (short)(128 + ((*p) - -128));
 		if ( 
-#line 129 "http11_parser.rl"
+#line 129 "/home/qiu/cppws/Myproject/scripts/http/http11_parser.rl"
  parser->uri_relaxed  ) _widec += 256;
 	}
 	switch( _widec ) {
@@ -943,14 +943,14 @@ case 26:
 		goto st26;
 	goto st0;
 tr204:
-#line 53 "http11_parser.rl"
+#line 53 "/home/qiu/cppws/Myproject/scripts/http/http11_parser.rl"
 	{MARK(mark, p); }
 	goto st27;
 st27:
 	if ( ++p == pe )
 		goto _test_eof27;
 case 27:
-#line 954 "http11_parser.rl.cc"
+#line 954 "/home/qiu/cppws/Myproject/scripts/http/http11_parser.rl.cc"
 	if ( (*p) < 65 ) {
 		if ( 48 <= (*p) && (*p) <= 57 )
 			goto st28;
@@ -974,16 +974,16 @@ case 28:
 		goto st26;
 	goto st0;
 tr11:
-#line 53 "http11_parser.rl"
+#line 53 "/home/qiu/cppws/Myproject/scripts/http/http11_parser.rl"
 	{MARK(mark, p); }
-#line 95 "http11_parser.rl"
+#line 95 "/home/qiu/cppws/Myproject/scripts/http/http11_parser.rl"
 	{
     if(parser->request_path != NULL)
       parser->request_path(parser->data, PTR_TO(mark), LEN(mark,p));
   }
 	goto st29;
 tr42:
-#line 95 "http11_parser.rl"
+#line 95 "/home/qiu/cppws/Myproject/scripts/http/http11_parser.rl"
 	{
     if(parser->request_path != NULL)
       parser->request_path(parser->data, PTR_TO(mark), LEN(mark,p));
@@ -993,26 +993,26 @@ st29:
 	if ( ++p == pe )
 		goto _test_eof29;
 case 29:
-#line 997 "http11_parser.rl.cc"
+#line 997 "/home/qiu/cppws/Myproject/scripts/http/http11_parser.rl.cc"
 	_widec = (*p);
 	if ( (*p) < 123 ) {
 		if ( 94 <= (*p) && (*p) <= 94 ) {
 			_widec = (short)(128 + ((*p) - -128));
 			if ( 
-#line 129 "http11_parser.rl"
+#line 129 "/home/qiu/cppws/Myproject/scripts/http/http11_parser.rl"
  parser->uri_relaxed  ) _widec += 256;
 		}
 	} else if ( (*p) > 123 ) {
 		if ( 125 <= (*p) && (*p) <= 125 ) {
 			_widec = (short)(128 + ((*p) - -128));
 			if ( 
-#line 129 "http11_parser.rl"
+#line 129 "/home/qiu/cppws/Myproject/scripts/http/http11_parser.rl"
  parser->uri_relaxed  ) _widec += 256;
 		}
 	} else {
 		_widec = (short)(128 + ((*p) - -128));
 		if ( 
-#line 129 "http11_parser.rl"
+#line 129 "/home/qiu/cppws/Myproject/scripts/http/http11_parser.rl"
  parser->uri_relaxed  ) _widec += 256;
 	}
 	switch( _widec ) {
@@ -1037,33 +1037,33 @@ case 29:
 		goto tr54;
 	goto st0;
 tr54:
-#line 84 "http11_parser.rl"
+#line 84 "/home/qiu/cppws/Myproject/scripts/http/http11_parser.rl"
 	{MARK(query_start, p); }
 	goto st30;
 st30:
 	if ( ++p == pe )
 		goto _test_eof30;
 case 30:
-#line 1048 "http11_parser.rl.cc"
+#line 1048 "/home/qiu/cppws/Myproject/scripts/http/http11_parser.rl.cc"
 	_widec = (*p);
 	if ( (*p) < 123 ) {
 		if ( 94 <= (*p) && (*p) <= 94 ) {
 			_widec = (short)(128 + ((*p) - -128));
 			if ( 
-#line 129 "http11_parser.rl"
+#line 129 "/home/qiu/cppws/Myproject/scripts/http/http11_parser.rl"
  parser->uri_relaxed  ) _widec += 256;
 		}
 	} else if ( (*p) > 123 ) {
 		if ( 125 <= (*p) && (*p) <= 125 ) {
 			_widec = (short)(128 + ((*p) - -128));
 			if ( 
-#line 129 "http11_parser.rl"
+#line 129 "/home/qiu/cppws/Myproject/scripts/http/http11_parser.rl"
  parser->uri_relaxed  ) _widec += 256;
 		}
 	} else {
 		_widec = (short)(128 + ((*p) - -128));
 		if ( 
-#line 129 "http11_parser.rl"
+#line 129 "/home/qiu/cppws/Myproject/scripts/http/http11_parser.rl"
  parser->uri_relaxed  ) _widec += 256;
 	}
 	switch( _widec ) {
@@ -1088,14 +1088,14 @@ case 30:
 		goto st30;
 	goto st0;
 tr56:
-#line 84 "http11_parser.rl"
+#line 84 "/home/qiu/cppws/Myproject/scripts/http/http11_parser.rl"
 	{MARK(query_start, p); }
 	goto st31;
 st31:
 	if ( ++p == pe )
 		goto _test_eof31;
 case 31:
-#line 1099 "http11_parser.rl.cc"
+#line 1099 "/home/qiu/cppws/Myproject/scripts/http/http11_parser.rl.cc"
 	if ( (*p) < 65 ) {
 		if ( 48 <= (*p) && (*p) <= 57 )
 			goto st32;
@@ -1119,33 +1119,33 @@ case 32:
 		goto st30;
 	goto st0;
 tr10:
-#line 53 "http11_parser.rl"
+#line 53 "/home/qiu/cppws/Myproject/scripts/http/http11_parser.rl"
 	{MARK(mark, p); }
 	goto st33;
 st33:
 	if ( ++p == pe )
 		goto _test_eof33;
 case 33:
-#line 1130 "http11_parser.rl.cc"
+#line 1130 "/home/qiu/cppws/Myproject/scripts/http/http11_parser.rl.cc"
 	_widec = (*p);
 	if ( (*p) < 123 ) {
 		if ( 94 <= (*p) && (*p) <= 94 ) {
 			_widec = (short)(128 + ((*p) - -128));
 			if ( 
-#line 129 "http11_parser.rl"
+#line 129 "/home/qiu/cppws/Myproject/scripts/http/http11_parser.rl"
  parser->uri_relaxed  ) _widec += 256;
 		}
 	} else if ( (*p) > 123 ) {
 		if ( 125 <= (*p) && (*p) <= 125 ) {
 			_widec = (short)(128 + ((*p) - -128));
 			if ( 
-#line 129 "http11_parser.rl"
+#line 129 "/home/qiu/cppws/Myproject/scripts/http/http11_parser.rl"
  parser->uri_relaxed  ) _widec += 256;
 		}
 	} else {
 		_widec = (short)(128 + ((*p) - -128));
 		if ( 
-#line 129 "http11_parser.rl"
+#line 129 "/home/qiu/cppws/Myproject/scripts/http/http11_parser.rl"
  parser->uri_relaxed  ) _widec += 256;
 	}
 	switch( _widec ) {
@@ -1180,20 +1180,20 @@ case 34:
 		if ( 94 <= (*p) && (*p) <= 94 ) {
 			_widec = (short)(128 + ((*p) - -128));
 			if ( 
-#line 129 "http11_parser.rl"
+#line 129 "/home/qiu/cppws/Myproject/scripts/http/http11_parser.rl"
  parser->uri_relaxed  ) _widec += 256;
 		}
 	} else if ( (*p) > 123 ) {
 		if ( 125 <= (*p) && (*p) <= 125 ) {
 			_widec = (short)(128 + ((*p) - -128));
 			if ( 
-#line 129 "http11_parser.rl"
+#line 129 "/home/qiu/cppws/Myproject/scripts/http/http11_parser.rl"
  parser->uri_relaxed  ) _widec += 256;
 		}
 	} else {
 		_widec = (short)(128 + ((*p) - -128));
 		if ( 
-#line 129 "http11_parser.rl"
+#line 129 "/home/qiu/cppws/Myproject/scripts/http/http11_parser.rl"
  parser->uri_relaxed  ) _widec += 256;
 	}
 	switch( _widec ) {
@@ -1231,20 +1231,20 @@ case 35:
 		if ( 94 <= (*p) && (*p) <= 94 ) {
 			_widec = (short)(128 + ((*p) - -128));
 			if ( 
-#line 129 "http11_parser.rl"
+#line 129 "/home/qiu/cppws/Myproject/scripts/http/http11_parser.rl"
  parser->uri_relaxed  ) _widec += 256;
 		}
 	} else if ( (*p) > 123 ) {
 		if ( 125 <= (*p) && (*p) <= 125 ) {
 			_widec = (short)(128 + ((*p) - -128));
 			if ( 
-#line 129 "http11_parser.rl"
+#line 129 "/home/qiu/cppws/Myproject/scripts/http/http11_parser.rl"
  parser->uri_relaxed  ) _widec += 256;
 		}
 	} else {
 		_widec = (short)(128 + ((*p) - -128));
 		if ( 
-#line 129 "http11_parser.rl"
+#line 129 "/home/qiu/cppws/Myproject/scripts/http/http11_parser.rl"
  parser->uri_relaxed  ) _widec += 256;
 	}
 	switch( _widec ) {
@@ -1307,20 +1307,20 @@ case 38:
 		if ( 94 <= (*p) && (*p) <= 94 ) {
 			_widec = (short)(128 + ((*p) - -128));
 			if ( 
-#line 129 "http11_parser.rl"
+#line 129 "/home/qiu/cppws/Myproject/scripts/http/http11_parser.rl"
  parser->uri_relaxed  ) _widec += 256;
 		}
 	} else if ( (*p) > 123 ) {
 		if ( 125 <= (*p) && (*p) <= 125 ) {
 			_widec = (short)(128 + ((*p) - -128));
 			if ( 
-#line 129 "http11_parser.rl"
+#line 129 "/home/qiu/cppws/Myproject/scripts/http/http11_parser.rl"
  parser->uri_relaxed  ) _widec += 256;
 		}
 	} else {
 		_widec = (short)(128 + ((*p) - -128));
 		if ( 
-#line 129 "http11_parser.rl"
+#line 129 "/home/qiu/cppws/Myproject/scripts/http/http11_parser.rl"
  parser->uri_relaxed  ) _widec += 256;
 	}
 	switch( _widec ) {
@@ -1362,20 +1362,20 @@ case 39:
 		if ( 94 <= (*p) && (*p) <= 94 ) {
 			_widec = (short)(128 + ((*p) - -128));
 			if ( 
-#line 129 "http11_parser.rl"
+#line 129 "/home/qiu/cppws/Myproject/scripts/http/http11_parser.rl"
  parser->uri_relaxed  ) _widec += 256;
 		}
 	} else if ( (*p) > 123 ) {
 		if ( 125 <= (*p) && (*p) <= 125 ) {
 			_widec = (short)(128 + ((*p) - -128));
 			if ( 
-#line 129 "http11_parser.rl"
+#line 129 "/home/qiu/cppws/Myproject/scripts/http/http11_parser.rl"
  parser->uri_relaxed  ) _widec += 256;
 		}
 	} else {
 		_widec = (short)(128 + ((*p) - -128));
 		if ( 
-#line 129 "http11_parser.rl"
+#line 129 "/home/qiu/cppws/Myproject/scripts/http/http11_parser.rl"
  parser->uri_relaxed  ) _widec += 256;
 	}
 	switch( _widec ) {
@@ -1436,20 +1436,20 @@ case 42:
 		if ( 94 <= (*p) && (*p) <= 94 ) {
 			_widec = (short)(128 + ((*p) - -128));
 			if ( 
-#line 129 "http11_parser.rl"
+#line 129 "/home/qiu/cppws/Myproject/scripts/http/http11_parser.rl"
  parser->uri_relaxed  ) _widec += 256;
 		}
 	} else if ( (*p) > 123 ) {
 		if ( 125 <= (*p) && (*p) <= 125 ) {
 			_widec = (short)(128 + ((*p) - -128));
 			if ( 
-#line 129 "http11_parser.rl"
+#line 129 "/home/qiu/cppws/Myproject/scripts/http/http11_parser.rl"
  parser->uri_relaxed  ) _widec += 256;
 		}
 	} else {
 		_widec = (short)(128 + ((*p) - -128));
 		if ( 
-#line 129 "http11_parser.rl"
+#line 129 "/home/qiu/cppws/Myproject/scripts/http/http11_parser.rl"
  parser->uri_relaxed  ) _widec += 256;
 	}
 	switch( _widec ) {
@@ -1486,20 +1486,20 @@ case 43:
 		if ( 94 <= (*p) && (*p) <= 94 ) {
 			_widec = (short)(128 + ((*p) - -128));
 			if ( 
-#line 129 "http11_parser.rl"
+#line 129 "/home/qiu/cppws/Myproject/scripts/http/http11_parser.rl"
  parser->uri_relaxed  ) _widec += 256;
 		}
 	} else if ( (*p) > 123 ) {
 		if ( 125 <= (*p) && (*p) <= 125 ) {
 			_widec = (short)(128 + ((*p) - -128));
 			if ( 
-#line 129 "http11_parser.rl"
+#line 129 "/home/qiu/cppws/Myproject/scripts/http/http11_parser.rl"
  parser->uri_relaxed  ) _widec += 256;
 		}
 	} else {
 		_widec = (short)(128 + ((*p) - -128));
 		if ( 
-#line 129 "http11_parser.rl"
+#line 129 "/home/qiu/cppws/Myproject/scripts/http/http11_parser.rl"
  parser->uri_relaxed  ) _widec += 256;
 	}
 	switch( _widec ) {
@@ -3280,20 +3280,20 @@ case 171:
 		if ( 94 <= (*p) && (*p) <= 94 ) {
 			_widec = (short)(128 + ((*p) - -128));
 			if ( 
-#line 129 "http11_parser.rl"
+#line 129 "/home/qiu/cppws/Myproject/scripts/http/http11_parser.rl"
  parser->uri_relaxed  ) _widec += 256;
 		}
 	} else if ( (*p) > 123 ) {
 		if ( 125 <= (*p) && (*p) <= 125 ) {
 			_widec = (short)(128 + ((*p) - -128));
 			if ( 
-#line 129 "http11_parser.rl"
+#line 129 "/home/qiu/cppws/Myproject/scripts/http/http11_parser.rl"
  parser->uri_relaxed  ) _widec += 256;
 		}
 	} else {
 		_widec = (short)(128 + ((*p) - -128));
 		if ( 
-#line 129 "http11_parser.rl"
+#line 129 "/home/qiu/cppws/Myproject/scripts/http/http11_parser.rl"
  parser->uri_relaxed  ) _widec += 256;
 	}
 	switch( _widec ) {
@@ -3327,20 +3327,20 @@ case 172:
 		if ( 94 <= (*p) && (*p) <= 94 ) {
 			_widec = (short)(128 + ((*p) - -128));
 			if ( 
-#line 129 "http11_parser.rl"
+#line 129 "/home/qiu/cppws/Myproject/scripts/http/http11_parser.rl"
  parser->uri_relaxed  ) _widec += 256;
 		}
 	} else if ( (*p) > 123 ) {
 		if ( 125 <= (*p) && (*p) <= 125 ) {
 			_widec = (short)(128 + ((*p) - -128));
 			if ( 
-#line 129 "http11_parser.rl"
+#line 129 "/home/qiu/cppws/Myproject/scripts/http/http11_parser.rl"
  parser->uri_relaxed  ) _widec += 256;
 		}
 	} else {
 		_widec = (short)(128 + ((*p) - -128));
 		if ( 
-#line 129 "http11_parser.rl"
+#line 129 "/home/qiu/cppws/Myproject/scripts/http/http11_parser.rl"
  parser->uri_relaxed  ) _widec += 256;
 	}
 	switch( _widec ) {
@@ -3367,33 +3367,33 @@ case 172:
 		goto st172;
 	goto st0;
 tr12:
-#line 53 "http11_parser.rl"
+#line 53 "/home/qiu/cppws/Myproject/scripts/http/http11_parser.rl"
 	{MARK(mark, p); }
 	goto st173;
 st173:
 	if ( ++p == pe )
 		goto _test_eof173;
 case 173:
-#line 3378 "http11_parser.rl.cc"
+#line 3378 "/home/qiu/cppws/Myproject/scripts/http/http11_parser.rl.cc"
 	_widec = (*p);
 	if ( (*p) < 123 ) {
 		if ( 94 <= (*p) && (*p) <= 94 ) {
 			_widec = (short)(128 + ((*p) - -128));
 			if ( 
-#line 129 "http11_parser.rl"
+#line 129 "/home/qiu/cppws/Myproject/scripts/http/http11_parser.rl"
  parser->uri_relaxed  ) _widec += 256;
 		}
 	} else if ( (*p) > 123 ) {
 		if ( 125 <= (*p) && (*p) <= 125 ) {
 			_widec = (short)(128 + ((*p) - -128));
 			if ( 
-#line 129 "http11_parser.rl"
+#line 129 "/home/qiu/cppws/Myproject/scripts/http/http11_parser.rl"
  parser->uri_relaxed  ) _widec += 256;
 		}
 	} else {
 		_widec = (short)(128 + ((*p) - -128));
 		if ( 
-#line 129 "http11_parser.rl"
+#line 129 "/home/qiu/cppws/Myproject/scripts/http/http11_parser.rl"
  parser->uri_relaxed  ) _widec += 256;
 	}
 	switch( _widec ) {
@@ -3435,20 +3435,20 @@ case 174:
 		if ( 94 <= (*p) && (*p) <= 94 ) {
 			_widec = (short)(128 + ((*p) - -128));
 			if ( 
-#line 129 "http11_parser.rl"
+#line 129 "/home/qiu/cppws/Myproject/scripts/http/http11_parser.rl"
  parser->uri_relaxed  ) _widec += 256;
 		}
 	} else if ( (*p) > 123 ) {
 		if ( 125 <= (*p) && (*p) <= 125 ) {
 			_widec = (short)(128 + ((*p) - -128));
 			if ( 
-#line 129 "http11_parser.rl"
+#line 129 "/home/qiu/cppws/Myproject/scripts/http/http11_parser.rl"
  parser->uri_relaxed  ) _widec += 256;
 		}
 	} else {
 		_widec = (short)(128 + ((*p) - -128));
 		if ( 
-#line 129 "http11_parser.rl"
+#line 129 "/home/qiu/cppws/Myproject/scripts/http/http11_parser.rl"
  parser->uri_relaxed  ) _widec += 256;
 	}
 	switch( _widec ) {
@@ -3698,14 +3698,14 @@ case 193:
 		goto tr4;
 	goto st0;
 tr2:
-#line 53 "http11_parser.rl"
+#line 53 "/home/qiu/cppws/Myproject/scripts/http/http11_parser.rl"
 	{MARK(mark, p); }
 	goto st194;
 st194:
 	if ( ++p == pe )
 		goto _test_eof194;
 case 194:
-#line 3709 "http11_parser.rl.cc"
+#line 3709 "/home/qiu/cppws/Myproject/scripts/http/http11_parser.rl.cc"
 	if ( (*p) < 48 ) {
 		if ( 45 <= (*p) && (*p) <= 46 )
 			goto st195;
@@ -3740,7 +3740,7 @@ case 195:
 		goto st195;
 	goto st0;
 tr224:
-#line 95 "http11_parser.rl"
+#line 95 "/home/qiu/cppws/Myproject/scripts/http/http11_parser.rl"
 	{
     if(parser->request_path != NULL)
       parser->request_path(parser->data, PTR_TO(mark), LEN(mark,p));
@@ -3750,7 +3750,7 @@ st196:
 	if ( ++p == pe )
 		goto _test_eof196;
 case 196:
-#line 3754 "http11_parser.rl.cc"
+#line 3754 "/home/qiu/cppws/Myproject/scripts/http/http11_parser.rl.cc"
 	if ( (*p) == 62 )
 		goto st197;
 	goto st196;
@@ -3764,11 +3764,11 @@ case 197:
 	}
 	goto st196;
 tr227:
-#line 115 "http11_parser.rl"
+#line 115 "/home/qiu/cppws/Myproject/scripts/http/http11_parser.rl"
 	{
       parser->xml_sent = 1;
   }
-#line 100 "http11_parser.rl"
+#line 100 "/home/qiu/cppws/Myproject/scripts/http/http11_parser.rl"
 	{
       if(parser->xml_sent || parser->json_sent) {
         parser->body_start = PTR_TO(mark) - buffer;
@@ -3785,11 +3785,11 @@ tr227:
   }
 	goto st349;
 tr235:
-#line 119 "http11_parser.rl"
+#line 119 "/home/qiu/cppws/Myproject/scripts/http/http11_parser.rl"
 	{
       parser->json_sent = 1;
   }
-#line 100 "http11_parser.rl"
+#line 100 "/home/qiu/cppws/Myproject/scripts/http/http11_parser.rl"
 	{
       if(parser->xml_sent || parser->json_sent) {
         parser->body_start = PTR_TO(mark) - buffer;
@@ -3809,36 +3809,36 @@ st349:
 	if ( ++p == pe )
 		goto _test_eof349;
 case 349:
-#line 3813 "http11_parser.rl.cc"
+#line 3813 "/home/qiu/cppws/Myproject/scripts/http/http11_parser.rl.cc"
 	goto st0;
 tr3:
-#line 53 "http11_parser.rl"
+#line 53 "/home/qiu/cppws/Myproject/scripts/http/http11_parser.rl"
 	{MARK(mark, p); }
 	goto st198;
 st198:
 	if ( ++p == pe )
 		goto _test_eof198;
 case 198:
-#line 3823 "http11_parser.rl.cc"
+#line 3823 "/home/qiu/cppws/Myproject/scripts/http/http11_parser.rl.cc"
 	_widec = (*p);
 	if ( (*p) < 123 ) {
 		if ( 94 <= (*p) && (*p) <= 94 ) {
 			_widec = (short)(128 + ((*p) - -128));
 			if ( 
-#line 129 "http11_parser.rl"
+#line 129 "/home/qiu/cppws/Myproject/scripts/http/http11_parser.rl"
  parser->uri_relaxed  ) _widec += 256;
 		}
 	} else if ( (*p) > 123 ) {
 		if ( 125 <= (*p) && (*p) <= 125 ) {
 			_widec = (short)(128 + ((*p) - -128));
 			if ( 
-#line 129 "http11_parser.rl"
+#line 129 "/home/qiu/cppws/Myproject/scripts/http/http11_parser.rl"
  parser->uri_relaxed  ) _widec += 256;
 		}
 	} else {
 		_widec = (short)(128 + ((*p) - -128));
 		if ( 
-#line 129 "http11_parser.rl"
+#line 129 "/home/qiu/cppws/Myproject/scripts/http/http11_parser.rl"
  parser->uri_relaxed  ) _widec += 256;
 	}
 	switch( _widec ) {
@@ -3864,7 +3864,7 @@ case 198:
 		goto st202;
 	goto st0;
 tr228:
-#line 95 "http11_parser.rl"
+#line 95 "/home/qiu/cppws/Myproject/scripts/http/http11_parser.rl"
 	{
     if(parser->request_path != NULL)
       parser->request_path(parser->data, PTR_TO(mark), LEN(mark,p));
@@ -3874,19 +3874,19 @@ st199:
 	if ( ++p == pe )
 		goto _test_eof199;
 case 199:
-#line 3878 "http11_parser.rl.cc"
+#line 3878 "/home/qiu/cppws/Myproject/scripts/http/http11_parser.rl.cc"
 	if ( (*p) == 123 )
 		goto tr232;
 	goto st0;
 tr232:
-#line 53 "http11_parser.rl"
+#line 53 "/home/qiu/cppws/Myproject/scripts/http/http11_parser.rl"
 	{MARK(mark, p); }
 	goto st200;
 st200:
 	if ( ++p == pe )
 		goto _test_eof200;
 case 200:
-#line 3890 "http11_parser.rl.cc"
+#line 3890 "/home/qiu/cppws/Myproject/scripts/http/http11_parser.rl.cc"
 	if ( (*p) == 125 )
 		goto st201;
 	goto st200;
@@ -3908,20 +3908,20 @@ case 202:
 		if ( 94 <= (*p) && (*p) <= 94 ) {
 			_widec = (short)(128 + ((*p) - -128));
 			if ( 
-#line 129 "http11_parser.rl"
+#line 129 "/home/qiu/cppws/Myproject/scripts/http/http11_parser.rl"
  parser->uri_relaxed  ) _widec += 256;
 		}
 	} else if ( (*p) > 123 ) {
 		if ( 125 <= (*p) && (*p) <= 125 ) {
 			_widec = (short)(128 + ((*p) - -128));
 			if ( 
-#line 129 "http11_parser.rl"
+#line 129 "/home/qiu/cppws/Myproject/scripts/http/http11_parser.rl"
  parser->uri_relaxed  ) _widec += 256;
 		}
 	} else {
 		_widec = (short)(128 + ((*p) - -128));
 		if ( 
-#line 129 "http11_parser.rl"
+#line 129 "/home/qiu/cppws/Myproject/scripts/http/http11_parser.rl"
  parser->uri_relaxed  ) _widec += 256;
 	}
 	switch( _widec ) {
@@ -3981,20 +3981,20 @@ case 205:
 		if ( 94 <= (*p) && (*p) <= 94 ) {
 			_widec = (short)(128 + ((*p) - -128));
 			if ( 
-#line 129 "http11_parser.rl"
+#line 129 "/home/qiu/cppws/Myproject/scripts/http/http11_parser.rl"
  parser->uri_relaxed  ) _widec += 256;
 		}
 	} else if ( (*p) > 123 ) {
 		if ( 125 <= (*p) && (*p) <= 125 ) {
 			_widec = (short)(128 + ((*p) - -128));
 			if ( 
-#line 129 "http11_parser.rl"
+#line 129 "/home/qiu/cppws/Myproject/scripts/http/http11_parser.rl"
  parser->uri_relaxed  ) _widec += 256;
 		}
 	} else {
 		_widec = (short)(128 + ((*p) - -128));
 		if ( 
-#line 129 "http11_parser.rl"
+#line 129 "/home/qiu/cppws/Myproject/scripts/http/http11_parser.rl"
  parser->uri_relaxed  ) _widec += 256;
 	}
 	switch( _widec ) {
@@ -4052,20 +4052,20 @@ case 208:
 		if ( 94 <= (*p) && (*p) <= 94 ) {
 			_widec = (short)(128 + ((*p) - -128));
 			if ( 
-#line 129 "http11_parser.rl"
+#line 129 "/home/qiu/cppws/Myproject/scripts/http/http11_parser.rl"
  parser->uri_relaxed  ) _widec += 256;
 		}
 	} else if ( (*p) > 123 ) {
 		if ( 125 <= (*p) && (*p) <= 125 ) {
 			_widec = (short)(128 + ((*p) - -128));
 			if ( 
-#line 129 "http11_parser.rl"
+#line 129 "/home/qiu/cppws/Myproject/scripts/http/http11_parser.rl"
  parser->uri_relaxed  ) _widec += 256;
 		}
 	} else {
 		_widec = (short)(128 + ((*p) - -128));
 		if ( 
-#line 129 "http11_parser.rl"
+#line 129 "/home/qiu/cppws/Myproject/scripts/http/http11_parser.rl"
  parser->uri_relaxed  ) _widec += 256;
 	}
 	switch( _widec ) {
@@ -4098,20 +4098,20 @@ case 209:
 		if ( 94 <= (*p) && (*p) <= 94 ) {
 			_widec = (short)(128 + ((*p) - -128));
 			if ( 
-#line 129 "http11_parser.rl"
+#line 129 "/home/qiu/cppws/Myproject/scripts/http/http11_parser.rl"
  parser->uri_relaxed  ) _widec += 256;
 		}
 	} else if ( (*p) > 123 ) {
 		if ( 125 <= (*p) && (*p) <= 125 ) {
 			_widec = (short)(128 + ((*p) - -128));
 			if ( 
-#line 129 "http11_parser.rl"
+#line 129 "/home/qiu/cppws/Myproject/scripts/http/http11_parser.rl"
  parser->uri_relaxed  ) _widec += 256;
 		}
 	} else {
 		_widec = (short)(128 + ((*p) - -128));
 		if ( 
-#line 129 "http11_parser.rl"
+#line 129 "/home/qiu/cppws/Myproject/scripts/http/http11_parser.rl"
  parser->uri_relaxed  ) _widec += 256;
 	}
 	switch( _widec ) {
@@ -4147,20 +4147,20 @@ case 210:
 		if ( 94 <= (*p) && (*p) <= 94 ) {
 			_widec = (short)(128 + ((*p) - -128));
 			if ( 
-#line 129 "http11_parser.rl"
+#line 129 "/home/qiu/cppws/Myproject/scripts/http/http11_parser.rl"
  parser->uri_relaxed  ) _widec += 256;
 		}
 	} else if ( (*p) > 123 ) {
 		if ( 125 <= (*p) && (*p) <= 125 ) {
 			_widec = (short)(128 + ((*p) - -128));
 			if ( 
-#line 129 "http11_parser.rl"
+#line 129 "/home/qiu/cppws/Myproject/scripts/http/http11_parser.rl"
  parser->uri_relaxed  ) _widec += 256;
 		}
 	} else {
 		_widec = (short)(128 + ((*p) - -128));
 		if ( 
-#line 129 "http11_parser.rl"
+#line 129 "/home/qiu/cppws/Myproject/scripts/http/http11_parser.rl"
  parser->uri_relaxed  ) _widec += 256;
 	}
 	switch( _widec ) {
@@ -4221,20 +4221,20 @@ case 213:
 		if ( 94 <= (*p) && (*p) <= 94 ) {
 			_widec = (short)(128 + ((*p) - -128));
 			if ( 
-#line 129 "http11_parser.rl"
+#line 129 "/home/qiu/cppws/Myproject/scripts/http/http11_parser.rl"
  parser->uri_relaxed  ) _widec += 256;
 		}
 	} else if ( (*p) > 123 ) {
 		if ( 125 <= (*p) && (*p) <= 125 ) {
 			_widec = (short)(128 + ((*p) - -128));
 			if ( 
-#line 129 "http11_parser.rl"
+#line 129 "/home/qiu/cppws/Myproject/scripts/http/http11_parser.rl"
  parser->uri_relaxed  ) _widec += 256;
 		}
 	} else {
 		_widec = (short)(128 + ((*p) - -128));
 		if ( 
-#line 129 "http11_parser.rl"
+#line 129 "/home/qiu/cppws/Myproject/scripts/http/http11_parser.rl"
  parser->uri_relaxed  ) _widec += 256;
 	}
 	switch( _widec ) {
@@ -4274,20 +4274,20 @@ case 214:
 		if ( 94 <= (*p) && (*p) <= 94 ) {
 			_widec = (short)(128 + ((*p) - -128));
 			if ( 
-#line 129 "http11_parser.rl"
+#line 129 "/home/qiu/cppws/Myproject/scripts/http/http11_parser.rl"
  parser->uri_relaxed  ) _widec += 256;
 		}
 	} else if ( (*p) > 123 ) {
 		if ( 125 <= (*p) && (*p) <= 125 ) {
 			_widec = (short)(128 + ((*p) - -128));
 			if ( 
-#line 129 "http11_parser.rl"
+#line 129 "/home/qiu/cppws/Myproject/scripts/http/http11_parser.rl"
  parser->uri_relaxed  ) _widec += 256;
 		}
 	} else {
 		_widec = (short)(128 + ((*p) - -128));
 		if ( 
-#line 129 "http11_parser.rl"
+#line 129 "/home/qiu/cppws/Myproject/scripts/http/http11_parser.rl"
  parser->uri_relaxed  ) _widec += 256;
 	}
 	switch( _widec ) {
@@ -4348,20 +4348,20 @@ case 217:
 		if ( 94 <= (*p) && (*p) <= 94 ) {
 			_widec = (short)(128 + ((*p) - -128));
 			if ( 
-#line 129 "http11_parser.rl"
+#line 129 "/home/qiu/cppws/Myproject/scripts/http/http11_parser.rl"
  parser->uri_relaxed  ) _widec += 256;
 		}
 	} else if ( (*p) > 123 ) {
 		if ( 125 <= (*p) && (*p) <= 125 ) {
 			_widec = (short)(128 + ((*p) - -128));
 			if ( 
-#line 129 "http11_parser.rl"
+#line 129 "/home/qiu/cppws/Myproject/scripts/http/http11_parser.rl"
  parser->uri_relaxed  ) _widec += 256;
 		}
 	} else {
 		_widec = (short)(128 + ((*p) - -128));
 		if ( 
-#line 129 "http11_parser.rl"
+#line 129 "/home/qiu/cppws/Myproject/scripts/http/http11_parser.rl"
  parser->uri_relaxed  ) _widec += 256;
 	}
 	switch( _widec ) {
@@ -4396,20 +4396,20 @@ case 218:
 		if ( 94 <= (*p) && (*p) <= 94 ) {
 			_widec = (short)(128 + ((*p) - -128));
 			if ( 
-#line 129 "http11_parser.rl"
+#line 129 "/home/qiu/cppws/Myproject/scripts/http/http11_parser.rl"
  parser->uri_relaxed  ) _widec += 256;
 		}
 	} else if ( (*p) > 123 ) {
 		if ( 125 <= (*p) && (*p) <= 125 ) {
 			_widec = (short)(128 + ((*p) - -128));
 			if ( 
-#line 129 "http11_parser.rl"
+#line 129 "/home/qiu/cppws/Myproject/scripts/http/http11_parser.rl"
  parser->uri_relaxed  ) _widec += 256;
 		}
 	} else {
 		_widec = (short)(128 + ((*p) - -128));
 		if ( 
-#line 129 "http11_parser.rl"
+#line 129 "/home/qiu/cppws/Myproject/scripts/http/http11_parser.rl"
  parser->uri_relaxed  ) _widec += 256;
 	}
 	switch( _widec ) {
@@ -6184,20 +6184,20 @@ case 346:
 		if ( 94 <= (*p) && (*p) <= 94 ) {
 			_widec = (short)(128 + ((*p) - -128));
 			if ( 
-#line 129 "http11_parser.rl"
+#line 129 "/home/qiu/cppws/Myproject/scripts/http/http11_parser.rl"
  parser->uri_relaxed  ) _widec += 256;
 		}
 	} else if ( (*p) > 123 ) {
 		if ( 125 <= (*p) && (*p) <= 125 ) {
 			_widec = (short)(128 + ((*p) - -128));
 			if ( 
-#line 129 "http11_parser.rl"
+#line 129 "/home/qiu/cppws/Myproject/scripts/http/http11_parser.rl"
  parser->uri_relaxed  ) _widec += 256;
 		}
 	} else {
 		_widec = (short)(128 + ((*p) - -128));
 		if ( 
-#line 129 "http11_parser.rl"
+#line 129 "/home/qiu/cppws/Myproject/scripts/http/http11_parser.rl"
  parser->uri_relaxed  ) _widec += 256;
 	}
 	switch( _widec ) {
@@ -6231,20 +6231,20 @@ case 347:
 		if ( 94 <= (*p) && (*p) <= 94 ) {
 			_widec = (short)(128 + ((*p) - -128));
 			if ( 
-#line 129 "http11_parser.rl"
+#line 129 "/home/qiu/cppws/Myproject/scripts/http/http11_parser.rl"
  parser->uri_relaxed  ) _widec += 256;
 		}
 	} else if ( (*p) > 123 ) {
 		if ( 125 <= (*p) && (*p) <= 125 ) {
 			_widec = (short)(128 + ((*p) - -128));
 			if ( 
-#line 129 "http11_parser.rl"
+#line 129 "/home/qiu/cppws/Myproject/scripts/http/http11_parser.rl"
  parser->uri_relaxed  ) _widec += 256;
 		}
 	} else {
 		_widec = (short)(128 + ((*p) - -128));
 		if ( 
-#line 129 "http11_parser.rl"
+#line 129 "/home/qiu/cppws/Myproject/scripts/http/http11_parser.rl"
  parser->uri_relaxed  ) _widec += 256;
 	}
 	switch( _widec ) {
@@ -6624,7 +6624,7 @@ case 347:
 	_out: {}
 	}
 
-#line 297 "http11_parser.rl"
+#line 297 "/home/qiu/cppws/Myproject/scripts/http/http11_parser.rl"
 
   assert(p <= pe && "Buffer overflow after parsing.");
 
