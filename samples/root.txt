@@ -1,0 +1,195 @@
+2022-04-01 16:41:22	name=class.map description=system person typename=St3mapINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE6PersonSt4lessIS5_ESaISt4pairIKS5_S6_EEE value=
+2022-04-01 16:41:22	name=class.person description=system person typename=6Person value=name: ""
+age: 0
+sex: false
+2022-04-01 16:41:22	name=class.vec_map description=system person typename=St3mapINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt6vectorI6PersonSaIS7_EESt4lessIS5_ESaISt4pairIKS5_S9_EEE value=
+2022-04-01 16:41:22	name=fiber.stack_size description=fiber stack size typename=j value=131072
+2022-04-01 16:41:22	name=http.request.buffer_size description=http request buffer size typename=m value=4096
+2022-04-01 16:41:22	name=http.request.max_body_size description=http request max body size typename=m value=67108864
+2022-04-01 16:41:22	name=http.response.buffer_size description=http response buffer size typename=m value=4096
+2022-04-01 16:41:22	name=http.response.max_body_size description=http response max body size typename=m value=67108864
+2022-04-01 16:41:22	name=logs description=logs config typename=St3setIN3qiu9LogDefineESt4lessIS1_ESaIS1_EE value=- name: root
+  level: INFO
+  formatter: "%d%T%m%n"
+  appenders:
+    - type: FileLogAppender
+      file: root.txt
+    - type: StdoutLogAppender
+- name: system
+  level: DEBUG
+  formatter: "%d%T%m%n"
+  appenders:
+    - type: FileLogAppender
+      file: system.txt
+      formatter: "%d%T[%p]%m%n"
+    - type: StdoutLogAppender
+2022-04-01 16:41:22	name=system.int_list description=system int list typename=NSt7__cxx114listIiSaIiEEE value=- 1
+- 2
+2022-04-01 16:41:22	name=system.int_set description=system int set typename=St3setIiSt4lessIiESaIiEE value=- 1
+- 2
+2022-04-01 16:41:22	name=system.int_uset description=system int uset typename=St13unordered_setIiSt4hashIiESt8equal_toIiESaIiEE value=- 2
+- 1
+2022-04-01 16:41:22	name=system.int_vec description=system int vec typename=St6vectorIiSaIiEE value=- 1
+- 2
+2022-04-01 16:41:22	name=system.port description=system port typename=i value=8080
+2022-04-01 16:41:22	name=system.str_int_map description=system str int map typename=St3mapINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEiSt4lessIS5_ESaISt4pairIKS5_iEEE value=k: 2
+2022-04-01 16:41:22	name=system.str_int_umap description=system str int umap typename=St13unordered_mapINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEiSt4hashIS5_ESt8equal_toIS5_ESaISt4pairIKS5_iEEE value=k: 2
+2022-04-01 16:41:22	name=system.value description=system value typename=f value=10.1999998
+2022-04-01 16:41:22	name=tcp.connect.timeout description=tcp connect timeout typename=i value=5000
+2022-04-01 16:41:22	name=tcp_server.read_timeout description=tcp server read timeout typename=m value=120000
+2022-04-01 16:41:40	name=class.map description=system person typename=St3mapINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE6PersonSt4lessIS5_ESaISt4pairIKS5_S6_EEE value=
+2022-04-01 16:41:40	name=class.person description=system person typename=6Person value=name: ""
+age: 0
+sex: false
+2022-04-01 16:41:40	name=class.vec_map description=system person typename=St3mapINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt6vectorI6PersonSaIS7_EESt4lessIS5_ESaISt4pairIKS5_S9_EEE value=
+2022-04-01 16:41:40	name=fiber.stack_size description=fiber stack size typename=j value=131072
+2022-04-01 16:41:40	name=http.request.buffer_size description=http request buffer size typename=m value=4096
+2022-04-01 16:41:40	name=http.request.max_body_size description=http request max body size typename=m value=67108864
+2022-04-01 16:41:40	name=http.response.buffer_size description=http response buffer size typename=m value=4096
+2022-04-01 16:41:40	name=http.response.max_body_size description=http response max body size typename=m value=67108864
+2022-04-01 16:41:40	name=logs description=logs config typename=St3setIN3qiu9LogDefineESt4lessIS1_ESaIS1_EE value=- name: root
+  level: INFO
+  formatter: "%d%T%m%n"
+  appenders:
+    - type: FileLogAppender
+      file: root.txt
+    - type: StdoutLogAppender
+- name: system
+  level: DEBUG
+  formatter: "%d%T%m%n"
+  appenders:
+    - type: FileLogAppender
+      file: system.txt
+      formatter: "%d%T[%p]%m%n"
+    - type: StdoutLogAppender
+2022-04-01 16:41:40	name=system.int_list description=system int list typename=NSt7__cxx114listIiSaIiEEE value=- 1
+- 2
+2022-04-01 16:41:40	name=system.int_set description=system int set typename=St3setIiSt4lessIiESaIiEE value=- 1
+- 2
+2022-04-01 16:41:40	name=system.int_uset description=system int uset typename=St13unordered_setIiSt4hashIiESt8equal_toIiESaIiEE value=- 2
+- 1
+2022-04-01 16:41:40	name=system.int_vec description=system int vec typename=St6vectorIiSaIiEE value=- 1
+- 2
+2022-04-01 16:41:40	name=system.port description=system port typename=i value=8080
+2022-04-01 16:41:40	name=system.str_int_map description=system str int map typename=St3mapINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEiSt4lessIS5_ESaISt4pairIKS5_iEEE value=k: 2
+2022-04-01 16:41:40	name=system.str_int_umap description=system str int umap typename=St13unordered_mapINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEiSt4hashIS5_ESt8equal_toIS5_ESaISt4pairIKS5_iEEE value=k: 2
+2022-04-01 16:41:40	name=system.value description=system value typename=f value=10.1999998
+2022-04-01 16:41:40	name=tcp.connect.timeout description=tcp connect timeout typename=i value=5000
+2022-04-01 16:41:40	name=tcp_server.read_timeout description=tcp server read timeout typename=m value=120000
+2022-04-01 16:43:00	name=class.map description=system person typename=St3mapINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE6PersonSt4lessIS5_ESaISt4pairIKS5_S6_EEE value=
+2022-04-01 16:43:00	name=class.person description=system person typename=6Person value=name: ""
+age: 0
+sex: false
+2022-04-01 16:43:00	name=class.vec_map description=system person typename=St3mapINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt6vectorI6PersonSaIS7_EESt4lessIS5_ESaISt4pairIKS5_S9_EEE value=
+2022-04-01 16:43:00	name=fiber.stack_size description=fiber stack size typename=j value=131072
+2022-04-01 16:43:00	name=http.request.buffer_size description=http request buffer size typename=m value=4096
+2022-04-01 16:43:00	name=http.request.max_body_size description=http request max body size typename=m value=67108864
+2022-04-01 16:43:00	name=http.response.buffer_size description=http response buffer size typename=m value=4096
+2022-04-01 16:43:00	name=http.response.max_body_size description=http response max body size typename=m value=67108864
+2022-04-01 16:43:00	name=logs description=logs config typename=St3setIN3qiu9LogDefineESt4lessIS1_ESaIS1_EE value=- name: root
+  level: INFO
+  formatter: "%d%T%m%n"
+  appenders:
+    - type: FileLogAppender
+      file: root.txt
+    - type: StdoutLogAppender
+- name: system
+  level: DEBUG
+  formatter: "%d%T%m%n"
+  appenders:
+    - type: FileLogAppender
+      file: system.txt
+      formatter: "%d%T[%p]%m%n"
+    - type: StdoutLogAppender
+2022-04-01 16:43:00	name=system.int_list description=system int list typename=NSt7__cxx114listIiSaIiEEE value=- 1
+- 2
+2022-04-01 16:43:00	name=system.int_set description=system int set typename=St3setIiSt4lessIiESaIiEE value=- 1
+- 2
+2022-04-01 16:43:00	name=system.int_uset description=system int uset typename=St13unordered_setIiSt4hashIiESt8equal_toIiESaIiEE value=- 2
+- 1
+2022-04-01 16:43:00	name=system.int_vec description=system int vec typename=St6vectorIiSaIiEE value=- 1
+- 2
+2022-04-01 16:43:00	name=system.port description=system port typename=i value=8080
+2022-04-01 16:43:00	name=system.str_int_map description=system str int map typename=St3mapINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEiSt4lessIS5_ESaISt4pairIKS5_iEEE value=k: 2
+2022-04-01 16:43:00	name=system.str_int_umap description=system str int umap typename=St13unordered_mapINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEiSt4hashIS5_ESt8equal_toIS5_ESaISt4pairIKS5_iEEE value=k: 2
+2022-04-01 16:43:00	name=system.value description=system value typename=f value=10.1999998
+2022-04-01 16:43:00	name=tcp.connect.timeout description=tcp connect timeout typename=i value=5000
+2022-04-01 16:43:00	name=tcp_server.read_timeout description=tcp server read timeout typename=m value=120000
+2022-04-01 16:43:10	name=class.map description=system person typename=St3mapINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE6PersonSt4lessIS5_ESaISt4pairIKS5_S6_EEE value=
+2022-04-01 16:43:10	name=class.person description=system person typename=6Person value=name: ""
+age: 0
+sex: false
+2022-04-01 16:43:10	name=class.vec_map description=system person typename=St3mapINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt6vectorI6PersonSaIS7_EESt4lessIS5_ESaISt4pairIKS5_S9_EEE value=
+2022-04-01 16:43:10	name=fiber.stack_size description=fiber stack size typename=j value=131072
+2022-04-01 16:43:10	name=http.request.buffer_size description=http request buffer size typename=m value=4096
+2022-04-01 16:43:10	name=http.request.max_body_size description=http request max body size typename=m value=67108864
+2022-04-01 16:43:10	name=http.response.buffer_size description=http response buffer size typename=m value=4096
+2022-04-01 16:43:10	name=http.response.max_body_size description=http response max body size typename=m value=67108864
+2022-04-01 16:43:10	name=logs description=logs config typename=St3setIN3qiu9LogDefineESt4lessIS1_ESaIS1_EE value=- name: root
+  level: INFO
+  formatter: "%d%T%m%n"
+  appenders:
+    - type: FileLogAppender
+      file: root.txt
+    - type: StdoutLogAppender
+- name: system
+  level: DEBUG
+  formatter: "%d%T%m%n"
+  appenders:
+    - type: FileLogAppender
+      file: system.txt
+      formatter: "%d%T[%p]%m%n"
+    - type: StdoutLogAppender
+2022-04-01 16:43:10	name=system.int_list description=system int list typename=NSt7__cxx114listIiSaIiEEE value=- 1
+- 2
+2022-04-01 16:43:10	name=system.int_set description=system int set typename=St3setIiSt4lessIiESaIiEE value=- 1
+- 2
+2022-04-01 16:43:10	name=system.int_uset description=system int uset typename=St13unordered_setIiSt4hashIiESt8equal_toIiESaIiEE value=- 2
+- 1
+2022-04-01 16:43:10	name=system.int_vec description=system int vec typename=St6vectorIiSaIiEE value=- 1
+- 2
+2022-04-01 16:43:10	name=system.port description=system port typename=i value=8080
+2022-04-01 16:43:10	name=system.str_int_map description=system str int map typename=St3mapINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEiSt4lessIS5_ESaISt4pairIKS5_iEEE value=k: 2
+2022-04-01 16:43:10	name=system.str_int_umap description=system str int umap typename=St13unordered_mapINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEiSt4hashIS5_ESt8equal_toIS5_ESaISt4pairIKS5_iEEE value=k: 2
+2022-04-01 16:43:10	name=system.value description=system value typename=f value=10.1999998
+2022-04-01 16:43:10	name=tcp.connect.timeout description=tcp connect timeout typename=i value=5000
+2022-04-01 16:43:10	name=tcp_server.read_timeout description=tcp server read timeout typename=m value=120000
+2022-04-01 16:44:01	name=class.map description=system person typename=St3mapINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE6PersonSt4lessIS5_ESaISt4pairIKS5_S6_EEE value=
+2022-04-01 16:44:01	name=class.person description=system person typename=6Person value=name: ""
+age: 0
+sex: false
+2022-04-01 16:44:01	name=class.vec_map description=system person typename=St3mapINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt6vectorI6PersonSaIS7_EESt4lessIS5_ESaISt4pairIKS5_S9_EEE value=
+2022-04-01 16:44:01	name=fiber.stack_size description=fiber stack size typename=j value=131072
+2022-04-01 16:44:01	name=http.request.buffer_size description=http request buffer size typename=m value=4096
+2022-04-01 16:44:01	name=http.request.max_body_size description=http request max body size typename=m value=67108864
+2022-04-01 16:44:01	name=http.response.buffer_size description=http response buffer size typename=m value=4096
+2022-04-01 16:44:01	name=http.response.max_body_size description=http response max body size typename=m value=67108864
+2022-04-01 16:44:01	name=logs description=logs config typename=St3setIN3qiu9LogDefineESt4lessIS1_ESaIS1_EE value=- name: root
+  level: INFO
+  formatter: "%d%T%m%n"
+  appenders:
+    - type: FileLogAppender
+      file: root.txt
+    - type: StdoutLogAppender
+- name: system
+  level: DEBUG
+  formatter: "%d%T%m%n"
+  appenders:
+    - type: FileLogAppender
+      file: system.txt
+      formatter: "%d%T[%p]%m%n"
+    - type: StdoutLogAppender
+2022-04-01 16:44:01	name=system.int_list description=system int list typename=NSt7__cxx114listIiSaIiEEE value=- 1
+- 2
+2022-04-01 16:44:01	name=system.int_set description=system int set typename=St3setIiSt4lessIiESaIiEE value=- 1
+- 2
+2022-04-01 16:44:01	name=system.int_uset description=system int uset typename=St13unordered_setIiSt4hashIiESt8equal_toIiESaIiEE value=- 2
+- 1
+2022-04-01 16:44:01	name=system.int_vec description=system int vec typename=St6vectorIiSaIiEE value=- 1
+- 2
+2022-04-01 16:44:01	name=system.port description=system port typename=i value=8080
+2022-04-01 16:44:01	name=system.str_int_map description=system str int map typename=St3mapINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEiSt4lessIS5_ESaISt4pairIKS5_iEEE value=k: 2
+2022-04-01 16:44:01	name=system.str_int_umap description=system str int umap typename=St13unordered_mapINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEiSt4hashIS5_ESt8equal_toIS5_ESaISt4pairIKS5_iEEE value=k: 2
+2022-04-01 16:44:01	name=system.value description=system value typename=f value=10.1999998
+2022-04-01 16:44:01	name=tcp.connect.timeout description=tcp connect timeout typename=i value=5000
+2022-04-01 16:44:01	name=tcp_server.read_timeout description=tcp server read timeout typename=m value=120000

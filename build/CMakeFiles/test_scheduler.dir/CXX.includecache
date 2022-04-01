@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/qiu/cppws/Myproject/scripts/config.h
+../scripts/config.h
 memory
 -
 string
@@ -32,11 +32,11 @@ unordered_set
 functional
 -
 thread.h
-/home/qiu/cppws/Myproject/scripts/thread.h
+../scripts/thread.h
 log.h
-/home/qiu/cppws/Myproject/scripts/log.h
+../scripts/log.h
 
-/home/qiu/cppws/Myproject/scripts/fiber.h
+../scripts/fiber.h
 ucontext.h
 -
 memory
@@ -44,9 +44,9 @@ memory
 functional
 -
 thread.h
-/home/qiu/cppws/Myproject/scripts/thread.h
+../scripts/thread.h
 
-/home/qiu/cppws/Myproject/scripts/log.h
+../scripts/log.h
 string
 -
 stdint.h
@@ -68,23 +68,23 @@ stdarg.h
 map
 -
 util.h
-/home/qiu/cppws/Myproject/scripts/util.h
+../scripts/util.h
 singleton.h
-/home/qiu/cppws/Myproject/scripts/singleton.h
+../scripts/singleton.h
 thread.h
-/home/qiu/cppws/Myproject/scripts/thread.h
+../scripts/thread.h
 
-/home/qiu/cppws/Myproject/scripts/macro.h
+../scripts/macro.h
 string.h
 -
 assert.h
 -
 util.h
-/home/qiu/cppws/Myproject/scripts/util.h
+../scripts/util.h
 
-/home/qiu/cppws/Myproject/scripts/noncopyable.h
+../scripts/noncopyable.h
 
-/home/qiu/cppws/Myproject/scripts/scheduler.h
+../scripts/scheduler.h
 memory
 -
 vector
@@ -96,33 +96,33 @@ string
 functional
 -
 fiber.h
-/home/qiu/cppws/Myproject/scripts/fiber.h
+../scripts/fiber.h
 thread.h
-/home/qiu/cppws/Myproject/scripts/thread.h
+../scripts/thread.h
 
-/home/qiu/cppws/Myproject/scripts/scripts.h
+../scripts/scripts.h
 config.h
-/home/qiu/cppws/Myproject/scripts/config.h
+../scripts/config.h
 fiber.h
-/home/qiu/cppws/Myproject/scripts/fiber.h
+../scripts/fiber.h
 log.h
-/home/qiu/cppws/Myproject/scripts/log.h
+../scripts/log.h
 macro.h
-/home/qiu/cppws/Myproject/scripts/macro.h
+../scripts/macro.h
 scheduler.h
-/home/qiu/cppws/Myproject/scripts/scheduler.h
+../scripts/scheduler.h
 singleton.h
-/home/qiu/cppws/Myproject/scripts/singleton.h
+../scripts/singleton.h
 thread.h
-/home/qiu/cppws/Myproject/scripts/thread.h
+../scripts/thread.h
 util.h
-/home/qiu/cppws/Myproject/scripts/util.h
+../scripts/util.h
 
-/home/qiu/cppws/Myproject/scripts/singleton.h
+../scripts/singleton.h
 memory
 -
 
-/home/qiu/cppws/Myproject/scripts/thread.h
+../scripts/thread.h
 thread
 -
 functional
@@ -140,9 +140,9 @@ stdint.h
 atomic
 -
 noncopyable.h
-/home/qiu/cppws/Myproject/scripts/noncopyable.h
+../scripts/noncopyable.h
 
-/home/qiu/cppws/Myproject/scripts/util.h
+../scripts/util.h
 stdio.h
 -
 pthread.h
@@ -161,8 +161,8 @@ string
 -
 
 /home/qiu/cppws/Myproject/tests/test_scheduler.cc
-../scripts/scripts.h
-/home/qiu/cppws/Myproject/scripts/scripts.h
+scripts/scripts.h
+/home/qiu/cppws/Myproject/tests/scripts/scripts.h
 thread
 -
 vector

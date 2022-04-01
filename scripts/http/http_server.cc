@@ -33,7 +33,10 @@ void HttpServer::handleClient(Socket::ptr client) {
         // QIU_LOG_INFO(g_logger) << "request:" << std::endl
         // << *rsp;
         session->sendResponse(rsp);
-    } while(m_isKeepalive);
+        if(!m_isKeepalive || req->isClose()){
+            break;
+        }
+    } while(true);
     session->close();
 }
 

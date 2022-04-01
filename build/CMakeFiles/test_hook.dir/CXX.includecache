@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/qiu/cppws/Myproject/scripts/fiber.h
+../scripts/fiber.h
 ucontext.h
 -
 memory
@@ -14,9 +14,9 @@ memory
 functional
 -
 thread.h
-/home/qiu/cppws/Myproject/scripts/thread.h
+../scripts/thread.h
 
-/home/qiu/cppws/Myproject/scripts/hook.h
+../scripts/hook.h
 sys/types.h
 -
 sys/socket.h
@@ -31,14 +31,16 @@ sys/ioctl.h
 -
 sys/uio.h
 -
+stdint.h
+-
 
-/home/qiu/cppws/Myproject/scripts/iomanager.h
+../scripts/iomanager.h
 scheduler.h
-/home/qiu/cppws/Myproject/scripts/scheduler.h
+../scripts/scheduler.h
 timer.h
-/home/qiu/cppws/Myproject/scripts/timer.h
+../scripts/timer.h
 
-/home/qiu/cppws/Myproject/scripts/log.h
+../scripts/log.h
 string
 -
 stdint.h
@@ -60,15 +62,15 @@ stdarg.h
 map
 -
 util.h
-/home/qiu/cppws/Myproject/scripts/util.h
+../scripts/util.h
 singleton.h
-/home/qiu/cppws/Myproject/scripts/singleton.h
+../scripts/singleton.h
 thread.h
-/home/qiu/cppws/Myproject/scripts/thread.h
+../scripts/thread.h
 
-/home/qiu/cppws/Myproject/scripts/noncopyable.h
+../scripts/noncopyable.h
 
-/home/qiu/cppws/Myproject/scripts/scheduler.h
+../scripts/scheduler.h
 memory
 -
 vector
@@ -80,15 +82,15 @@ string
 functional
 -
 fiber.h
-/home/qiu/cppws/Myproject/scripts/fiber.h
+../scripts/fiber.h
 thread.h
-/home/qiu/cppws/Myproject/scripts/thread.h
+../scripts/thread.h
 
-/home/qiu/cppws/Myproject/scripts/singleton.h
+../scripts/singleton.h
 memory
 -
 
-/home/qiu/cppws/Myproject/scripts/thread.h
+../scripts/thread.h
 thread
 -
 functional
@@ -106,9 +108,9 @@ stdint.h
 atomic
 -
 noncopyable.h
-/home/qiu/cppws/Myproject/scripts/noncopyable.h
+../scripts/noncopyable.h
 
-/home/qiu/cppws/Myproject/scripts/timer.h
+../scripts/timer.h
 memory
 -
 set
@@ -116,9 +118,9 @@ set
 vector
 -
 thread.h
-/home/qiu/cppws/Myproject/scripts/thread.h
+../scripts/thread.h
 
-/home/qiu/cppws/Myproject/scripts/util.h
+../scripts/util.h
 stdio.h
 -
 pthread.h
@@ -137,12 +139,12 @@ string
 -
 
 /home/qiu/cppws/Myproject/tests/test_hook.cc
-../scripts/hook.h
-/home/qiu/cppws/Myproject/scripts/hook.h
-../scripts/iomanager.h
-/home/qiu/cppws/Myproject/scripts/iomanager.h
-../scripts/log.h
-/home/qiu/cppws/Myproject/scripts/log.h
+scripts/hook.h
+/home/qiu/cppws/Myproject/tests/scripts/hook.h
+scripts/iomanager.h
+/home/qiu/cppws/Myproject/tests/scripts/iomanager.h
+scripts/log.h
+/home/qiu/cppws/Myproject/tests/scripts/log.h
 sys/socket.h
 -
 arpa/inet.h

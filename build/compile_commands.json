@@ -1,48 +1,43 @@
 [
 {
   "directory": "/home/qiu/cppws/Myproject/build",
-  "command": "/bin/x86_64-linux-gnu-g++-9   -D__FILE__=\\\"tests/test_hook.cc\\\" -I/home/qiu/cppws/Myproject/. -I/home/qiu/include   -rdynamic -O0 -ggdb -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -g   -o CMakeFiles/test_hook.dir/tests/test_hook.cc.o -c /home/qiu/cppws/Myproject/tests/test_hook.cc",
-  "file": "/home/qiu/cppws/Myproject/tests/test_hook.cc"
+  "command": "/bin/x86_64-linux-gnu-g++-9   -D__FILE__=\\\"samples/my_http_server.cc\\\" -I/home/qiu/cppws/Myproject/. -I/home/qiu/include   -rdynamic -O0 -ggdb -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -g   -o CMakeFiles/my_http_server.dir/samples/my_http_server.cc.o -c /home/qiu/cppws/Myproject/samples/my_http_server.cc",
+  "file": "/home/qiu/cppws/Myproject/samples/my_http_server.cc"
 },
 {
   "directory": "/home/qiu/cppws/Myproject/build",
-  "command": "/bin/x86_64-linux-gnu-g++-9   -D__FILE__=\\\"tests/test_iomanager.cc\\\" -I/home/qiu/cppws/Myproject/. -I/home/qiu/include   -rdynamic -O0 -ggdb -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -g   -o CMakeFiles/test_iomanager.dir/tests/test_iomanager.cc.o -c /home/qiu/cppws/Myproject/tests/test_iomanager.cc",
-  "file": "/home/qiu/cppws/Myproject/tests/test_iomanager.cc"
+  "command": "/bin/x86_64-linux-gnu-g++-9   -D__FILE__=\\\"tests/test_uri.cc\\\" -I/home/qiu/cppws/Myproject/. -I/home/qiu/include   -rdynamic -O0 -ggdb -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -g   -o CMakeFiles/test_uri.dir/tests/test_uri.cc.o -c /home/qiu/cppws/Myproject/tests/test_uri.cc",
+  "file": "/home/qiu/cppws/Myproject/tests/test_uri.cc"
 },
 {
   "directory": "/home/qiu/cppws/Myproject/build",
-  "command": "/bin/x86_64-linux-gnu-g++-9   -D__FILE__=\\\"tests/test_scheduler.cc\\\" -I/home/qiu/cppws/Myproject/. -I/home/qiu/include   -rdynamic -O0 -ggdb -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -g   -o CMakeFiles/test_scheduler.dir/tests/test_scheduler.cc.o -c /home/qiu/cppws/Myproject/tests/test_scheduler.cc",
-  "file": "/home/qiu/cppws/Myproject/tests/test_scheduler.cc"
+  "command": "/bin/x86_64-linux-gnu-g++-9   -D__FILE__=\\\"tests/test_http_connection.cc\\\" -I/home/qiu/cppws/Myproject/. -I/home/qiu/include   -rdynamic -O0 -ggdb -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -g   -o CMakeFiles/test_http_connection.dir/tests/test_http_connection.cc.o -c /home/qiu/cppws/Myproject/tests/test_http_connection.cc",
+  "file": "/home/qiu/cppws/Myproject/tests/test_http_connection.cc"
 },
 {
   "directory": "/home/qiu/cppws/Myproject/build",
-  "command": "/bin/x86_64-linux-gnu-g++-9   -D__FILE__=\\\"tests/test_fiber.cc\\\" -I/home/qiu/cppws/Myproject/. -I/home/qiu/include   -rdynamic -O0 -ggdb -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -g   -o CMakeFiles/test_fiber.dir/tests/test_fiber.cc.o -c /home/qiu/cppws/Myproject/tests/test_fiber.cc",
-  "file": "/home/qiu/cppws/Myproject/tests/test_fiber.cc"
+  "command": "/bin/x86_64-linux-gnu-g++-9   -D__FILE__=\\\"examples/echo_server.cc\\\" -I/home/qiu/cppws/Myproject/. -I/home/qiu/include   -rdynamic -O0 -ggdb -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -g   -o CMakeFiles/echo_server.dir/examples/echo_server.cc.o -c /home/qiu/cppws/Myproject/examples/echo_server.cc",
+  "file": "/home/qiu/cppws/Myproject/examples/echo_server.cc"
 },
 {
   "directory": "/home/qiu/cppws/Myproject/build",
-  "command": "/bin/x86_64-linux-gnu-g++-9   -D__FILE__=\\\"tests/test_util.cc\\\" -I/home/qiu/cppws/Myproject/. -I/home/qiu/include   -rdynamic -O0 -ggdb -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -g   -o CMakeFiles/test_util.dir/tests/test_util.cc.o -c /home/qiu/cppws/Myproject/tests/test_util.cc",
-  "file": "/home/qiu/cppws/Myproject/tests/test_util.cc"
+  "command": "/bin/x86_64-linux-gnu-g++-9   -D__FILE__=\\\"tests/test_tcp_server.cc\\\" -I/home/qiu/cppws/Myproject/. -I/home/qiu/include   -rdynamic -O0 -ggdb -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -g   -o CMakeFiles/test_tcp_server.dir/tests/test_tcp_server.cc.o -c /home/qiu/cppws/Myproject/tests/test_tcp_server.cc",
+  "file": "/home/qiu/cppws/Myproject/tests/test_tcp_server.cc"
 },
 {
   "directory": "/home/qiu/cppws/Myproject/build",
-  "command": "/bin/x86_64-linux-gnu-g++-9   -D__FILE__=\\\"tests/test_config.cc\\\" -I/home/qiu/cppws/Myproject/. -I/home/qiu/include   -rdynamic -O0 -ggdb -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -g   -o CMakeFiles/test_config.dir/tests/test_config.cc.o -c /home/qiu/cppws/Myproject/tests/test_config.cc",
-  "file": "/home/qiu/cppws/Myproject/tests/test_config.cc"
-},
-{
-  "directory": "/home/qiu/cppws/Myproject/build",
-  "command": "/bin/x86_64-linux-gnu-g++-9   -D__FILE__=\\\"tests/test_thread.cc\\\" -I/home/qiu/cppws/Myproject/. -I/home/qiu/include   -rdynamic -O0 -ggdb -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -g   -o CMakeFiles/test_thread.dir/tests/test_thread.cc.o -c /home/qiu/cppws/Myproject/tests/test_thread.cc",
-  "file": "/home/qiu/cppws/Myproject/tests/test_thread.cc"
-},
-{
-  "directory": "/home/qiu/cppws/Myproject/build",
-  "command": "/bin/x86_64-linux-gnu-g++-9   -D__FILE__=\\\"tests/test.cc\\\" -I/home/qiu/cppws/Myproject/. -I/home/qiu/include   -rdynamic -O0 -ggdb -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -g   -o CMakeFiles/test.dir/tests/test.cc.o -c /home/qiu/cppws/Myproject/tests/test.cc",
-  "file": "/home/qiu/cppws/Myproject/tests/test.cc"
+  "command": "/bin/x86_64-linux-gnu-g++-9   -D__FILE__=\\\"tests/test_http_parser.cc\\\" -I/home/qiu/cppws/Myproject/. -I/home/qiu/include   -rdynamic -O0 -ggdb -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -g   -o CMakeFiles/test_http_parser.dir/tests/test_http_parser.cc.o -c /home/qiu/cppws/Myproject/tests/test_http_parser.cc",
+  "file": "/home/qiu/cppws/Myproject/tests/test_http_parser.cc"
 },
 {
   "directory": "/home/qiu/cppws/Myproject/build",
   "command": "/bin/x86_64-linux-gnu-g++-9  -Dscripts_EXPORTS -D__FILE__=\\\"scripts/address.cc\\\" -I/home/qiu/cppws/Myproject/. -I/home/qiu/include   -rdynamic -O0 -ggdb -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -g -fPIC   -o CMakeFiles/scripts.dir/scripts/address.cc.o -c /home/qiu/cppws/Myproject/scripts/address.cc",
   "file": "/home/qiu/cppws/Myproject/scripts/address.cc"
+},
+{
+  "directory": "/home/qiu/cppws/Myproject/build",
+  "command": "/bin/x86_64-linux-gnu-g++-9  -Dscripts_EXPORTS -D__FILE__=\\\"scripts/bytearray.cc\\\" -I/home/qiu/cppws/Myproject/. -I/home/qiu/include   -rdynamic -O0 -ggdb -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -g -fPIC   -o CMakeFiles/scripts.dir/scripts/bytearray.cc.o -c /home/qiu/cppws/Myproject/scripts/bytearray.cc",
+  "file": "/home/qiu/cppws/Myproject/scripts/bytearray.cc"
 },
 {
   "directory": "/home/qiu/cppws/Myproject/build",
@@ -58,6 +53,36 @@
   "directory": "/home/qiu/cppws/Myproject/build",
   "command": "/bin/x86_64-linux-gnu-g++-9  -Dscripts_EXPORTS -D__FILE__=\\\"scripts/fiber.cc\\\" -I/home/qiu/cppws/Myproject/. -I/home/qiu/include   -rdynamic -O0 -ggdb -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -g -fPIC   -o CMakeFiles/scripts.dir/scripts/fiber.cc.o -c /home/qiu/cppws/Myproject/scripts/fiber.cc",
   "file": "/home/qiu/cppws/Myproject/scripts/fiber.cc"
+},
+{
+  "directory": "/home/qiu/cppws/Myproject/build",
+  "command": "/bin/x86_64-linux-gnu-g++-9  -Dscripts_EXPORTS -D__FILE__=\\\"scripts/http/http.cc\\\" -I/home/qiu/cppws/Myproject/. -I/home/qiu/include   -rdynamic -O0 -ggdb -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -g -fPIC   -o CMakeFiles/scripts.dir/scripts/http/http.cc.o -c /home/qiu/cppws/Myproject/scripts/http/http.cc",
+  "file": "/home/qiu/cppws/Myproject/scripts/http/http.cc"
+},
+{
+  "directory": "/home/qiu/cppws/Myproject/build",
+  "command": "/bin/x86_64-linux-gnu-g++-9  -Dscripts_EXPORTS -D__FILE__=\\\"scripts/http/http_connection.cc\\\" -I/home/qiu/cppws/Myproject/. -I/home/qiu/include   -rdynamic -O0 -ggdb -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -g -fPIC   -o CMakeFiles/scripts.dir/scripts/http/http_connection.cc.o -c /home/qiu/cppws/Myproject/scripts/http/http_connection.cc",
+  "file": "/home/qiu/cppws/Myproject/scripts/http/http_connection.cc"
+},
+{
+  "directory": "/home/qiu/cppws/Myproject/build",
+  "command": "/bin/x86_64-linux-gnu-g++-9  -Dscripts_EXPORTS -D__FILE__=\\\"scripts/http/http_parser.cc\\\" -I/home/qiu/cppws/Myproject/. -I/home/qiu/include   -rdynamic -O0 -ggdb -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -g -fPIC   -o CMakeFiles/scripts.dir/scripts/http/http_parser.cc.o -c /home/qiu/cppws/Myproject/scripts/http/http_parser.cc",
+  "file": "/home/qiu/cppws/Myproject/scripts/http/http_parser.cc"
+},
+{
+  "directory": "/home/qiu/cppws/Myproject/build",
+  "command": "/bin/x86_64-linux-gnu-g++-9  -Dscripts_EXPORTS -D__FILE__=\\\"scripts/http/http_session.cc\\\" -I/home/qiu/cppws/Myproject/. -I/home/qiu/include   -rdynamic -O0 -ggdb -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -g -fPIC   -o CMakeFiles/scripts.dir/scripts/http/http_session.cc.o -c /home/qiu/cppws/Myproject/scripts/http/http_session.cc",
+  "file": "/home/qiu/cppws/Myproject/scripts/http/http_session.cc"
+},
+{
+  "directory": "/home/qiu/cppws/Myproject/build",
+  "command": "/bin/x86_64-linux-gnu-g++-9  -Dscripts_EXPORTS -D__FILE__=\\\"scripts/http/http_server.cc\\\" -I/home/qiu/cppws/Myproject/. -I/home/qiu/include   -rdynamic -O0 -ggdb -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -g -fPIC   -o CMakeFiles/scripts.dir/scripts/http/http_server.cc.o -c /home/qiu/cppws/Myproject/scripts/http/http_server.cc",
+  "file": "/home/qiu/cppws/Myproject/scripts/http/http_server.cc"
+},
+{
+  "directory": "/home/qiu/cppws/Myproject/build",
+  "command": "/bin/x86_64-linux-gnu-g++-9  -Dscripts_EXPORTS -D__FILE__=\\\"scripts/http/servlet.cc\\\" -I/home/qiu/cppws/Myproject/. -I/home/qiu/include   -rdynamic -O0 -ggdb -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -g -fPIC   -o CMakeFiles/scripts.dir/scripts/http/servlet.cc.o -c /home/qiu/cppws/Myproject/scripts/http/servlet.cc",
+  "file": "/home/qiu/cppws/Myproject/scripts/http/servlet.cc"
 },
 {
   "directory": "/home/qiu/cppws/Myproject/build",
@@ -81,6 +106,26 @@
 },
 {
   "directory": "/home/qiu/cppws/Myproject/build",
+  "command": "/bin/x86_64-linux-gnu-g++-9  -Dscripts_EXPORTS -D__FILE__=\\\"scripts/socket.cc\\\" -I/home/qiu/cppws/Myproject/. -I/home/qiu/include   -rdynamic -O0 -ggdb -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -g -fPIC   -o CMakeFiles/scripts.dir/scripts/socket.cc.o -c /home/qiu/cppws/Myproject/scripts/socket.cc",
+  "file": "/home/qiu/cppws/Myproject/scripts/socket.cc"
+},
+{
+  "directory": "/home/qiu/cppws/Myproject/build",
+  "command": "/bin/x86_64-linux-gnu-g++-9  -Dscripts_EXPORTS -D__FILE__=\\\"scripts/socket_stream.cc\\\" -I/home/qiu/cppws/Myproject/. -I/home/qiu/include   -rdynamic -O0 -ggdb -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -g -fPIC   -o CMakeFiles/scripts.dir/scripts/socket_stream.cc.o -c /home/qiu/cppws/Myproject/scripts/socket_stream.cc",
+  "file": "/home/qiu/cppws/Myproject/scripts/socket_stream.cc"
+},
+{
+  "directory": "/home/qiu/cppws/Myproject/build",
+  "command": "/bin/x86_64-linux-gnu-g++-9  -Dscripts_EXPORTS -D__FILE__=\\\"scripts/stream.cc\\\" -I/home/qiu/cppws/Myproject/. -I/home/qiu/include   -rdynamic -O0 -ggdb -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -g -fPIC   -o CMakeFiles/scripts.dir/scripts/stream.cc.o -c /home/qiu/cppws/Myproject/scripts/stream.cc",
+  "file": "/home/qiu/cppws/Myproject/scripts/stream.cc"
+},
+{
+  "directory": "/home/qiu/cppws/Myproject/build",
+  "command": "/bin/x86_64-linux-gnu-g++-9  -Dscripts_EXPORTS -D__FILE__=\\\"scripts/tcp_server.cc\\\" -I/home/qiu/cppws/Myproject/. -I/home/qiu/include   -rdynamic -O0 -ggdb -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -g -fPIC   -o CMakeFiles/scripts.dir/scripts/tcp_server.cc.o -c /home/qiu/cppws/Myproject/scripts/tcp_server.cc",
+  "file": "/home/qiu/cppws/Myproject/scripts/tcp_server.cc"
+},
+{
+  "directory": "/home/qiu/cppws/Myproject/build",
   "command": "/bin/x86_64-linux-gnu-g++-9  -Dscripts_EXPORTS -D__FILE__=\\\"scripts/timer.cc\\\" -I/home/qiu/cppws/Myproject/. -I/home/qiu/include   -rdynamic -O0 -ggdb -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -g -fPIC   -o CMakeFiles/scripts.dir/scripts/timer.cc.o -c /home/qiu/cppws/Myproject/scripts/timer.cc",
   "file": "/home/qiu/cppws/Myproject/scripts/timer.cc"
 },
@@ -93,5 +138,85 @@
   "directory": "/home/qiu/cppws/Myproject/build",
   "command": "/bin/x86_64-linux-gnu-g++-9  -Dscripts_EXPORTS -D__FILE__=\\\"scripts/util.cc\\\" -I/home/qiu/cppws/Myproject/. -I/home/qiu/include   -rdynamic -O0 -ggdb -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -g -fPIC   -o CMakeFiles/scripts.dir/scripts/util.cc.o -c /home/qiu/cppws/Myproject/scripts/util.cc",
   "file": "/home/qiu/cppws/Myproject/scripts/util.cc"
+},
+{
+  "directory": "/home/qiu/cppws/Myproject/build",
+  "command": "/bin/x86_64-linux-gnu-g++-9  -Dscripts_EXPORTS -D__FILE__=\\\"scripts/http/http11_parser.rl.cc\\\" -I/home/qiu/cppws/Myproject/. -I/home/qiu/include   -rdynamic -O0 -ggdb -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -g -fPIC   -o CMakeFiles/scripts.dir/scripts/http/http11_parser.rl.cc.o -c /home/qiu/cppws/Myproject/scripts/http/http11_parser.rl.cc",
+  "file": "/home/qiu/cppws/Myproject/scripts/http/http11_parser.rl.cc"
+},
+{
+  "directory": "/home/qiu/cppws/Myproject/build",
+  "command": "/bin/x86_64-linux-gnu-g++-9  -Dscripts_EXPORTS -D__FILE__=\\\"scripts/http/httpclient_parser.rl.cc\\\" -I/home/qiu/cppws/Myproject/. -I/home/qiu/include   -rdynamic -O0 -ggdb -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -g -fPIC   -o CMakeFiles/scripts.dir/scripts/http/httpclient_parser.rl.cc.o -c /home/qiu/cppws/Myproject/scripts/http/httpclient_parser.rl.cc",
+  "file": "/home/qiu/cppws/Myproject/scripts/http/httpclient_parser.rl.cc"
+},
+{
+  "directory": "/home/qiu/cppws/Myproject/build",
+  "command": "/bin/x86_64-linux-gnu-g++-9  -Dscripts_EXPORTS -D__FILE__=\\\"scripts/uri.rl.cc\\\" -I/home/qiu/cppws/Myproject/. -I/home/qiu/include   -rdynamic -O0 -ggdb -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -g -fPIC   -o CMakeFiles/scripts.dir/scripts/uri.rl.cc.o -c /home/qiu/cppws/Myproject/scripts/uri.rl.cc",
+  "file": "/home/qiu/cppws/Myproject/scripts/uri.rl.cc"
+},
+{
+  "directory": "/home/qiu/cppws/Myproject/build",
+  "command": "/bin/x86_64-linux-gnu-g++-9   -D__FILE__=\\\"tests/test.cc\\\" -I/home/qiu/cppws/Myproject/. -I/home/qiu/include   -rdynamic -O0 -ggdb -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -g   -o CMakeFiles/test.dir/tests/test.cc.o -c /home/qiu/cppws/Myproject/tests/test.cc",
+  "file": "/home/qiu/cppws/Myproject/tests/test.cc"
+},
+{
+  "directory": "/home/qiu/cppws/Myproject/build",
+  "command": "/bin/x86_64-linux-gnu-g++-9   -D__FILE__=\\\"tests/test_thread.cc\\\" -I/home/qiu/cppws/Myproject/. -I/home/qiu/include   -rdynamic -O0 -ggdb -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -g   -o CMakeFiles/test_thread.dir/tests/test_thread.cc.o -c /home/qiu/cppws/Myproject/tests/test_thread.cc",
+  "file": "/home/qiu/cppws/Myproject/tests/test_thread.cc"
+},
+{
+  "directory": "/home/qiu/cppws/Myproject/build",
+  "command": "/bin/x86_64-linux-gnu-g++-9   -D__FILE__=\\\"tests/test_config.cc\\\" -I/home/qiu/cppws/Myproject/. -I/home/qiu/include   -rdynamic -O0 -ggdb -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -g   -o CMakeFiles/test_config.dir/tests/test_config.cc.o -c /home/qiu/cppws/Myproject/tests/test_config.cc",
+  "file": "/home/qiu/cppws/Myproject/tests/test_config.cc"
+},
+{
+  "directory": "/home/qiu/cppws/Myproject/build",
+  "command": "/bin/x86_64-linux-gnu-g++-9   -D__FILE__=\\\"tests/test_bytearray.cc\\\" -I/home/qiu/cppws/Myproject/. -I/home/qiu/include   -rdynamic -O0 -ggdb -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -g   -o CMakeFiles/test_bytearray.dir/tests/test_bytearray.cc.o -c /home/qiu/cppws/Myproject/tests/test_bytearray.cc",
+  "file": "/home/qiu/cppws/Myproject/tests/test_bytearray.cc"
+},
+{
+  "directory": "/home/qiu/cppws/Myproject/build",
+  "command": "/bin/x86_64-linux-gnu-g++-9   -D__FILE__=\\\"tests/test_util.cc\\\" -I/home/qiu/cppws/Myproject/. -I/home/qiu/include   -rdynamic -O0 -ggdb -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -g   -o CMakeFiles/test_util.dir/tests/test_util.cc.o -c /home/qiu/cppws/Myproject/tests/test_util.cc",
+  "file": "/home/qiu/cppws/Myproject/tests/test_util.cc"
+},
+{
+  "directory": "/home/qiu/cppws/Myproject/build",
+  "command": "/bin/x86_64-linux-gnu-g++-9   -D__FILE__=\\\"tests/test_fiber.cc\\\" -I/home/qiu/cppws/Myproject/. -I/home/qiu/include   -rdynamic -O0 -ggdb -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -g   -o CMakeFiles/test_fiber.dir/tests/test_fiber.cc.o -c /home/qiu/cppws/Myproject/tests/test_fiber.cc",
+  "file": "/home/qiu/cppws/Myproject/tests/test_fiber.cc"
+},
+{
+  "directory": "/home/qiu/cppws/Myproject/build",
+  "command": "/bin/x86_64-linux-gnu-g++-9   -D__FILE__=\\\"tests/test_http_server.cc\\\" -I/home/qiu/cppws/Myproject/. -I/home/qiu/include   -rdynamic -O0 -ggdb -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -g   -o CMakeFiles/test_http_server.dir/tests/test_http_server.cc.o -c /home/qiu/cppws/Myproject/tests/test_http_server.cc",
+  "file": "/home/qiu/cppws/Myproject/tests/test_http_server.cc"
+},
+{
+  "directory": "/home/qiu/cppws/Myproject/build",
+  "command": "/bin/x86_64-linux-gnu-g++-9   -D__FILE__=\\\"tests/test_address.cc\\\" -I/home/qiu/cppws/Myproject/. -I/home/qiu/include   -rdynamic -O0 -ggdb -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -g   -o CMakeFiles/test_address.dir/tests/test_address.cc.o -c /home/qiu/cppws/Myproject/tests/test_address.cc",
+  "file": "/home/qiu/cppws/Myproject/tests/test_address.cc"
+},
+{
+  "directory": "/home/qiu/cppws/Myproject/build",
+  "command": "/bin/x86_64-linux-gnu-g++-9   -D__FILE__=\\\"tests/test_scheduler.cc\\\" -I/home/qiu/cppws/Myproject/. -I/home/qiu/include   -rdynamic -O0 -ggdb -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -g   -o CMakeFiles/test_scheduler.dir/tests/test_scheduler.cc.o -c /home/qiu/cppws/Myproject/tests/test_scheduler.cc",
+  "file": "/home/qiu/cppws/Myproject/tests/test_scheduler.cc"
+},
+{
+  "directory": "/home/qiu/cppws/Myproject/build",
+  "command": "/bin/x86_64-linux-gnu-g++-9   -D__FILE__=\\\"tests/test_iomanager.cc\\\" -I/home/qiu/cppws/Myproject/. -I/home/qiu/include   -rdynamic -O0 -ggdb -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -g   -o CMakeFiles/test_iomanager.dir/tests/test_iomanager.cc.o -c /home/qiu/cppws/Myproject/tests/test_iomanager.cc",
+  "file": "/home/qiu/cppws/Myproject/tests/test_iomanager.cc"
+},
+{
+  "directory": "/home/qiu/cppws/Myproject/build",
+  "command": "/bin/x86_64-linux-gnu-g++-9   -D__FILE__=\\\"tests/test_hook.cc\\\" -I/home/qiu/cppws/Myproject/. -I/home/qiu/include   -rdynamic -O0 -ggdb -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -g   -o CMakeFiles/test_hook.dir/tests/test_hook.cc.o -c /home/qiu/cppws/Myproject/tests/test_hook.cc",
+  "file": "/home/qiu/cppws/Myproject/tests/test_hook.cc"
+},
+{
+  "directory": "/home/qiu/cppws/Myproject/build",
+  "command": "/bin/x86_64-linux-gnu-g++-9   -D__FILE__=\\\"tests/test_socket.cc\\\" -I/home/qiu/cppws/Myproject/. -I/home/qiu/include   -rdynamic -O0 -ggdb -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -g   -o CMakeFiles/test_socket.dir/tests/test_socket.cc.o -c /home/qiu/cppws/Myproject/tests/test_socket.cc",
+  "file": "/home/qiu/cppws/Myproject/tests/test_socket.cc"
+},
+{
+  "directory": "/home/qiu/cppws/Myproject/build",
+  "command": "/bin/x86_64-linux-gnu-g++-9   -D__FILE__=\\\"tests/test_http.cc\\\" -I/home/qiu/cppws/Myproject/. -I/home/qiu/include   -rdynamic -O0 -ggdb -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -g   -o CMakeFiles/test_http.dir/tests/test_http.cc.o -c /home/qiu/cppws/Myproject/tests/test_http.cc",
+  "file": "/home/qiu/cppws/Myproject/tests/test_http.cc"
 }
 ]

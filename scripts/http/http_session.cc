@@ -28,6 +28,7 @@ HttpRequest::ptr HttpSession::recvRequest(){
         size_t nparse = parser->execute(data, len);
         if(parser->hasError()){
             close();
+            std::cout << "hasError" << std::endl;
             return nullptr;
         }
         offset = len - nparse;
@@ -60,6 +61,10 @@ HttpRequest::ptr HttpSession::recvRequest(){
             }
         }
         parser->getData()->setBody(body);
+    }
+    std::string keep_alive = parser->getData()->getHeader("Connection");
+    if(!strcasecmp(keep_alive.c_str(), "keep-alive")){
+        parser->getData()->setClose(false);
     }
     return parser->getData();
 }

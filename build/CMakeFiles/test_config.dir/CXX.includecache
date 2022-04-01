@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/qiu/cppws/Myproject/scripts/config.h
+../scripts/config.h
 memory
 -
 string
@@ -32,11 +32,11 @@ unordered_set
 functional
 -
 thread.h
-/home/qiu/cppws/Myproject/scripts/thread.h
+../scripts/thread.h
 log.h
-/home/qiu/cppws/Myproject/scripts/log.h
+../scripts/log.h
 
-/home/qiu/cppws/Myproject/scripts/log.h
+../scripts/log.h
 string
 -
 stdint.h
@@ -58,19 +58,19 @@ stdarg.h
 map
 -
 util.h
-/home/qiu/cppws/Myproject/scripts/util.h
+../scripts/util.h
 singleton.h
-/home/qiu/cppws/Myproject/scripts/singleton.h
+../scripts/singleton.h
 thread.h
-/home/qiu/cppws/Myproject/scripts/thread.h
+../scripts/thread.h
 
-/home/qiu/cppws/Myproject/scripts/noncopyable.h
+../scripts/noncopyable.h
 
-/home/qiu/cppws/Myproject/scripts/singleton.h
+../scripts/singleton.h
 memory
 -
 
-/home/qiu/cppws/Myproject/scripts/thread.h
+../scripts/thread.h
 thread
 -
 functional
@@ -88,9 +88,9 @@ stdint.h
 atomic
 -
 noncopyable.h
-/home/qiu/cppws/Myproject/scripts/noncopyable.h
+../scripts/noncopyable.h
 
-/home/qiu/cppws/Myproject/scripts/util.h
+../scripts/util.h
 stdio.h
 -
 pthread.h
@@ -109,10 +109,10 @@ string
 -
 
 /home/qiu/cppws/Myproject/tests/test_config.cc
-../scripts/config.h
-/home/qiu/cppws/Myproject/scripts/config.h
-../scripts/log.h
-/home/qiu/cppws/Myproject/scripts/log.h
+scripts/config.h
+/home/qiu/cppws/Myproject/tests/scripts/config.h
+scripts/log.h
+/home/qiu/cppws/Myproject/tests/scripts/log.h
 yaml-cpp/yaml.h
 -
 

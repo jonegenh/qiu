@@ -4,6 +4,20 @@
 CMakeFiles/scripts.dir/scripts/address.cc.o: ../scripts/address.cc
 CMakeFiles/scripts.dir/scripts/address.cc.o: ../scripts/address.h
 CMakeFiles/scripts.dir/scripts/address.cc.o: ../scripts/endian.h
+CMakeFiles/scripts.dir/scripts/address.cc.o: ../scripts/log.h
+CMakeFiles/scripts.dir/scripts/address.cc.o: ../scripts/noncopyable.h
+CMakeFiles/scripts.dir/scripts/address.cc.o: ../scripts/singleton.h
+CMakeFiles/scripts.dir/scripts/address.cc.o: ../scripts/thread.h
+CMakeFiles/scripts.dir/scripts/address.cc.o: ../scripts/util.h
+
+CMakeFiles/scripts.dir/scripts/bytearray.cc.o: ../scripts/bytearray.cc
+CMakeFiles/scripts.dir/scripts/bytearray.cc.o: ../scripts/bytearray.h
+CMakeFiles/scripts.dir/scripts/bytearray.cc.o: ../scripts/endian.h
+CMakeFiles/scripts.dir/scripts/bytearray.cc.o: ../scripts/log.h
+CMakeFiles/scripts.dir/scripts/bytearray.cc.o: ../scripts/noncopyable.h
+CMakeFiles/scripts.dir/scripts/bytearray.cc.o: ../scripts/singleton.h
+CMakeFiles/scripts.dir/scripts/bytearray.cc.o: ../scripts/thread.h
+CMakeFiles/scripts.dir/scripts/bytearray.cc.o: ../scripts/util.h
 
 CMakeFiles/scripts.dir/scripts/config.cc.o: ../scripts/config.cc
 CMakeFiles/scripts.dir/scripts/config.cc.o: ../scripts/config.h
@@ -49,6 +63,96 @@ CMakeFiles/scripts.dir/scripts/hook.cc.o: ../scripts/thread.h
 CMakeFiles/scripts.dir/scripts/hook.cc.o: ../scripts/timer.h
 CMakeFiles/scripts.dir/scripts/hook.cc.o: ../scripts/util.h
 
+CMakeFiles/scripts.dir/scripts/http/http.cc.o: ../scripts/http/http.cc
+CMakeFiles/scripts.dir/scripts/http/http.cc.o: ../scripts/http/http.h
+
+CMakeFiles/scripts.dir/scripts/http/http11_parser.rl.cc.o: ../scripts/http/http11_common.h
+CMakeFiles/scripts.dir/scripts/http/http11_parser.rl.cc.o: ../scripts/http/http11_parser.h
+CMakeFiles/scripts.dir/scripts/http/http11_parser.rl.cc.o: ../scripts/http/http11_parser.rl.cc
+
+CMakeFiles/scripts.dir/scripts/http/http_connection.cc.o: ../scripts/address.h
+CMakeFiles/scripts.dir/scripts/http/http_connection.cc.o: ../scripts/bytearray.h
+CMakeFiles/scripts.dir/scripts/http/http_connection.cc.o: ../scripts/log.h
+CMakeFiles/scripts.dir/scripts/http/http_connection.cc.o: ../scripts/noncopyable.h
+CMakeFiles/scripts.dir/scripts/http/http_connection.cc.o: ../scripts/singleton.h
+CMakeFiles/scripts.dir/scripts/http/http_connection.cc.o: ../scripts/socket.h
+CMakeFiles/scripts.dir/scripts/http/http_connection.cc.o: ../scripts/socket_stream.h
+CMakeFiles/scripts.dir/scripts/http/http_connection.cc.o: ../scripts/stream.h
+CMakeFiles/scripts.dir/scripts/http/http_connection.cc.o: ../scripts/thread.h
+CMakeFiles/scripts.dir/scripts/http/http_connection.cc.o: ../scripts/uri.h
+CMakeFiles/scripts.dir/scripts/http/http_connection.cc.o: ../scripts/util.h
+CMakeFiles/scripts.dir/scripts/http/http_connection.cc.o: ../scripts/http/http.h
+CMakeFiles/scripts.dir/scripts/http/http_connection.cc.o: ../scripts/http/http11_common.h
+CMakeFiles/scripts.dir/scripts/http/http_connection.cc.o: ../scripts/http/http11_parser.h
+CMakeFiles/scripts.dir/scripts/http/http_connection.cc.o: ../scripts/http/http_connection.cc
+CMakeFiles/scripts.dir/scripts/http/http_connection.cc.o: ../scripts/http/http_connection.h
+CMakeFiles/scripts.dir/scripts/http/http_connection.cc.o: ../scripts/http/http_parser.h
+CMakeFiles/scripts.dir/scripts/http/http_connection.cc.o: ../scripts/http/httpclient_parser.h
+
+CMakeFiles/scripts.dir/scripts/http/http_parser.cc.o: ../scripts/config.h
+CMakeFiles/scripts.dir/scripts/http/http_parser.cc.o: ../scripts/log.h
+CMakeFiles/scripts.dir/scripts/http/http_parser.cc.o: ../scripts/noncopyable.h
+CMakeFiles/scripts.dir/scripts/http/http_parser.cc.o: ../scripts/singleton.h
+CMakeFiles/scripts.dir/scripts/http/http_parser.cc.o: ../scripts/thread.h
+CMakeFiles/scripts.dir/scripts/http/http_parser.cc.o: ../scripts/util.h
+CMakeFiles/scripts.dir/scripts/http/http_parser.cc.o: ../scripts/http/http.h
+CMakeFiles/scripts.dir/scripts/http/http_parser.cc.o: ../scripts/http/http11_common.h
+CMakeFiles/scripts.dir/scripts/http/http_parser.cc.o: ../scripts/http/http11_parser.h
+CMakeFiles/scripts.dir/scripts/http/http_parser.cc.o: ../scripts/http/http_parser.cc
+CMakeFiles/scripts.dir/scripts/http/http_parser.cc.o: ../scripts/http/http_parser.h
+CMakeFiles/scripts.dir/scripts/http/http_parser.cc.o: ../scripts/http/httpclient_parser.h
+
+CMakeFiles/scripts.dir/scripts/http/http_server.cc.o: ../scripts/address.h
+CMakeFiles/scripts.dir/scripts/http/http_server.cc.o: ../scripts/bytearray.h
+CMakeFiles/scripts.dir/scripts/http/http_server.cc.o: ../scripts/fiber.h
+CMakeFiles/scripts.dir/scripts/http/http_server.cc.o: ../scripts/iomanager.h
+CMakeFiles/scripts.dir/scripts/http/http_server.cc.o: ../scripts/log.h
+CMakeFiles/scripts.dir/scripts/http/http_server.cc.o: ../scripts/noncopyable.h
+CMakeFiles/scripts.dir/scripts/http/http_server.cc.o: ../scripts/scheduler.h
+CMakeFiles/scripts.dir/scripts/http/http_server.cc.o: ../scripts/singleton.h
+CMakeFiles/scripts.dir/scripts/http/http_server.cc.o: ../scripts/socket.h
+CMakeFiles/scripts.dir/scripts/http/http_server.cc.o: ../scripts/socket_stream.h
+CMakeFiles/scripts.dir/scripts/http/http_server.cc.o: ../scripts/stream.h
+CMakeFiles/scripts.dir/scripts/http/http_server.cc.o: ../scripts/tcp_server.h
+CMakeFiles/scripts.dir/scripts/http/http_server.cc.o: ../scripts/thread.h
+CMakeFiles/scripts.dir/scripts/http/http_server.cc.o: ../scripts/timer.h
+CMakeFiles/scripts.dir/scripts/http/http_server.cc.o: ../scripts/util.h
+CMakeFiles/scripts.dir/scripts/http/http_server.cc.o: ../scripts/http/http.h
+CMakeFiles/scripts.dir/scripts/http/http_server.cc.o: ../scripts/http/http_server.cc
+CMakeFiles/scripts.dir/scripts/http/http_server.cc.o: ../scripts/http/http_server.h
+CMakeFiles/scripts.dir/scripts/http/http_server.cc.o: ../scripts/http/http_session.h
+CMakeFiles/scripts.dir/scripts/http/http_server.cc.o: ../scripts/http/servlet.h
+
+CMakeFiles/scripts.dir/scripts/http/http_session.cc.o: ../scripts/address.h
+CMakeFiles/scripts.dir/scripts/http/http_session.cc.o: ../scripts/bytearray.h
+CMakeFiles/scripts.dir/scripts/http/http_session.cc.o: ../scripts/noncopyable.h
+CMakeFiles/scripts.dir/scripts/http/http_session.cc.o: ../scripts/socket.h
+CMakeFiles/scripts.dir/scripts/http/http_session.cc.o: ../scripts/socket_stream.h
+CMakeFiles/scripts.dir/scripts/http/http_session.cc.o: ../scripts/stream.h
+CMakeFiles/scripts.dir/scripts/http/http_session.cc.o: ../scripts/http/http.h
+CMakeFiles/scripts.dir/scripts/http/http_session.cc.o: ../scripts/http/http11_common.h
+CMakeFiles/scripts.dir/scripts/http/http_session.cc.o: ../scripts/http/http11_parser.h
+CMakeFiles/scripts.dir/scripts/http/http_session.cc.o: ../scripts/http/http_parser.h
+CMakeFiles/scripts.dir/scripts/http/http_session.cc.o: ../scripts/http/http_session.cc
+CMakeFiles/scripts.dir/scripts/http/http_session.cc.o: ../scripts/http/http_session.h
+CMakeFiles/scripts.dir/scripts/http/http_session.cc.o: ../scripts/http/httpclient_parser.h
+
+CMakeFiles/scripts.dir/scripts/http/httpclient_parser.rl.cc.o: ../scripts/http/http11_common.h
+CMakeFiles/scripts.dir/scripts/http/httpclient_parser.rl.cc.o: ../scripts/http/httpclient_parser.h
+CMakeFiles/scripts.dir/scripts/http/httpclient_parser.rl.cc.o: ../scripts/http/httpclient_parser.rl.cc
+
+CMakeFiles/scripts.dir/scripts/http/servlet.cc.o: ../scripts/address.h
+CMakeFiles/scripts.dir/scripts/http/servlet.cc.o: ../scripts/bytearray.h
+CMakeFiles/scripts.dir/scripts/http/servlet.cc.o: ../scripts/noncopyable.h
+CMakeFiles/scripts.dir/scripts/http/servlet.cc.o: ../scripts/socket.h
+CMakeFiles/scripts.dir/scripts/http/servlet.cc.o: ../scripts/socket_stream.h
+CMakeFiles/scripts.dir/scripts/http/servlet.cc.o: ../scripts/stream.h
+CMakeFiles/scripts.dir/scripts/http/servlet.cc.o: ../scripts/thread.h
+CMakeFiles/scripts.dir/scripts/http/servlet.cc.o: ../scripts/http/http.h
+CMakeFiles/scripts.dir/scripts/http/servlet.cc.o: ../scripts/http/http_session.h
+CMakeFiles/scripts.dir/scripts/http/servlet.cc.o: ../scripts/http/servlet.cc
+CMakeFiles/scripts.dir/scripts/http/servlet.cc.o: ../scripts/http/servlet.h
+
 CMakeFiles/scripts.dir/scripts/iomanager.cc.o: ../scripts/fiber.h
 CMakeFiles/scripts.dir/scripts/iomanager.cc.o: ../scripts/iomanager.cc
 CMakeFiles/scripts.dir/scripts/iomanager.cc.o: ../scripts/iomanager.h
@@ -80,6 +184,49 @@ CMakeFiles/scripts.dir/scripts/scheduler.cc.o: ../scripts/singleton.h
 CMakeFiles/scripts.dir/scripts/scheduler.cc.o: ../scripts/thread.h
 CMakeFiles/scripts.dir/scripts/scheduler.cc.o: ../scripts/util.h
 
+CMakeFiles/scripts.dir/scripts/socket.cc.o: ../scripts/address.h
+CMakeFiles/scripts.dir/scripts/socket.cc.o: ../scripts/fd_manager.h
+CMakeFiles/scripts.dir/scripts/socket.cc.o: ../scripts/fiber.h
+CMakeFiles/scripts.dir/scripts/socket.cc.o: ../scripts/hook.h
+CMakeFiles/scripts.dir/scripts/socket.cc.o: ../scripts/iomanager.h
+CMakeFiles/scripts.dir/scripts/socket.cc.o: ../scripts/log.h
+CMakeFiles/scripts.dir/scripts/socket.cc.o: ../scripts/macro.h
+CMakeFiles/scripts.dir/scripts/socket.cc.o: ../scripts/noncopyable.h
+CMakeFiles/scripts.dir/scripts/socket.cc.o: ../scripts/scheduler.h
+CMakeFiles/scripts.dir/scripts/socket.cc.o: ../scripts/singleton.h
+CMakeFiles/scripts.dir/scripts/socket.cc.o: ../scripts/socket.cc
+CMakeFiles/scripts.dir/scripts/socket.cc.o: ../scripts/socket.h
+CMakeFiles/scripts.dir/scripts/socket.cc.o: ../scripts/thread.h
+CMakeFiles/scripts.dir/scripts/socket.cc.o: ../scripts/timer.h
+CMakeFiles/scripts.dir/scripts/socket.cc.o: ../scripts/util.h
+
+CMakeFiles/scripts.dir/scripts/socket_stream.cc.o: ../scripts/address.h
+CMakeFiles/scripts.dir/scripts/socket_stream.cc.o: ../scripts/bytearray.h
+CMakeFiles/scripts.dir/scripts/socket_stream.cc.o: ../scripts/noncopyable.h
+CMakeFiles/scripts.dir/scripts/socket_stream.cc.o: ../scripts/socket.h
+CMakeFiles/scripts.dir/scripts/socket_stream.cc.o: ../scripts/socket_stream.cc
+CMakeFiles/scripts.dir/scripts/socket_stream.cc.o: ../scripts/socket_stream.h
+CMakeFiles/scripts.dir/scripts/socket_stream.cc.o: ../scripts/stream.h
+
+CMakeFiles/scripts.dir/scripts/stream.cc.o: ../scripts/bytearray.h
+CMakeFiles/scripts.dir/scripts/stream.cc.o: ../scripts/stream.cc
+CMakeFiles/scripts.dir/scripts/stream.cc.o: ../scripts/stream.h
+
+CMakeFiles/scripts.dir/scripts/tcp_server.cc.o: ../scripts/address.h
+CMakeFiles/scripts.dir/scripts/tcp_server.cc.o: ../scripts/config.h
+CMakeFiles/scripts.dir/scripts/tcp_server.cc.o: ../scripts/fiber.h
+CMakeFiles/scripts.dir/scripts/tcp_server.cc.o: ../scripts/iomanager.h
+CMakeFiles/scripts.dir/scripts/tcp_server.cc.o: ../scripts/log.h
+CMakeFiles/scripts.dir/scripts/tcp_server.cc.o: ../scripts/noncopyable.h
+CMakeFiles/scripts.dir/scripts/tcp_server.cc.o: ../scripts/scheduler.h
+CMakeFiles/scripts.dir/scripts/tcp_server.cc.o: ../scripts/singleton.h
+CMakeFiles/scripts.dir/scripts/tcp_server.cc.o: ../scripts/socket.h
+CMakeFiles/scripts.dir/scripts/tcp_server.cc.o: ../scripts/tcp_server.cc
+CMakeFiles/scripts.dir/scripts/tcp_server.cc.o: ../scripts/tcp_server.h
+CMakeFiles/scripts.dir/scripts/tcp_server.cc.o: ../scripts/thread.h
+CMakeFiles/scripts.dir/scripts/tcp_server.cc.o: ../scripts/timer.h
+CMakeFiles/scripts.dir/scripts/tcp_server.cc.o: ../scripts/util.h
+
 CMakeFiles/scripts.dir/scripts/thread.cc.o: ../scripts/log.h
 CMakeFiles/scripts.dir/scripts/thread.cc.o: ../scripts/noncopyable.h
 CMakeFiles/scripts.dir/scripts/thread.cc.o: ../scripts/singleton.h
@@ -92,6 +239,10 @@ CMakeFiles/scripts.dir/scripts/timer.cc.o: ../scripts/thread.h
 CMakeFiles/scripts.dir/scripts/timer.cc.o: ../scripts/timer.cc
 CMakeFiles/scripts.dir/scripts/timer.cc.o: ../scripts/timer.h
 CMakeFiles/scripts.dir/scripts/timer.cc.o: ../scripts/util.h
+
+CMakeFiles/scripts.dir/scripts/uri.rl.cc.o: ../scripts/address.h
+CMakeFiles/scripts.dir/scripts/uri.rl.cc.o: ../scripts/uri.h
+CMakeFiles/scripts.dir/scripts/uri.rl.cc.o: ../scripts/uri.rl.cc
 
 CMakeFiles/scripts.dir/scripts/util.cc.o: ../scripts/fiber.h
 CMakeFiles/scripts.dir/scripts/util.cc.o: ../scripts/log.h

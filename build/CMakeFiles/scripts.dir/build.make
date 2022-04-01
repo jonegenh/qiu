@@ -57,9 +57,24 @@ include CMakeFiles/scripts.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/scripts.dir/flags.make
 
+../scripts/http/http11_parser.rl.cc: ../scripts/http/http11_parser.rl
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/qiu/cppws/Myproject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating ../scripts/http/http11_parser.rl.cc"
+	cd /home/qiu/cppws/Myproject/scripts/http
+	ragel /home/qiu/cppws/Myproject/scripts/http/http11_parser.rl -o /home/qiu/cppws/Myproject/scripts/http/http11_parser.rl.cc -l -C -G2 --error-format=msvc
+
+../scripts/http/httpclient_parser.rl.cc: ../scripts/http/httpclient_parser.rl
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/qiu/cppws/Myproject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating ../scripts/http/httpclient_parser.rl.cc"
+	cd /home/qiu/cppws/Myproject/scripts/http
+	ragel /home/qiu/cppws/Myproject/scripts/http/httpclient_parser.rl -o /home/qiu/cppws/Myproject/scripts/http/httpclient_parser.rl.cc -l -C -G2 --error-format=msvc
+
+../scripts/uri.rl.cc: ../scripts/uri.rl
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/qiu/cppws/Myproject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating ../scripts/uri.rl.cc"
+	cd /home/qiu/cppws/Myproject/scripts
+	ragel /home/qiu/cppws/Myproject/scripts/uri.rl -o /home/qiu/cppws/Myproject/scripts/uri.rl.cc -l -C -G2 --error-format=msvc
+
 CMakeFiles/scripts.dir/scripts/address.cc.o: CMakeFiles/scripts.dir/flags.make
 CMakeFiles/scripts.dir/scripts/address.cc.o: ../scripts/address.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/qiu/cppws/Myproject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/scripts.dir/scripts/address.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/qiu/cppws/Myproject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/scripts.dir/scripts/address.cc.o"
 	/bin/x86_64-linux-gnu-g++-9  $(CXX_DEFINES) -D__FILE__=\"scripts/address.cc\" $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/scripts.dir/scripts/address.cc.o -c /home/qiu/cppws/Myproject/scripts/address.cc
 
 CMakeFiles/scripts.dir/scripts/address.cc.i: cmake_force
@@ -70,9 +85,22 @@ CMakeFiles/scripts.dir/scripts/address.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/scripts.dir/scripts/address.cc.s"
 	/bin/x86_64-linux-gnu-g++-9 $(CXX_DEFINES) -D__FILE__=\"scripts/address.cc\" $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/qiu/cppws/Myproject/scripts/address.cc -o CMakeFiles/scripts.dir/scripts/address.cc.s
 
+CMakeFiles/scripts.dir/scripts/bytearray.cc.o: CMakeFiles/scripts.dir/flags.make
+CMakeFiles/scripts.dir/scripts/bytearray.cc.o: ../scripts/bytearray.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/qiu/cppws/Myproject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/scripts.dir/scripts/bytearray.cc.o"
+	/bin/x86_64-linux-gnu-g++-9  $(CXX_DEFINES) -D__FILE__=\"scripts/bytearray.cc\" $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/scripts.dir/scripts/bytearray.cc.o -c /home/qiu/cppws/Myproject/scripts/bytearray.cc
+
+CMakeFiles/scripts.dir/scripts/bytearray.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/scripts.dir/scripts/bytearray.cc.i"
+	/bin/x86_64-linux-gnu-g++-9 $(CXX_DEFINES) -D__FILE__=\"scripts/bytearray.cc\" $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/qiu/cppws/Myproject/scripts/bytearray.cc > CMakeFiles/scripts.dir/scripts/bytearray.cc.i
+
+CMakeFiles/scripts.dir/scripts/bytearray.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/scripts.dir/scripts/bytearray.cc.s"
+	/bin/x86_64-linux-gnu-g++-9 $(CXX_DEFINES) -D__FILE__=\"scripts/bytearray.cc\" $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/qiu/cppws/Myproject/scripts/bytearray.cc -o CMakeFiles/scripts.dir/scripts/bytearray.cc.s
+
 CMakeFiles/scripts.dir/scripts/config.cc.o: CMakeFiles/scripts.dir/flags.make
 CMakeFiles/scripts.dir/scripts/config.cc.o: ../scripts/config.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/qiu/cppws/Myproject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/scripts.dir/scripts/config.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/qiu/cppws/Myproject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/scripts.dir/scripts/config.cc.o"
 	/bin/x86_64-linux-gnu-g++-9  $(CXX_DEFINES) -D__FILE__=\"scripts/config.cc\" $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/scripts.dir/scripts/config.cc.o -c /home/qiu/cppws/Myproject/scripts/config.cc
 
 CMakeFiles/scripts.dir/scripts/config.cc.i: cmake_force
@@ -85,7 +113,7 @@ CMakeFiles/scripts.dir/scripts/config.cc.s: cmake_force
 
 CMakeFiles/scripts.dir/scripts/fd_manager.cc.o: CMakeFiles/scripts.dir/flags.make
 CMakeFiles/scripts.dir/scripts/fd_manager.cc.o: ../scripts/fd_manager.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/qiu/cppws/Myproject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/scripts.dir/scripts/fd_manager.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/qiu/cppws/Myproject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/scripts.dir/scripts/fd_manager.cc.o"
 	/bin/x86_64-linux-gnu-g++-9  $(CXX_DEFINES) -D__FILE__=\"scripts/fd_manager.cc\" $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/scripts.dir/scripts/fd_manager.cc.o -c /home/qiu/cppws/Myproject/scripts/fd_manager.cc
 
 CMakeFiles/scripts.dir/scripts/fd_manager.cc.i: cmake_force
@@ -98,7 +126,7 @@ CMakeFiles/scripts.dir/scripts/fd_manager.cc.s: cmake_force
 
 CMakeFiles/scripts.dir/scripts/fiber.cc.o: CMakeFiles/scripts.dir/flags.make
 CMakeFiles/scripts.dir/scripts/fiber.cc.o: ../scripts/fiber.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/qiu/cppws/Myproject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/scripts.dir/scripts/fiber.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/qiu/cppws/Myproject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/scripts.dir/scripts/fiber.cc.o"
 	/bin/x86_64-linux-gnu-g++-9  $(CXX_DEFINES) -D__FILE__=\"scripts/fiber.cc\" $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/scripts.dir/scripts/fiber.cc.o -c /home/qiu/cppws/Myproject/scripts/fiber.cc
 
 CMakeFiles/scripts.dir/scripts/fiber.cc.i: cmake_force
@@ -109,9 +137,87 @@ CMakeFiles/scripts.dir/scripts/fiber.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/scripts.dir/scripts/fiber.cc.s"
 	/bin/x86_64-linux-gnu-g++-9 $(CXX_DEFINES) -D__FILE__=\"scripts/fiber.cc\" $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/qiu/cppws/Myproject/scripts/fiber.cc -o CMakeFiles/scripts.dir/scripts/fiber.cc.s
 
+CMakeFiles/scripts.dir/scripts/http/http.cc.o: CMakeFiles/scripts.dir/flags.make
+CMakeFiles/scripts.dir/scripts/http/http.cc.o: ../scripts/http/http.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/qiu/cppws/Myproject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/scripts.dir/scripts/http/http.cc.o"
+	/bin/x86_64-linux-gnu-g++-9  $(CXX_DEFINES) -D__FILE__=\"scripts/http/http.cc\" $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/scripts.dir/scripts/http/http.cc.o -c /home/qiu/cppws/Myproject/scripts/http/http.cc
+
+CMakeFiles/scripts.dir/scripts/http/http.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/scripts.dir/scripts/http/http.cc.i"
+	/bin/x86_64-linux-gnu-g++-9 $(CXX_DEFINES) -D__FILE__=\"scripts/http/http.cc\" $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/qiu/cppws/Myproject/scripts/http/http.cc > CMakeFiles/scripts.dir/scripts/http/http.cc.i
+
+CMakeFiles/scripts.dir/scripts/http/http.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/scripts.dir/scripts/http/http.cc.s"
+	/bin/x86_64-linux-gnu-g++-9 $(CXX_DEFINES) -D__FILE__=\"scripts/http/http.cc\" $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/qiu/cppws/Myproject/scripts/http/http.cc -o CMakeFiles/scripts.dir/scripts/http/http.cc.s
+
+CMakeFiles/scripts.dir/scripts/http/http_connection.cc.o: CMakeFiles/scripts.dir/flags.make
+CMakeFiles/scripts.dir/scripts/http/http_connection.cc.o: ../scripts/http/http_connection.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/qiu/cppws/Myproject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/scripts.dir/scripts/http/http_connection.cc.o"
+	/bin/x86_64-linux-gnu-g++-9  $(CXX_DEFINES) -D__FILE__=\"scripts/http/http_connection.cc\" $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/scripts.dir/scripts/http/http_connection.cc.o -c /home/qiu/cppws/Myproject/scripts/http/http_connection.cc
+
+CMakeFiles/scripts.dir/scripts/http/http_connection.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/scripts.dir/scripts/http/http_connection.cc.i"
+	/bin/x86_64-linux-gnu-g++-9 $(CXX_DEFINES) -D__FILE__=\"scripts/http/http_connection.cc\" $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/qiu/cppws/Myproject/scripts/http/http_connection.cc > CMakeFiles/scripts.dir/scripts/http/http_connection.cc.i
+
+CMakeFiles/scripts.dir/scripts/http/http_connection.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/scripts.dir/scripts/http/http_connection.cc.s"
+	/bin/x86_64-linux-gnu-g++-9 $(CXX_DEFINES) -D__FILE__=\"scripts/http/http_connection.cc\" $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/qiu/cppws/Myproject/scripts/http/http_connection.cc -o CMakeFiles/scripts.dir/scripts/http/http_connection.cc.s
+
+CMakeFiles/scripts.dir/scripts/http/http_parser.cc.o: CMakeFiles/scripts.dir/flags.make
+CMakeFiles/scripts.dir/scripts/http/http_parser.cc.o: ../scripts/http/http_parser.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/qiu/cppws/Myproject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/scripts.dir/scripts/http/http_parser.cc.o"
+	/bin/x86_64-linux-gnu-g++-9  $(CXX_DEFINES) -D__FILE__=\"scripts/http/http_parser.cc\" $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/scripts.dir/scripts/http/http_parser.cc.o -c /home/qiu/cppws/Myproject/scripts/http/http_parser.cc
+
+CMakeFiles/scripts.dir/scripts/http/http_parser.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/scripts.dir/scripts/http/http_parser.cc.i"
+	/bin/x86_64-linux-gnu-g++-9 $(CXX_DEFINES) -D__FILE__=\"scripts/http/http_parser.cc\" $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/qiu/cppws/Myproject/scripts/http/http_parser.cc > CMakeFiles/scripts.dir/scripts/http/http_parser.cc.i
+
+CMakeFiles/scripts.dir/scripts/http/http_parser.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/scripts.dir/scripts/http/http_parser.cc.s"
+	/bin/x86_64-linux-gnu-g++-9 $(CXX_DEFINES) -D__FILE__=\"scripts/http/http_parser.cc\" $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/qiu/cppws/Myproject/scripts/http/http_parser.cc -o CMakeFiles/scripts.dir/scripts/http/http_parser.cc.s
+
+CMakeFiles/scripts.dir/scripts/http/http_session.cc.o: CMakeFiles/scripts.dir/flags.make
+CMakeFiles/scripts.dir/scripts/http/http_session.cc.o: ../scripts/http/http_session.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/qiu/cppws/Myproject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/scripts.dir/scripts/http/http_session.cc.o"
+	/bin/x86_64-linux-gnu-g++-9  $(CXX_DEFINES) -D__FILE__=\"scripts/http/http_session.cc\" $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/scripts.dir/scripts/http/http_session.cc.o -c /home/qiu/cppws/Myproject/scripts/http/http_session.cc
+
+CMakeFiles/scripts.dir/scripts/http/http_session.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/scripts.dir/scripts/http/http_session.cc.i"
+	/bin/x86_64-linux-gnu-g++-9 $(CXX_DEFINES) -D__FILE__=\"scripts/http/http_session.cc\" $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/qiu/cppws/Myproject/scripts/http/http_session.cc > CMakeFiles/scripts.dir/scripts/http/http_session.cc.i
+
+CMakeFiles/scripts.dir/scripts/http/http_session.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/scripts.dir/scripts/http/http_session.cc.s"
+	/bin/x86_64-linux-gnu-g++-9 $(CXX_DEFINES) -D__FILE__=\"scripts/http/http_session.cc\" $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/qiu/cppws/Myproject/scripts/http/http_session.cc -o CMakeFiles/scripts.dir/scripts/http/http_session.cc.s
+
+CMakeFiles/scripts.dir/scripts/http/http_server.cc.o: CMakeFiles/scripts.dir/flags.make
+CMakeFiles/scripts.dir/scripts/http/http_server.cc.o: ../scripts/http/http_server.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/qiu/cppws/Myproject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/scripts.dir/scripts/http/http_server.cc.o"
+	/bin/x86_64-linux-gnu-g++-9  $(CXX_DEFINES) -D__FILE__=\"scripts/http/http_server.cc\" $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/scripts.dir/scripts/http/http_server.cc.o -c /home/qiu/cppws/Myproject/scripts/http/http_server.cc
+
+CMakeFiles/scripts.dir/scripts/http/http_server.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/scripts.dir/scripts/http/http_server.cc.i"
+	/bin/x86_64-linux-gnu-g++-9 $(CXX_DEFINES) -D__FILE__=\"scripts/http/http_server.cc\" $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/qiu/cppws/Myproject/scripts/http/http_server.cc > CMakeFiles/scripts.dir/scripts/http/http_server.cc.i
+
+CMakeFiles/scripts.dir/scripts/http/http_server.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/scripts.dir/scripts/http/http_server.cc.s"
+	/bin/x86_64-linux-gnu-g++-9 $(CXX_DEFINES) -D__FILE__=\"scripts/http/http_server.cc\" $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/qiu/cppws/Myproject/scripts/http/http_server.cc -o CMakeFiles/scripts.dir/scripts/http/http_server.cc.s
+
+CMakeFiles/scripts.dir/scripts/http/servlet.cc.o: CMakeFiles/scripts.dir/flags.make
+CMakeFiles/scripts.dir/scripts/http/servlet.cc.o: ../scripts/http/servlet.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/qiu/cppws/Myproject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/scripts.dir/scripts/http/servlet.cc.o"
+	/bin/x86_64-linux-gnu-g++-9  $(CXX_DEFINES) -D__FILE__=\"scripts/http/servlet.cc\" $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/scripts.dir/scripts/http/servlet.cc.o -c /home/qiu/cppws/Myproject/scripts/http/servlet.cc
+
+CMakeFiles/scripts.dir/scripts/http/servlet.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/scripts.dir/scripts/http/servlet.cc.i"
+	/bin/x86_64-linux-gnu-g++-9 $(CXX_DEFINES) -D__FILE__=\"scripts/http/servlet.cc\" $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/qiu/cppws/Myproject/scripts/http/servlet.cc > CMakeFiles/scripts.dir/scripts/http/servlet.cc.i
+
+CMakeFiles/scripts.dir/scripts/http/servlet.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/scripts.dir/scripts/http/servlet.cc.s"
+	/bin/x86_64-linux-gnu-g++-9 $(CXX_DEFINES) -D__FILE__=\"scripts/http/servlet.cc\" $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/qiu/cppws/Myproject/scripts/http/servlet.cc -o CMakeFiles/scripts.dir/scripts/http/servlet.cc.s
+
 CMakeFiles/scripts.dir/scripts/hook.cc.o: CMakeFiles/scripts.dir/flags.make
 CMakeFiles/scripts.dir/scripts/hook.cc.o: ../scripts/hook.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/qiu/cppws/Myproject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/scripts.dir/scripts/hook.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/qiu/cppws/Myproject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/scripts.dir/scripts/hook.cc.o"
 	/bin/x86_64-linux-gnu-g++-9  $(CXX_DEFINES) -D__FILE__=\"scripts/hook.cc\" $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/scripts.dir/scripts/hook.cc.o -c /home/qiu/cppws/Myproject/scripts/hook.cc
 
 CMakeFiles/scripts.dir/scripts/hook.cc.i: cmake_force
@@ -124,7 +230,7 @@ CMakeFiles/scripts.dir/scripts/hook.cc.s: cmake_force
 
 CMakeFiles/scripts.dir/scripts/iomanager.cc.o: CMakeFiles/scripts.dir/flags.make
 CMakeFiles/scripts.dir/scripts/iomanager.cc.o: ../scripts/iomanager.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/qiu/cppws/Myproject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/scripts.dir/scripts/iomanager.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/qiu/cppws/Myproject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/scripts.dir/scripts/iomanager.cc.o"
 	/bin/x86_64-linux-gnu-g++-9  $(CXX_DEFINES) -D__FILE__=\"scripts/iomanager.cc\" $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/scripts.dir/scripts/iomanager.cc.o -c /home/qiu/cppws/Myproject/scripts/iomanager.cc
 
 CMakeFiles/scripts.dir/scripts/iomanager.cc.i: cmake_force
@@ -137,7 +243,7 @@ CMakeFiles/scripts.dir/scripts/iomanager.cc.s: cmake_force
 
 CMakeFiles/scripts.dir/scripts/log.cc.o: CMakeFiles/scripts.dir/flags.make
 CMakeFiles/scripts.dir/scripts/log.cc.o: ../scripts/log.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/qiu/cppws/Myproject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/scripts.dir/scripts/log.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/qiu/cppws/Myproject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/scripts.dir/scripts/log.cc.o"
 	/bin/x86_64-linux-gnu-g++-9  $(CXX_DEFINES) -D__FILE__=\"scripts/log.cc\" $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/scripts.dir/scripts/log.cc.o -c /home/qiu/cppws/Myproject/scripts/log.cc
 
 CMakeFiles/scripts.dir/scripts/log.cc.i: cmake_force
@@ -150,7 +256,7 @@ CMakeFiles/scripts.dir/scripts/log.cc.s: cmake_force
 
 CMakeFiles/scripts.dir/scripts/scheduler.cc.o: CMakeFiles/scripts.dir/flags.make
 CMakeFiles/scripts.dir/scripts/scheduler.cc.o: ../scripts/scheduler.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/qiu/cppws/Myproject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/scripts.dir/scripts/scheduler.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/qiu/cppws/Myproject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/scripts.dir/scripts/scheduler.cc.o"
 	/bin/x86_64-linux-gnu-g++-9  $(CXX_DEFINES) -D__FILE__=\"scripts/scheduler.cc\" $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/scripts.dir/scripts/scheduler.cc.o -c /home/qiu/cppws/Myproject/scripts/scheduler.cc
 
 CMakeFiles/scripts.dir/scripts/scheduler.cc.i: cmake_force
@@ -161,9 +267,61 @@ CMakeFiles/scripts.dir/scripts/scheduler.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/scripts.dir/scripts/scheduler.cc.s"
 	/bin/x86_64-linux-gnu-g++-9 $(CXX_DEFINES) -D__FILE__=\"scripts/scheduler.cc\" $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/qiu/cppws/Myproject/scripts/scheduler.cc -o CMakeFiles/scripts.dir/scripts/scheduler.cc.s
 
+CMakeFiles/scripts.dir/scripts/socket.cc.o: CMakeFiles/scripts.dir/flags.make
+CMakeFiles/scripts.dir/scripts/socket.cc.o: ../scripts/socket.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/qiu/cppws/Myproject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/scripts.dir/scripts/socket.cc.o"
+	/bin/x86_64-linux-gnu-g++-9  $(CXX_DEFINES) -D__FILE__=\"scripts/socket.cc\" $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/scripts.dir/scripts/socket.cc.o -c /home/qiu/cppws/Myproject/scripts/socket.cc
+
+CMakeFiles/scripts.dir/scripts/socket.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/scripts.dir/scripts/socket.cc.i"
+	/bin/x86_64-linux-gnu-g++-9 $(CXX_DEFINES) -D__FILE__=\"scripts/socket.cc\" $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/qiu/cppws/Myproject/scripts/socket.cc > CMakeFiles/scripts.dir/scripts/socket.cc.i
+
+CMakeFiles/scripts.dir/scripts/socket.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/scripts.dir/scripts/socket.cc.s"
+	/bin/x86_64-linux-gnu-g++-9 $(CXX_DEFINES) -D__FILE__=\"scripts/socket.cc\" $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/qiu/cppws/Myproject/scripts/socket.cc -o CMakeFiles/scripts.dir/scripts/socket.cc.s
+
+CMakeFiles/scripts.dir/scripts/socket_stream.cc.o: CMakeFiles/scripts.dir/flags.make
+CMakeFiles/scripts.dir/scripts/socket_stream.cc.o: ../scripts/socket_stream.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/qiu/cppws/Myproject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/scripts.dir/scripts/socket_stream.cc.o"
+	/bin/x86_64-linux-gnu-g++-9  $(CXX_DEFINES) -D__FILE__=\"scripts/socket_stream.cc\" $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/scripts.dir/scripts/socket_stream.cc.o -c /home/qiu/cppws/Myproject/scripts/socket_stream.cc
+
+CMakeFiles/scripts.dir/scripts/socket_stream.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/scripts.dir/scripts/socket_stream.cc.i"
+	/bin/x86_64-linux-gnu-g++-9 $(CXX_DEFINES) -D__FILE__=\"scripts/socket_stream.cc\" $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/qiu/cppws/Myproject/scripts/socket_stream.cc > CMakeFiles/scripts.dir/scripts/socket_stream.cc.i
+
+CMakeFiles/scripts.dir/scripts/socket_stream.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/scripts.dir/scripts/socket_stream.cc.s"
+	/bin/x86_64-linux-gnu-g++-9 $(CXX_DEFINES) -D__FILE__=\"scripts/socket_stream.cc\" $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/qiu/cppws/Myproject/scripts/socket_stream.cc -o CMakeFiles/scripts.dir/scripts/socket_stream.cc.s
+
+CMakeFiles/scripts.dir/scripts/stream.cc.o: CMakeFiles/scripts.dir/flags.make
+CMakeFiles/scripts.dir/scripts/stream.cc.o: ../scripts/stream.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/qiu/cppws/Myproject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/scripts.dir/scripts/stream.cc.o"
+	/bin/x86_64-linux-gnu-g++-9  $(CXX_DEFINES) -D__FILE__=\"scripts/stream.cc\" $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/scripts.dir/scripts/stream.cc.o -c /home/qiu/cppws/Myproject/scripts/stream.cc
+
+CMakeFiles/scripts.dir/scripts/stream.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/scripts.dir/scripts/stream.cc.i"
+	/bin/x86_64-linux-gnu-g++-9 $(CXX_DEFINES) -D__FILE__=\"scripts/stream.cc\" $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/qiu/cppws/Myproject/scripts/stream.cc > CMakeFiles/scripts.dir/scripts/stream.cc.i
+
+CMakeFiles/scripts.dir/scripts/stream.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/scripts.dir/scripts/stream.cc.s"
+	/bin/x86_64-linux-gnu-g++-9 $(CXX_DEFINES) -D__FILE__=\"scripts/stream.cc\" $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/qiu/cppws/Myproject/scripts/stream.cc -o CMakeFiles/scripts.dir/scripts/stream.cc.s
+
+CMakeFiles/scripts.dir/scripts/tcp_server.cc.o: CMakeFiles/scripts.dir/flags.make
+CMakeFiles/scripts.dir/scripts/tcp_server.cc.o: ../scripts/tcp_server.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/qiu/cppws/Myproject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/scripts.dir/scripts/tcp_server.cc.o"
+	/bin/x86_64-linux-gnu-g++-9  $(CXX_DEFINES) -D__FILE__=\"scripts/tcp_server.cc\" $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/scripts.dir/scripts/tcp_server.cc.o -c /home/qiu/cppws/Myproject/scripts/tcp_server.cc
+
+CMakeFiles/scripts.dir/scripts/tcp_server.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/scripts.dir/scripts/tcp_server.cc.i"
+	/bin/x86_64-linux-gnu-g++-9 $(CXX_DEFINES) -D__FILE__=\"scripts/tcp_server.cc\" $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/qiu/cppws/Myproject/scripts/tcp_server.cc > CMakeFiles/scripts.dir/scripts/tcp_server.cc.i
+
+CMakeFiles/scripts.dir/scripts/tcp_server.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/scripts.dir/scripts/tcp_server.cc.s"
+	/bin/x86_64-linux-gnu-g++-9 $(CXX_DEFINES) -D__FILE__=\"scripts/tcp_server.cc\" $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/qiu/cppws/Myproject/scripts/tcp_server.cc -o CMakeFiles/scripts.dir/scripts/tcp_server.cc.s
+
 CMakeFiles/scripts.dir/scripts/timer.cc.o: CMakeFiles/scripts.dir/flags.make
 CMakeFiles/scripts.dir/scripts/timer.cc.o: ../scripts/timer.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/qiu/cppws/Myproject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/scripts.dir/scripts/timer.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/qiu/cppws/Myproject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object CMakeFiles/scripts.dir/scripts/timer.cc.o"
 	/bin/x86_64-linux-gnu-g++-9  $(CXX_DEFINES) -D__FILE__=\"scripts/timer.cc\" $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/scripts.dir/scripts/timer.cc.o -c /home/qiu/cppws/Myproject/scripts/timer.cc
 
 CMakeFiles/scripts.dir/scripts/timer.cc.i: cmake_force
@@ -176,7 +334,7 @@ CMakeFiles/scripts.dir/scripts/timer.cc.s: cmake_force
 
 CMakeFiles/scripts.dir/scripts/thread.cc.o: CMakeFiles/scripts.dir/flags.make
 CMakeFiles/scripts.dir/scripts/thread.cc.o: ../scripts/thread.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/qiu/cppws/Myproject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/scripts.dir/scripts/thread.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/qiu/cppws/Myproject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object CMakeFiles/scripts.dir/scripts/thread.cc.o"
 	/bin/x86_64-linux-gnu-g++-9  $(CXX_DEFINES) -D__FILE__=\"scripts/thread.cc\" $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/scripts.dir/scripts/thread.cc.o -c /home/qiu/cppws/Myproject/scripts/thread.cc
 
 CMakeFiles/scripts.dir/scripts/thread.cc.i: cmake_force
@@ -189,7 +347,7 @@ CMakeFiles/scripts.dir/scripts/thread.cc.s: cmake_force
 
 CMakeFiles/scripts.dir/scripts/util.cc.o: CMakeFiles/scripts.dir/flags.make
 CMakeFiles/scripts.dir/scripts/util.cc.o: ../scripts/util.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/qiu/cppws/Myproject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/scripts.dir/scripts/util.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/qiu/cppws/Myproject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object CMakeFiles/scripts.dir/scripts/util.cc.o"
 	/bin/x86_64-linux-gnu-g++-9  $(CXX_DEFINES) -D__FILE__=\"scripts/util.cc\" $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/scripts.dir/scripts/util.cc.o -c /home/qiu/cppws/Myproject/scripts/util.cc
 
 CMakeFiles/scripts.dir/scripts/util.cc.i: cmake_force
@@ -200,37 +358,104 @@ CMakeFiles/scripts.dir/scripts/util.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/scripts.dir/scripts/util.cc.s"
 	/bin/x86_64-linux-gnu-g++-9 $(CXX_DEFINES) -D__FILE__=\"scripts/util.cc\" $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/qiu/cppws/Myproject/scripts/util.cc -o CMakeFiles/scripts.dir/scripts/util.cc.s
 
+CMakeFiles/scripts.dir/scripts/http/http11_parser.rl.cc.o: CMakeFiles/scripts.dir/flags.make
+CMakeFiles/scripts.dir/scripts/http/http11_parser.rl.cc.o: ../scripts/http/http11_parser.rl.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/qiu/cppws/Myproject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building CXX object CMakeFiles/scripts.dir/scripts/http/http11_parser.rl.cc.o"
+	/bin/x86_64-linux-gnu-g++-9  $(CXX_DEFINES) -D__FILE__=\"scripts/http/http11_parser.rl.cc\" $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/scripts.dir/scripts/http/http11_parser.rl.cc.o -c /home/qiu/cppws/Myproject/scripts/http/http11_parser.rl.cc
+
+CMakeFiles/scripts.dir/scripts/http/http11_parser.rl.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/scripts.dir/scripts/http/http11_parser.rl.cc.i"
+	/bin/x86_64-linux-gnu-g++-9 $(CXX_DEFINES) -D__FILE__=\"scripts/http/http11_parser.rl.cc\" $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/qiu/cppws/Myproject/scripts/http/http11_parser.rl.cc > CMakeFiles/scripts.dir/scripts/http/http11_parser.rl.cc.i
+
+CMakeFiles/scripts.dir/scripts/http/http11_parser.rl.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/scripts.dir/scripts/http/http11_parser.rl.cc.s"
+	/bin/x86_64-linux-gnu-g++-9 $(CXX_DEFINES) -D__FILE__=\"scripts/http/http11_parser.rl.cc\" $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/qiu/cppws/Myproject/scripts/http/http11_parser.rl.cc -o CMakeFiles/scripts.dir/scripts/http/http11_parser.rl.cc.s
+
+CMakeFiles/scripts.dir/scripts/http/httpclient_parser.rl.cc.o: CMakeFiles/scripts.dir/flags.make
+CMakeFiles/scripts.dir/scripts/http/httpclient_parser.rl.cc.o: ../scripts/http/httpclient_parser.rl.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/qiu/cppws/Myproject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building CXX object CMakeFiles/scripts.dir/scripts/http/httpclient_parser.rl.cc.o"
+	/bin/x86_64-linux-gnu-g++-9  $(CXX_DEFINES) -D__FILE__=\"scripts/http/httpclient_parser.rl.cc\" $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/scripts.dir/scripts/http/httpclient_parser.rl.cc.o -c /home/qiu/cppws/Myproject/scripts/http/httpclient_parser.rl.cc
+
+CMakeFiles/scripts.dir/scripts/http/httpclient_parser.rl.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/scripts.dir/scripts/http/httpclient_parser.rl.cc.i"
+	/bin/x86_64-linux-gnu-g++-9 $(CXX_DEFINES) -D__FILE__=\"scripts/http/httpclient_parser.rl.cc\" $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/qiu/cppws/Myproject/scripts/http/httpclient_parser.rl.cc > CMakeFiles/scripts.dir/scripts/http/httpclient_parser.rl.cc.i
+
+CMakeFiles/scripts.dir/scripts/http/httpclient_parser.rl.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/scripts.dir/scripts/http/httpclient_parser.rl.cc.s"
+	/bin/x86_64-linux-gnu-g++-9 $(CXX_DEFINES) -D__FILE__=\"scripts/http/httpclient_parser.rl.cc\" $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/qiu/cppws/Myproject/scripts/http/httpclient_parser.rl.cc -o CMakeFiles/scripts.dir/scripts/http/httpclient_parser.rl.cc.s
+
+CMakeFiles/scripts.dir/scripts/uri.rl.cc.o: CMakeFiles/scripts.dir/flags.make
+CMakeFiles/scripts.dir/scripts/uri.rl.cc.o: ../scripts/uri.rl.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/qiu/cppws/Myproject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building CXX object CMakeFiles/scripts.dir/scripts/uri.rl.cc.o"
+	/bin/x86_64-linux-gnu-g++-9  $(CXX_DEFINES) -D__FILE__=\"scripts/uri.rl.cc\" $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/scripts.dir/scripts/uri.rl.cc.o -c /home/qiu/cppws/Myproject/scripts/uri.rl.cc
+
+CMakeFiles/scripts.dir/scripts/uri.rl.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/scripts.dir/scripts/uri.rl.cc.i"
+	/bin/x86_64-linux-gnu-g++-9 $(CXX_DEFINES) -D__FILE__=\"scripts/uri.rl.cc\" $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/qiu/cppws/Myproject/scripts/uri.rl.cc > CMakeFiles/scripts.dir/scripts/uri.rl.cc.i
+
+CMakeFiles/scripts.dir/scripts/uri.rl.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/scripts.dir/scripts/uri.rl.cc.s"
+	/bin/x86_64-linux-gnu-g++-9 $(CXX_DEFINES) -D__FILE__=\"scripts/uri.rl.cc\" $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/qiu/cppws/Myproject/scripts/uri.rl.cc -o CMakeFiles/scripts.dir/scripts/uri.rl.cc.s
+
 # Object files for target scripts
 scripts_OBJECTS = \
 "CMakeFiles/scripts.dir/scripts/address.cc.o" \
+"CMakeFiles/scripts.dir/scripts/bytearray.cc.o" \
 "CMakeFiles/scripts.dir/scripts/config.cc.o" \
 "CMakeFiles/scripts.dir/scripts/fd_manager.cc.o" \
 "CMakeFiles/scripts.dir/scripts/fiber.cc.o" \
+"CMakeFiles/scripts.dir/scripts/http/http.cc.o" \
+"CMakeFiles/scripts.dir/scripts/http/http_connection.cc.o" \
+"CMakeFiles/scripts.dir/scripts/http/http_parser.cc.o" \
+"CMakeFiles/scripts.dir/scripts/http/http_session.cc.o" \
+"CMakeFiles/scripts.dir/scripts/http/http_server.cc.o" \
+"CMakeFiles/scripts.dir/scripts/http/servlet.cc.o" \
 "CMakeFiles/scripts.dir/scripts/hook.cc.o" \
 "CMakeFiles/scripts.dir/scripts/iomanager.cc.o" \
 "CMakeFiles/scripts.dir/scripts/log.cc.o" \
 "CMakeFiles/scripts.dir/scripts/scheduler.cc.o" \
+"CMakeFiles/scripts.dir/scripts/socket.cc.o" \
+"CMakeFiles/scripts.dir/scripts/socket_stream.cc.o" \
+"CMakeFiles/scripts.dir/scripts/stream.cc.o" \
+"CMakeFiles/scripts.dir/scripts/tcp_server.cc.o" \
 "CMakeFiles/scripts.dir/scripts/timer.cc.o" \
 "CMakeFiles/scripts.dir/scripts/thread.cc.o" \
-"CMakeFiles/scripts.dir/scripts/util.cc.o"
+"CMakeFiles/scripts.dir/scripts/util.cc.o" \
+"CMakeFiles/scripts.dir/scripts/http/http11_parser.rl.cc.o" \
+"CMakeFiles/scripts.dir/scripts/http/httpclient_parser.rl.cc.o" \
+"CMakeFiles/scripts.dir/scripts/uri.rl.cc.o"
 
 # External object files for target scripts
 scripts_EXTERNAL_OBJECTS =
 
 ../lib/libscripts.so: CMakeFiles/scripts.dir/scripts/address.cc.o
+../lib/libscripts.so: CMakeFiles/scripts.dir/scripts/bytearray.cc.o
 ../lib/libscripts.so: CMakeFiles/scripts.dir/scripts/config.cc.o
 ../lib/libscripts.so: CMakeFiles/scripts.dir/scripts/fd_manager.cc.o
 ../lib/libscripts.so: CMakeFiles/scripts.dir/scripts/fiber.cc.o
+../lib/libscripts.so: CMakeFiles/scripts.dir/scripts/http/http.cc.o
+../lib/libscripts.so: CMakeFiles/scripts.dir/scripts/http/http_connection.cc.o
+../lib/libscripts.so: CMakeFiles/scripts.dir/scripts/http/http_parser.cc.o
+../lib/libscripts.so: CMakeFiles/scripts.dir/scripts/http/http_session.cc.o
+../lib/libscripts.so: CMakeFiles/scripts.dir/scripts/http/http_server.cc.o
+../lib/libscripts.so: CMakeFiles/scripts.dir/scripts/http/servlet.cc.o
 ../lib/libscripts.so: CMakeFiles/scripts.dir/scripts/hook.cc.o
 ../lib/libscripts.so: CMakeFiles/scripts.dir/scripts/iomanager.cc.o
 ../lib/libscripts.so: CMakeFiles/scripts.dir/scripts/log.cc.o
 ../lib/libscripts.so: CMakeFiles/scripts.dir/scripts/scheduler.cc.o
+../lib/libscripts.so: CMakeFiles/scripts.dir/scripts/socket.cc.o
+../lib/libscripts.so: CMakeFiles/scripts.dir/scripts/socket_stream.cc.o
+../lib/libscripts.so: CMakeFiles/scripts.dir/scripts/stream.cc.o
+../lib/libscripts.so: CMakeFiles/scripts.dir/scripts/tcp_server.cc.o
 ../lib/libscripts.so: CMakeFiles/scripts.dir/scripts/timer.cc.o
 ../lib/libscripts.so: CMakeFiles/scripts.dir/scripts/thread.cc.o
 ../lib/libscripts.so: CMakeFiles/scripts.dir/scripts/util.cc.o
+../lib/libscripts.so: CMakeFiles/scripts.dir/scripts/http/http11_parser.rl.cc.o
+../lib/libscripts.so: CMakeFiles/scripts.dir/scripts/http/httpclient_parser.rl.cc.o
+../lib/libscripts.so: CMakeFiles/scripts.dir/scripts/uri.rl.cc.o
 ../lib/libscripts.so: CMakeFiles/scripts.dir/build.make
 ../lib/libscripts.so: CMakeFiles/scripts.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/qiu/cppws/Myproject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Linking CXX shared library ../lib/libscripts.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/qiu/cppws/Myproject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Linking CXX shared library ../lib/libscripts.so"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/scripts.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -242,7 +467,9 @@ CMakeFiles/scripts.dir/clean:
 	$(CMAKE_COMMAND) -P CMakeFiles/scripts.dir/cmake_clean.cmake
 .PHONY : CMakeFiles/scripts.dir/clean
 
-CMakeFiles/scripts.dir/depend:
+CMakeFiles/scripts.dir/depend: ../scripts/http/http11_parser.rl.cc
+CMakeFiles/scripts.dir/depend: ../scripts/http/httpclient_parser.rl.cc
+CMakeFiles/scripts.dir/depend: ../scripts/uri.rl.cc
 	cd /home/qiu/cppws/Myproject/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/qiu/cppws/Myproject /home/qiu/cppws/Myproject /home/qiu/cppws/Myproject/build /home/qiu/cppws/Myproject/build /home/qiu/cppws/Myproject/build/CMakeFiles/scripts.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/scripts.dir/depend
 

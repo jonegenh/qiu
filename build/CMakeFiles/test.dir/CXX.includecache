@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/qiu/cppws/Myproject/scripts/log.h
+../scripts/log.h
 string
 -
 stdint.h
@@ -28,19 +28,19 @@ stdarg.h
 map
 -
 util.h
-/home/qiu/cppws/Myproject/scripts/util.h
+../scripts/util.h
 singleton.h
-/home/qiu/cppws/Myproject/scripts/singleton.h
+../scripts/singleton.h
 thread.h
-/home/qiu/cppws/Myproject/scripts/thread.h
+../scripts/thread.h
 
-/home/qiu/cppws/Myproject/scripts/noncopyable.h
+../scripts/noncopyable.h
 
-/home/qiu/cppws/Myproject/scripts/singleton.h
+../scripts/singleton.h
 memory
 -
 
-/home/qiu/cppws/Myproject/scripts/thread.h
+../scripts/thread.h
 thread
 -
 functional
@@ -58,9 +58,9 @@ stdint.h
 atomic
 -
 noncopyable.h
-/home/qiu/cppws/Myproject/scripts/noncopyable.h
+../scripts/noncopyable.h
 
-/home/qiu/cppws/Myproject/scripts/util.h
+../scripts/util.h
 stdio.h
 -
 pthread.h
@@ -83,8 +83,10 @@ iostream
 -
 thread
 -
-../scripts/log.h
-/home/qiu/cppws/Myproject/scripts/log.h
-../scripts/util.h
-/home/qiu/cppws/Myproject/scripts/util.h
+scripts/log.h
+/home/qiu/cppws/Myproject/tests/scripts/log.h
+scripts/util.h
+/home/qiu/cppws/Myproject/tests/scripts/util.h
+string.h
+-
 

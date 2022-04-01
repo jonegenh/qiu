@@ -1,8 +1,8 @@
-#include "../scripts/tcp_server.h"
-#include "../scripts/log.h"
-#include "../scripts/iomanager.h"
-#include "../scripts/bytearray.h"
-#include "../scripts/address.h"
+#include "scripts/tcp_server.h"
+#include "scripts/log.h"
+#include "scripts/iomanager.h"
+#include "scripts/bytearray.h"
+#include "scripts/address.h"
 
 static qiu::Logger::ptr g_logger = QIU_LOG_ROOT();
 
