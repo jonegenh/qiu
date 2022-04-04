@@ -271,13 +271,14 @@ bool IOManager::stopping(){
 }
                
 void IOManager::idle(){
-    epoll_event* events = new epoll_event[64]();
+    const uint64_t MAX_EVENTS = 256;
+    epoll_event* events = new epoll_event[MAX_EVENTS]();
     std::shared_ptr<epoll_event> shared_events(events,[](epoll_event* ptr){
         delete[] ptr;
     });
 
     while(true){
-        uint64_t next_timeout =0;
+        uint64_t next_timeout = 0;
         if(stopping(next_timeout)){
             QIU_LOG_INFO(g_logger) << "name=" << getName() << " idle stopping exit";
             break;
@@ -292,7 +293,7 @@ void IOManager::idle(){
             }else{
                 next_timeout = MAX_TIMEOUT;
             }
-            rt = epoll_wait(m_epfd, events, 64, (int)next_timeout);
+            rt = epoll_wait(m_epfd, events, MAX_EVENTS, (int)next_timeout);
             if(rt < 0 && errno == EINTR){
             } else{
                 break;
@@ -310,15 +311,15 @@ void IOManager::idle(){
         for(int i = 0 ; i < rt ; ++i){
             epoll_event& event = events[i];
             if(event.data.fd == m_tickleFds[0]){
-                uint8_t dummy;
-                while(read(m_tickleFds[0], &dummy, 1) == 1);
+                uint8_t dummy[256];
+                while(read(m_tickleFds[0], &dummy, sizeof(dummy)) > 0);
                 continue;
             }
 
             FdContext* fd_ctx = (FdContext*)event.data.ptr;
             FdContext::MutexType::Lock lock(fd_ctx->mutex);
             if(event.events & (EPOLLERR | EPOLLHUP)){
-                event.events |= EPOLLIN | EPOLLOUT;
+                event.events |= (EPOLLIN | EPOLLOUT) & fd_ctx->events;
             }
             int real_events = NONE;
             if(event.events & EPOLLIN){

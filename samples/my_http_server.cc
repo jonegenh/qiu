@@ -1,10 +1,9 @@
 #include "scripts/http/http_server.h"
 #include "scripts/log.h"
 
-qiu::Logger::ptr g_logger = QIU_LOG_ROOT();
+qiu::Logger::ptr g_logger = QIU_LOG_NAME("system");
 
 void run(){
-    g_logger->setLevel(qiu::LogLevel::INFO);
     qiu::Address::ptr addr = qiu::Address::LookupAnyIPAddress("0.0.0.0:8020");
     if(!addr){
         QIU_LOG_ERROR(g_logger) << "get address error";
@@ -21,6 +20,7 @@ void run(){
 }
 
 int main(int argc, char** argv){
+    g_logger->setLevel(qiu::LogLevel::ERROR);
     qiu::IOManager iom(1);
     iom.schedule(run);
     return 0;
