@@ -111,6 +111,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named test_daemon
+
+# Build rule for target.
+test_daemon: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 test_daemon
+.PHONY : test_daemon
+
+# fast build rule for target.
+test_daemon/fast:
+	$(MAKE) -f CMakeFiles/test_daemon.dir/build.make CMakeFiles/test_daemon.dir/build
+.PHONY : test_daemon/fast
+
+#=============================================================================
 # Target rules for targets named my_http_server
 
 # Build rule for target.
@@ -504,6 +517,33 @@ scripts/config.s: scripts/config.cc.s
 scripts/config.cc.s:
 	$(MAKE) -f CMakeFiles/scripts.dir/build.make CMakeFiles/scripts.dir/scripts/config.cc.s
 .PHONY : scripts/config.cc.s
+
+scripts/daemon.o: scripts/daemon.cc.o
+
+.PHONY : scripts/daemon.o
+
+# target to build an object file
+scripts/daemon.cc.o:
+	$(MAKE) -f CMakeFiles/scripts.dir/build.make CMakeFiles/scripts.dir/scripts/daemon.cc.o
+.PHONY : scripts/daemon.cc.o
+
+scripts/daemon.i: scripts/daemon.cc.i
+
+.PHONY : scripts/daemon.i
+
+# target to preprocess a source file
+scripts/daemon.cc.i:
+	$(MAKE) -f CMakeFiles/scripts.dir/build.make CMakeFiles/scripts.dir/scripts/daemon.cc.i
+.PHONY : scripts/daemon.cc.i
+
+scripts/daemon.s: scripts/daemon.cc.s
+
+.PHONY : scripts/daemon.s
+
+# target to generate assembly for a file
+scripts/daemon.cc.s:
+	$(MAKE) -f CMakeFiles/scripts.dir/build.make CMakeFiles/scripts.dir/scripts/daemon.cc.s
+.PHONY : scripts/daemon.cc.s
 
 scripts/fd_manager.o: scripts/fd_manager.cc.o
 
@@ -1207,6 +1247,33 @@ tests/test_config.cc.s:
 	$(MAKE) -f CMakeFiles/test_config.dir/build.make CMakeFiles/test_config.dir/tests/test_config.cc.s
 .PHONY : tests/test_config.cc.s
 
+tests/test_daemon.o: tests/test_daemon.cc.o
+
+.PHONY : tests/test_daemon.o
+
+# target to build an object file
+tests/test_daemon.cc.o:
+	$(MAKE) -f CMakeFiles/test_daemon.dir/build.make CMakeFiles/test_daemon.dir/tests/test_daemon.cc.o
+.PHONY : tests/test_daemon.cc.o
+
+tests/test_daemon.i: tests/test_daemon.cc.i
+
+.PHONY : tests/test_daemon.i
+
+# target to preprocess a source file
+tests/test_daemon.cc.i:
+	$(MAKE) -f CMakeFiles/test_daemon.dir/build.make CMakeFiles/test_daemon.dir/tests/test_daemon.cc.i
+.PHONY : tests/test_daemon.cc.i
+
+tests/test_daemon.s: tests/test_daemon.cc.s
+
+.PHONY : tests/test_daemon.s
+
+# target to generate assembly for a file
+tests/test_daemon.cc.s:
+	$(MAKE) -f CMakeFiles/test_daemon.dir/build.make CMakeFiles/test_daemon.dir/tests/test_daemon.cc.s
+.PHONY : tests/test_daemon.cc.s
+
 tests/test_fiber.o: tests/test_fiber.cc.o
 
 .PHONY : tests/test_fiber.o
@@ -1564,6 +1631,7 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
+	@echo "... test_daemon"
 	@echo "... my_http_server"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
@@ -1601,6 +1669,9 @@ help:
 	@echo "... scripts/config.o"
 	@echo "... scripts/config.i"
 	@echo "... scripts/config.s"
+	@echo "... scripts/daemon.o"
+	@echo "... scripts/daemon.i"
+	@echo "... scripts/daemon.s"
 	@echo "... scripts/fd_manager.o"
 	@echo "... scripts/fd_manager.i"
 	@echo "... scripts/fd_manager.s"
@@ -1679,6 +1750,9 @@ help:
 	@echo "... tests/test_config.o"
 	@echo "... tests/test_config.i"
 	@echo "... tests/test_config.s"
+	@echo "... tests/test_daemon.o"
+	@echo "... tests/test_daemon.i"
+	@echo "... tests/test_daemon.s"
 	@echo "... tests/test_fiber.o"
 	@echo "... tests/test_fiber.i"
 	@echo "... tests/test_fiber.s"

@@ -1,3 +1,4 @@
+/home/qiu/cppws/Myproject/build/CMakeFiles/test_daemon.dir
 /home/qiu/cppws/Myproject/build/CMakeFiles/my_http_server.dir
 /home/qiu/cppws/Myproject/build/CMakeFiles/rebuild_cache.dir
 /home/qiu/cppws/Myproject/build/CMakeFiles/edit_cache.dir

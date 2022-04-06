@@ -1,6 +1,11 @@
 [
 {
   "directory": "/home/qiu/cppws/Myproject/build",
+  "command": "/bin/x86_64-linux-gnu-g++-9   -D__FILE__=\\\"tests/test_daemon.cc\\\" -I/home/qiu/cppws/Myproject/. -I/home/qiu/include   -rdynamic -O0 -ggdb -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -g   -o CMakeFiles/test_daemon.dir/tests/test_daemon.cc.o -c /home/qiu/cppws/Myproject/tests/test_daemon.cc",
+  "file": "/home/qiu/cppws/Myproject/tests/test_daemon.cc"
+},
+{
+  "directory": "/home/qiu/cppws/Myproject/build",
   "command": "/bin/x86_64-linux-gnu-g++-9   -D__FILE__=\\\"samples/my_http_server.cc\\\" -I/home/qiu/cppws/Myproject/. -I/home/qiu/include   -rdynamic -O0 -ggdb -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -g   -o CMakeFiles/my_http_server.dir/samples/my_http_server.cc.o -c /home/qiu/cppws/Myproject/samples/my_http_server.cc",
   "file": "/home/qiu/cppws/Myproject/samples/my_http_server.cc"
 },
@@ -43,6 +48,11 @@
   "directory": "/home/qiu/cppws/Myproject/build",
   "command": "/bin/x86_64-linux-gnu-g++-9  -Dscripts_EXPORTS -D__FILE__=\\\"scripts/config.cc\\\" -I/home/qiu/cppws/Myproject/. -I/home/qiu/include   -rdynamic -O0 -ggdb -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -g -fPIC   -o CMakeFiles/scripts.dir/scripts/config.cc.o -c /home/qiu/cppws/Myproject/scripts/config.cc",
   "file": "/home/qiu/cppws/Myproject/scripts/config.cc"
+},
+{
+  "directory": "/home/qiu/cppws/Myproject/build",
+  "command": "/bin/x86_64-linux-gnu-g++-9  -Dscripts_EXPORTS -D__FILE__=\\\"scripts/daemon.cc\\\" -I/home/qiu/cppws/Myproject/. -I/home/qiu/include   -rdynamic -O0 -ggdb -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -g -fPIC   -o CMakeFiles/scripts.dir/scripts/daemon.cc.o -c /home/qiu/cppws/Myproject/scripts/daemon.cc",
+  "file": "/home/qiu/cppws/Myproject/scripts/daemon.cc"
 },
 {
   "directory": "/home/qiu/cppws/Myproject/build",

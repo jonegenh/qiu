@@ -27,6 +27,15 @@ CMakeFiles/scripts.dir/scripts/config.cc.o
  /home/qiu/cppws/Myproject/scripts/singleton.h
  /home/qiu/cppws/Myproject/scripts/thread.h
  /home/qiu/cppws/Myproject/scripts/util.h
+CMakeFiles/scripts.dir/scripts/daemon.cc.o
+ /home/qiu/cppws/Myproject/scripts/config.h
+ /home/qiu/cppws/Myproject/scripts/daemon.cc
+ /home/qiu/cppws/Myproject/scripts/daemon.h
+ /home/qiu/cppws/Myproject/scripts/log.h
+ /home/qiu/cppws/Myproject/scripts/noncopyable.h
+ /home/qiu/cppws/Myproject/scripts/singleton.h
+ /home/qiu/cppws/Myproject/scripts/thread.h
+ /home/qiu/cppws/Myproject/scripts/util.h
 CMakeFiles/scripts.dir/scripts/fd_manager.cc.o
  /home/qiu/cppws/Myproject/scripts/fd_manager.cc
  /home/qiu/cppws/Myproject/scripts/fd_manager.h

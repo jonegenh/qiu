@@ -27,6 +27,15 @@ CMakeFiles/scripts.dir/scripts/config.cc.o: ../scripts/singleton.h
 CMakeFiles/scripts.dir/scripts/config.cc.o: ../scripts/thread.h
 CMakeFiles/scripts.dir/scripts/config.cc.o: ../scripts/util.h
 
+CMakeFiles/scripts.dir/scripts/daemon.cc.o: ../scripts/config.h
+CMakeFiles/scripts.dir/scripts/daemon.cc.o: ../scripts/daemon.cc
+CMakeFiles/scripts.dir/scripts/daemon.cc.o: ../scripts/daemon.h
+CMakeFiles/scripts.dir/scripts/daemon.cc.o: ../scripts/log.h
+CMakeFiles/scripts.dir/scripts/daemon.cc.o: ../scripts/noncopyable.h
+CMakeFiles/scripts.dir/scripts/daemon.cc.o: ../scripts/singleton.h
+CMakeFiles/scripts.dir/scripts/daemon.cc.o: ../scripts/thread.h
+CMakeFiles/scripts.dir/scripts/daemon.cc.o: ../scripts/util.h
+
 CMakeFiles/scripts.dir/scripts/fd_manager.cc.o: ../scripts/fd_manager.cc
 CMakeFiles/scripts.dir/scripts/fd_manager.cc.o: ../scripts/fd_manager.h
 CMakeFiles/scripts.dir/scripts/fd_manager.cc.o: ../scripts/fiber.h
