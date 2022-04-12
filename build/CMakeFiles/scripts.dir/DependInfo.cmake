@@ -8,6 +8,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/qiu/cppws/Myproject/scripts/bytearray.cc" "/home/qiu/cppws/Myproject/build/CMakeFiles/scripts.dir/scripts/bytearray.cc.o"
   "/home/qiu/cppws/Myproject/scripts/config.cc" "/home/qiu/cppws/Myproject/build/CMakeFiles/scripts.dir/scripts/config.cc.o"
   "/home/qiu/cppws/Myproject/scripts/daemon.cc" "/home/qiu/cppws/Myproject/build/CMakeFiles/scripts.dir/scripts/daemon.cc.o"
+  "/home/qiu/cppws/Myproject/scripts/env.cc" "/home/qiu/cppws/Myproject/build/CMakeFiles/scripts.dir/scripts/env.cc.o"
   "/home/qiu/cppws/Myproject/scripts/fd_manager.cc" "/home/qiu/cppws/Myproject/build/CMakeFiles/scripts.dir/scripts/fd_manager.cc.o"
   "/home/qiu/cppws/Myproject/scripts/fiber.cc" "/home/qiu/cppws/Myproject/build/CMakeFiles/scripts.dir/scripts/fiber.cc.o"
   "/home/qiu/cppws/Myproject/scripts/hook.cc" "/home/qiu/cppws/Myproject/build/CMakeFiles/scripts.dir/scripts/hook.cc.o"

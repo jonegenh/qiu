@@ -22,6 +22,14 @@ uint64_t GetCurrentUs();
 
 std::string Time2Str(time_t ts = time(0), const std::string& format = "%Y-%m-%d %H:%M:%S");
 
+class FSUtil{
+public:
+    static void ListAllFile(std::vector<std::string>& files
+                            , const std::string& path
+                            , const std::string& subfix);
+private:
+};
+
 } // namespace qiu
 
 #endif

@@ -16,6 +16,8 @@ CXX_INCLUDES = -I/home/qiu/cppws/Myproject/. -I/home/qiu/include
 
 # Custom defines: CMakeFiles/scripts.dir/scripts/daemon.cc.o_DEFINES = __FILE__="scripts/daemon.cc"
 
+# Custom defines: CMakeFiles/scripts.dir/scripts/env.cc.o_DEFINES = __FILE__="scripts/env.cc"
+
 # Custom defines: CMakeFiles/scripts.dir/scripts/fd_manager.cc.o_DEFINES = __FILE__="scripts/fd_manager.cc"
 
 # Custom defines: CMakeFiles/scripts.dir/scripts/fiber.cc.o_DEFINES = __FILE__="scripts/fiber.cc"

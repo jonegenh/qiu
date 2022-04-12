@@ -18,6 +18,7 @@ set(LIB_SRC
 	scripts/bytearray.cc
 	scripts/config.cc
 	scripts/daemon.cc
+	scripts/env.cc
 	scripts/fd_manager.cc
 	scripts/fiber.cc
 	scripts/http/http.cc
@@ -154,6 +155,11 @@ add_executable(test_daemon tests/test_daemon.cc)
 add_dependencies(test_daemon scripts)
 force_redefine_file_macro_for_sources(test_daemon) # __FILE__
 target_link_libraries(test_daemon ${LIB_LIB}) 
+
+add_executable(test_env tests/test_env.cc)
+add_dependencies(test_env scripts)
+force_redefine_file_macro_for_sources(test_env) # __FILE__
+target_link_libraries(test_env ${LIB_LIB}) 
 
 SET(EXECUTABLE_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/bin)
 SET(LIBRARY_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/lib)

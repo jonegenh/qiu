@@ -267,6 +267,19 @@ test_bytearray/fast:
 .PHONY : test_bytearray/fast
 
 #=============================================================================
+# Target rules for targets named test_env
+
+# Build rule for target.
+test_env: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 test_env
+.PHONY : test_env
+
+# fast build rule for target.
+test_env/fast:
+	$(MAKE) -f CMakeFiles/test_env.dir/build.make CMakeFiles/test_env.dir/build
+.PHONY : test_env/fast
+
+#=============================================================================
 # Target rules for targets named test_util
 
 # Build rule for target.
@@ -544,6 +557,33 @@ scripts/daemon.s: scripts/daemon.cc.s
 scripts/daemon.cc.s:
 	$(MAKE) -f CMakeFiles/scripts.dir/build.make CMakeFiles/scripts.dir/scripts/daemon.cc.s
 .PHONY : scripts/daemon.cc.s
+
+scripts/env.o: scripts/env.cc.o
+
+.PHONY : scripts/env.o
+
+# target to build an object file
+scripts/env.cc.o:
+	$(MAKE) -f CMakeFiles/scripts.dir/build.make CMakeFiles/scripts.dir/scripts/env.cc.o
+.PHONY : scripts/env.cc.o
+
+scripts/env.i: scripts/env.cc.i
+
+.PHONY : scripts/env.i
+
+# target to preprocess a source file
+scripts/env.cc.i:
+	$(MAKE) -f CMakeFiles/scripts.dir/build.make CMakeFiles/scripts.dir/scripts/env.cc.i
+.PHONY : scripts/env.cc.i
+
+scripts/env.s: scripts/env.cc.s
+
+.PHONY : scripts/env.s
+
+# target to generate assembly for a file
+scripts/env.cc.s:
+	$(MAKE) -f CMakeFiles/scripts.dir/build.make CMakeFiles/scripts.dir/scripts/env.cc.s
+.PHONY : scripts/env.cc.s
 
 scripts/fd_manager.o: scripts/fd_manager.cc.o
 
@@ -1274,6 +1314,33 @@ tests/test_daemon.cc.s:
 	$(MAKE) -f CMakeFiles/test_daemon.dir/build.make CMakeFiles/test_daemon.dir/tests/test_daemon.cc.s
 .PHONY : tests/test_daemon.cc.s
 
+tests/test_env.o: tests/test_env.cc.o
+
+.PHONY : tests/test_env.o
+
+# target to build an object file
+tests/test_env.cc.o:
+	$(MAKE) -f CMakeFiles/test_env.dir/build.make CMakeFiles/test_env.dir/tests/test_env.cc.o
+.PHONY : tests/test_env.cc.o
+
+tests/test_env.i: tests/test_env.cc.i
+
+.PHONY : tests/test_env.i
+
+# target to preprocess a source file
+tests/test_env.cc.i:
+	$(MAKE) -f CMakeFiles/test_env.dir/build.make CMakeFiles/test_env.dir/tests/test_env.cc.i
+.PHONY : tests/test_env.cc.i
+
+tests/test_env.s: tests/test_env.cc.s
+
+.PHONY : tests/test_env.s
+
+# target to generate assembly for a file
+tests/test_env.cc.s:
+	$(MAKE) -f CMakeFiles/test_env.dir/build.make CMakeFiles/test_env.dir/tests/test_env.cc.s
+.PHONY : tests/test_env.cc.s
+
 tests/test_fiber.o: tests/test_fiber.cc.o
 
 .PHONY : tests/test_fiber.o
@@ -1645,6 +1712,7 @@ help:
 	@echo "... test_thread"
 	@echo "... test_config"
 	@echo "... test_bytearray"
+	@echo "... test_env"
 	@echo "... test_util"
 	@echo "... test_fiber"
 	@echo "... test_http_server"
@@ -1672,6 +1740,9 @@ help:
 	@echo "... scripts/daemon.o"
 	@echo "... scripts/daemon.i"
 	@echo "... scripts/daemon.s"
+	@echo "... scripts/env.o"
+	@echo "... scripts/env.i"
+	@echo "... scripts/env.s"
 	@echo "... scripts/fd_manager.o"
 	@echo "... scripts/fd_manager.i"
 	@echo "... scripts/fd_manager.s"
@@ -1753,6 +1824,9 @@ help:
 	@echo "... tests/test_daemon.o"
 	@echo "... tests/test_daemon.i"
 	@echo "... tests/test_daemon.s"
+	@echo "... tests/test_env.o"
+	@echo "... tests/test_env.i"
+	@echo "... tests/test_env.s"
 	@echo "... tests/test_fiber.o"
 	@echo "... tests/test_fiber.i"
 	@echo "... tests/test_fiber.s"

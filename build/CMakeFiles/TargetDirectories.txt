@@ -12,6 +12,7 @@
 /home/qiu/cppws/Myproject/build/CMakeFiles/test_thread.dir
 /home/qiu/cppws/Myproject/build/CMakeFiles/test_config.dir
 /home/qiu/cppws/Myproject/build/CMakeFiles/test_bytearray.dir
+/home/qiu/cppws/Myproject/build/CMakeFiles/test_env.dir
 /home/qiu/cppws/Myproject/build/CMakeFiles/test_util.dir
 /home/qiu/cppws/Myproject/build/CMakeFiles/test_fiber.dir
 /home/qiu/cppws/Myproject/build/CMakeFiles/test_http_server.dir

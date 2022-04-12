@@ -21,6 +21,7 @@ CMakeFiles/scripts.dir/scripts/bytearray.cc.o: ../scripts/util.h
 
 CMakeFiles/scripts.dir/scripts/config.cc.o: ../scripts/config.cc
 CMakeFiles/scripts.dir/scripts/config.cc.o: ../scripts/config.h
+CMakeFiles/scripts.dir/scripts/config.cc.o: ../scripts/env.h
 CMakeFiles/scripts.dir/scripts/config.cc.o: ../scripts/log.h
 CMakeFiles/scripts.dir/scripts/config.cc.o: ../scripts/noncopyable.h
 CMakeFiles/scripts.dir/scripts/config.cc.o: ../scripts/singleton.h
@@ -35,6 +36,14 @@ CMakeFiles/scripts.dir/scripts/daemon.cc.o: ../scripts/noncopyable.h
 CMakeFiles/scripts.dir/scripts/daemon.cc.o: ../scripts/singleton.h
 CMakeFiles/scripts.dir/scripts/daemon.cc.o: ../scripts/thread.h
 CMakeFiles/scripts.dir/scripts/daemon.cc.o: ../scripts/util.h
+
+CMakeFiles/scripts.dir/scripts/env.cc.o: ../scripts/env.cc
+CMakeFiles/scripts.dir/scripts/env.cc.o: ../scripts/env.h
+CMakeFiles/scripts.dir/scripts/env.cc.o: ../scripts/log.h
+CMakeFiles/scripts.dir/scripts/env.cc.o: ../scripts/noncopyable.h
+CMakeFiles/scripts.dir/scripts/env.cc.o: ../scripts/singleton.h
+CMakeFiles/scripts.dir/scripts/env.cc.o: ../scripts/thread.h
+CMakeFiles/scripts.dir/scripts/env.cc.o: ../scripts/util.h
 
 CMakeFiles/scripts.dir/scripts/fd_manager.cc.o: ../scripts/fd_manager.cc
 CMakeFiles/scripts.dir/scripts/fd_manager.cc.o: ../scripts/fd_manager.h

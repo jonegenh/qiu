@@ -56,6 +56,11 @@
 },
 {
   "directory": "/home/qiu/cppws/Myproject/build",
+  "command": "/bin/x86_64-linux-gnu-g++-9  -Dscripts_EXPORTS -D__FILE__=\\\"scripts/env.cc\\\" -I/home/qiu/cppws/Myproject/. -I/home/qiu/include   -rdynamic -O0 -ggdb -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -g -fPIC   -o CMakeFiles/scripts.dir/scripts/env.cc.o -c /home/qiu/cppws/Myproject/scripts/env.cc",
+  "file": "/home/qiu/cppws/Myproject/scripts/env.cc"
+},
+{
+  "directory": "/home/qiu/cppws/Myproject/build",
   "command": "/bin/x86_64-linux-gnu-g++-9  -Dscripts_EXPORTS -D__FILE__=\\\"scripts/fd_manager.cc\\\" -I/home/qiu/cppws/Myproject/. -I/home/qiu/include   -rdynamic -O0 -ggdb -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -g -fPIC   -o CMakeFiles/scripts.dir/scripts/fd_manager.cc.o -c /home/qiu/cppws/Myproject/scripts/fd_manager.cc",
   "file": "/home/qiu/cppws/Myproject/scripts/fd_manager.cc"
 },
@@ -183,6 +188,11 @@
   "directory": "/home/qiu/cppws/Myproject/build",
   "command": "/bin/x86_64-linux-gnu-g++-9   -D__FILE__=\\\"tests/test_bytearray.cc\\\" -I/home/qiu/cppws/Myproject/. -I/home/qiu/include   -rdynamic -O0 -ggdb -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -g   -o CMakeFiles/test_bytearray.dir/tests/test_bytearray.cc.o -c /home/qiu/cppws/Myproject/tests/test_bytearray.cc",
   "file": "/home/qiu/cppws/Myproject/tests/test_bytearray.cc"
+},
+{
+  "directory": "/home/qiu/cppws/Myproject/build",
+  "command": "/bin/x86_64-linux-gnu-g++-9   -D__FILE__=\\\"tests/test_env.cc\\\" -I/home/qiu/cppws/Myproject/. -I/home/qiu/include   -rdynamic -O0 -ggdb -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -g   -o CMakeFiles/test_env.dir/tests/test_env.cc.o -c /home/qiu/cppws/Myproject/tests/test_env.cc",
+  "file": "/home/qiu/cppws/Myproject/tests/test_env.cc"
 },
 {
   "directory": "/home/qiu/cppws/Myproject/build",

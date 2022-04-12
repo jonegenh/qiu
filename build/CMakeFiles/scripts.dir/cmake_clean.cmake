@@ -8,6 +8,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/scripts.dir/scripts/bytearray.cc.o"
   "CMakeFiles/scripts.dir/scripts/config.cc.o"
   "CMakeFiles/scripts.dir/scripts/daemon.cc.o"
+  "CMakeFiles/scripts.dir/scripts/env.cc.o"
   "CMakeFiles/scripts.dir/scripts/fd_manager.cc.o"
   "CMakeFiles/scripts.dir/scripts/fiber.cc.o"
   "CMakeFiles/scripts.dir/scripts/hook.cc.o"

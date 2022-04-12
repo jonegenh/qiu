@@ -1,5 +1,6 @@
 #include "scripts/config.h"
 #include "scripts/log.h"
+#include "scripts/env.h"
 #include<yaml-cpp/yaml.h>
 
 #if 1
@@ -200,13 +201,17 @@ void test_log(){
     QIU_LOG_INFO(system_log) << "hello system" << std::endl;
 }
 
+void test_loadconf() {
+    qiu::Config::LoadFromConfDir("conf");
+}
 
 int main(int argc, char** argv){
     // test_yaml();
     // test_config();
     // test_class();
-
-    test_log();
+    // test_log();
+    qiu::EnvMgr::GetInstance()->init(argc, argv);
+    test_loadconf();
     qiu::Config::Visit([](qiu::ConfigVarBase::ptr var){
         QIU_LOG_INFO(QIU_LOG_ROOT()) << "name=" << var->getName()
         << " description=" << var->getDescription()
