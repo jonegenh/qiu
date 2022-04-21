@@ -60,15 +60,15 @@ include CMakeFiles/echo_server.dir/flags.make
 CMakeFiles/echo_server.dir/examples/echo_server.cc.o: CMakeFiles/echo_server.dir/flags.make
 CMakeFiles/echo_server.dir/examples/echo_server.cc.o: ../examples/echo_server.cc
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/qiu/cppws/Myproject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/echo_server.dir/examples/echo_server.cc.o"
-	/bin/x86_64-linux-gnu-g++-9  $(CXX_DEFINES) -D__FILE__=\"examples/echo_server.cc\" $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/echo_server.dir/examples/echo_server.cc.o -c /home/qiu/cppws/Myproject/examples/echo_server.cc
+	/usr/bin/c++  $(CXX_DEFINES) -D__FILE__=\"examples/echo_server.cc\" $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/echo_server.dir/examples/echo_server.cc.o -c /home/qiu/cppws/Myproject/examples/echo_server.cc
 
 CMakeFiles/echo_server.dir/examples/echo_server.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/echo_server.dir/examples/echo_server.cc.i"
-	/bin/x86_64-linux-gnu-g++-9 $(CXX_DEFINES) -D__FILE__=\"examples/echo_server.cc\" $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/qiu/cppws/Myproject/examples/echo_server.cc > CMakeFiles/echo_server.dir/examples/echo_server.cc.i
+	/usr/bin/c++ $(CXX_DEFINES) -D__FILE__=\"examples/echo_server.cc\" $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/qiu/cppws/Myproject/examples/echo_server.cc > CMakeFiles/echo_server.dir/examples/echo_server.cc.i
 
 CMakeFiles/echo_server.dir/examples/echo_server.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/echo_server.dir/examples/echo_server.cc.s"
-	/bin/x86_64-linux-gnu-g++-9 $(CXX_DEFINES) -D__FILE__=\"examples/echo_server.cc\" $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/qiu/cppws/Myproject/examples/echo_server.cc -o CMakeFiles/echo_server.dir/examples/echo_server.cc.s
+	/usr/bin/c++ $(CXX_DEFINES) -D__FILE__=\"examples/echo_server.cc\" $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/qiu/cppws/Myproject/examples/echo_server.cc -o CMakeFiles/echo_server.dir/examples/echo_server.cc.s
 
 # Object files for target echo_server
 echo_server_OBJECTS = \

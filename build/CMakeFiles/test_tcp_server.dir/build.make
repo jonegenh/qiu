@@ -60,15 +60,15 @@ include CMakeFiles/test_tcp_server.dir/flags.make
 CMakeFiles/test_tcp_server.dir/tests/test_tcp_server.cc.o: CMakeFiles/test_tcp_server.dir/flags.make
 CMakeFiles/test_tcp_server.dir/tests/test_tcp_server.cc.o: ../tests/test_tcp_server.cc
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/qiu/cppws/Myproject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/test_tcp_server.dir/tests/test_tcp_server.cc.o"
-	/bin/x86_64-linux-gnu-g++-9  $(CXX_DEFINES) -D__FILE__=\"tests/test_tcp_server.cc\" $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test_tcp_server.dir/tests/test_tcp_server.cc.o -c /home/qiu/cppws/Myproject/tests/test_tcp_server.cc
+	/usr/bin/c++  $(CXX_DEFINES) -D__FILE__=\"tests/test_tcp_server.cc\" $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test_tcp_server.dir/tests/test_tcp_server.cc.o -c /home/qiu/cppws/Myproject/tests/test_tcp_server.cc
 
 CMakeFiles/test_tcp_server.dir/tests/test_tcp_server.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test_tcp_server.dir/tests/test_tcp_server.cc.i"
-	/bin/x86_64-linux-gnu-g++-9 $(CXX_DEFINES) -D__FILE__=\"tests/test_tcp_server.cc\" $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/qiu/cppws/Myproject/tests/test_tcp_server.cc > CMakeFiles/test_tcp_server.dir/tests/test_tcp_server.cc.i
+	/usr/bin/c++ $(CXX_DEFINES) -D__FILE__=\"tests/test_tcp_server.cc\" $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/qiu/cppws/Myproject/tests/test_tcp_server.cc > CMakeFiles/test_tcp_server.dir/tests/test_tcp_server.cc.i
 
 CMakeFiles/test_tcp_server.dir/tests/test_tcp_server.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test_tcp_server.dir/tests/test_tcp_server.cc.s"
-	/bin/x86_64-linux-gnu-g++-9 $(CXX_DEFINES) -D__FILE__=\"tests/test_tcp_server.cc\" $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/qiu/cppws/Myproject/tests/test_tcp_server.cc -o CMakeFiles/test_tcp_server.dir/tests/test_tcp_server.cc.s
+	/usr/bin/c++ $(CXX_DEFINES) -D__FILE__=\"tests/test_tcp_server.cc\" $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/qiu/cppws/Myproject/tests/test_tcp_server.cc -o CMakeFiles/test_tcp_server.dir/tests/test_tcp_server.cc.s
 
 # Object files for target test_tcp_server
 test_tcp_server_OBJECTS = \

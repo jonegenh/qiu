@@ -60,15 +60,15 @@ include CMakeFiles/test_env.dir/flags.make
 CMakeFiles/test_env.dir/tests/test_env.cc.o: CMakeFiles/test_env.dir/flags.make
 CMakeFiles/test_env.dir/tests/test_env.cc.o: ../tests/test_env.cc
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/qiu/cppws/Myproject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/test_env.dir/tests/test_env.cc.o"
-	/bin/x86_64-linux-gnu-g++-9  $(CXX_DEFINES) -D__FILE__=\"tests/test_env.cc\" $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test_env.dir/tests/test_env.cc.o -c /home/qiu/cppws/Myproject/tests/test_env.cc
+	/usr/bin/c++  $(CXX_DEFINES) -D__FILE__=\"tests/test_env.cc\" $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test_env.dir/tests/test_env.cc.o -c /home/qiu/cppws/Myproject/tests/test_env.cc
 
 CMakeFiles/test_env.dir/tests/test_env.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test_env.dir/tests/test_env.cc.i"
-	/bin/x86_64-linux-gnu-g++-9 $(CXX_DEFINES) -D__FILE__=\"tests/test_env.cc\" $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/qiu/cppws/Myproject/tests/test_env.cc > CMakeFiles/test_env.dir/tests/test_env.cc.i
+	/usr/bin/c++ $(CXX_DEFINES) -D__FILE__=\"tests/test_env.cc\" $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/qiu/cppws/Myproject/tests/test_env.cc > CMakeFiles/test_env.dir/tests/test_env.cc.i
 
 CMakeFiles/test_env.dir/tests/test_env.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test_env.dir/tests/test_env.cc.s"
-	/bin/x86_64-linux-gnu-g++-9 $(CXX_DEFINES) -D__FILE__=\"tests/test_env.cc\" $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/qiu/cppws/Myproject/tests/test_env.cc -o CMakeFiles/test_env.dir/tests/test_env.cc.s
+	/usr/bin/c++ $(CXX_DEFINES) -D__FILE__=\"tests/test_env.cc\" $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/qiu/cppws/Myproject/tests/test_env.cc -o CMakeFiles/test_env.dir/tests/test_env.cc.s
 
 # Object files for target test_env
 test_env_OBJECTS = \

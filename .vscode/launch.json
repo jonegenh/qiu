@@ -9,7 +9,7 @@
             "name": "(gdb) 启动",
             "type": "cppdbg",
             "request": "launch",
-            "program": "${workspaceFolder}/bin/my_http_server",
+            "program": "${workspaceFolder}/bin/test_config",
             "args": [],
             "stopAtEntry": false,
             "cwd": "${fileDirname}",

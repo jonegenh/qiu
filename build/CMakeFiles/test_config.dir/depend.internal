@@ -3,6 +3,7 @@
 
 CMakeFiles/test_config.dir/tests/test_config.cc.o
  ../scripts/config.h
+ ../scripts/env.h
  ../scripts/log.h
  ../scripts/noncopyable.h
  ../scripts/singleton.h

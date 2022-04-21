@@ -10,6 +10,17 @@ CMakeFiles/scripts.dir/scripts/address.cc.o: ../scripts/singleton.h
 CMakeFiles/scripts.dir/scripts/address.cc.o: ../scripts/thread.h
 CMakeFiles/scripts.dir/scripts/address.cc.o: ../scripts/util.h
 
+CMakeFiles/scripts.dir/scripts/application.cc.o: ../scripts/application.cc
+CMakeFiles/scripts.dir/scripts/application.cc.o: ../scripts/application.h
+CMakeFiles/scripts.dir/scripts/application.cc.o: ../scripts/config.h
+CMakeFiles/scripts.dir/scripts/application.cc.o: ../scripts/daemon.h
+CMakeFiles/scripts.dir/scripts/application.cc.o: ../scripts/env.h
+CMakeFiles/scripts.dir/scripts/application.cc.o: ../scripts/log.h
+CMakeFiles/scripts.dir/scripts/application.cc.o: ../scripts/noncopyable.h
+CMakeFiles/scripts.dir/scripts/application.cc.o: ../scripts/singleton.h
+CMakeFiles/scripts.dir/scripts/application.cc.o: ../scripts/thread.h
+CMakeFiles/scripts.dir/scripts/application.cc.o: ../scripts/util.h
+
 CMakeFiles/scripts.dir/scripts/bytearray.cc.o: ../scripts/bytearray.cc
 CMakeFiles/scripts.dir/scripts/bytearray.cc.o: ../scripts/bytearray.h
 CMakeFiles/scripts.dir/scripts/bytearray.cc.o: ../scripts/endian.h

@@ -5,6 +5,7 @@ file(REMOVE_RECURSE
   "../scripts/http/httpclient_parser.rl.cc"
   "../scripts/uri.rl.cc"
   "CMakeFiles/scripts.dir/scripts/address.cc.o"
+  "CMakeFiles/scripts.dir/scripts/application.cc.o"
   "CMakeFiles/scripts.dir/scripts/bytearray.cc.o"
   "CMakeFiles/scripts.dir/scripts/config.cc.o"
   "CMakeFiles/scripts.dir/scripts/daemon.cc.o"

@@ -111,6 +111,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named test_application
+
+# Build rule for target.
+test_application: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 test_application
+.PHONY : test_application
+
+# fast build rule for target.
+test_application/fast:
+	$(MAKE) -f CMakeFiles/test_application.dir/build.make CMakeFiles/test_application.dir/build
+.PHONY : test_application/fast
+
+#=============================================================================
 # Target rules for targets named test_daemon
 
 # Build rule for target.
@@ -476,6 +489,33 @@ scripts/address.s: scripts/address.cc.s
 scripts/address.cc.s:
 	$(MAKE) -f CMakeFiles/scripts.dir/build.make CMakeFiles/scripts.dir/scripts/address.cc.s
 .PHONY : scripts/address.cc.s
+
+scripts/application.o: scripts/application.cc.o
+
+.PHONY : scripts/application.o
+
+# target to build an object file
+scripts/application.cc.o:
+	$(MAKE) -f CMakeFiles/scripts.dir/build.make CMakeFiles/scripts.dir/scripts/application.cc.o
+.PHONY : scripts/application.cc.o
+
+scripts/application.i: scripts/application.cc.i
+
+.PHONY : scripts/application.i
+
+# target to preprocess a source file
+scripts/application.cc.i:
+	$(MAKE) -f CMakeFiles/scripts.dir/build.make CMakeFiles/scripts.dir/scripts/application.cc.i
+.PHONY : scripts/application.cc.i
+
+scripts/application.s: scripts/application.cc.s
+
+.PHONY : scripts/application.s
+
+# target to generate assembly for a file
+scripts/application.cc.s:
+	$(MAKE) -f CMakeFiles/scripts.dir/build.make CMakeFiles/scripts.dir/scripts/application.cc.s
+.PHONY : scripts/application.cc.s
 
 scripts/bytearray.o: scripts/bytearray.cc.o
 
@@ -1233,6 +1273,33 @@ tests/test_address.cc.s:
 	$(MAKE) -f CMakeFiles/test_address.dir/build.make CMakeFiles/test_address.dir/tests/test_address.cc.s
 .PHONY : tests/test_address.cc.s
 
+tests/test_application.o: tests/test_application.cc.o
+
+.PHONY : tests/test_application.o
+
+# target to build an object file
+tests/test_application.cc.o:
+	$(MAKE) -f CMakeFiles/test_application.dir/build.make CMakeFiles/test_application.dir/tests/test_application.cc.o
+.PHONY : tests/test_application.cc.o
+
+tests/test_application.i: tests/test_application.cc.i
+
+.PHONY : tests/test_application.i
+
+# target to preprocess a source file
+tests/test_application.cc.i:
+	$(MAKE) -f CMakeFiles/test_application.dir/build.make CMakeFiles/test_application.dir/tests/test_application.cc.i
+.PHONY : tests/test_application.cc.i
+
+tests/test_application.s: tests/test_application.cc.s
+
+.PHONY : tests/test_application.s
+
+# target to generate assembly for a file
+tests/test_application.cc.s:
+	$(MAKE) -f CMakeFiles/test_application.dir/build.make CMakeFiles/test_application.dir/tests/test_application.cc.s
+.PHONY : tests/test_application.cc.s
+
 tests/test_bytearray.o: tests/test_bytearray.cc.o
 
 .PHONY : tests/test_bytearray.o
@@ -1698,6 +1765,7 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
+	@echo "... test_application"
 	@echo "... test_daemon"
 	@echo "... my_http_server"
 	@echo "... rebuild_cache"
@@ -1731,6 +1799,9 @@ help:
 	@echo "... scripts/address.o"
 	@echo "... scripts/address.i"
 	@echo "... scripts/address.s"
+	@echo "... scripts/application.o"
+	@echo "... scripts/application.i"
+	@echo "... scripts/application.s"
 	@echo "... scripts/bytearray.o"
 	@echo "... scripts/bytearray.i"
 	@echo "... scripts/bytearray.s"
@@ -1815,6 +1886,9 @@ help:
 	@echo "... tests/test_address.o"
 	@echo "... tests/test_address.i"
 	@echo "... tests/test_address.s"
+	@echo "... tests/test_application.o"
+	@echo "... tests/test_application.i"
+	@echo "... tests/test_application.s"
 	@echo "... tests/test_bytearray.o"
 	@echo "... tests/test_bytearray.i"
 	@echo "... tests/test_bytearray.s"

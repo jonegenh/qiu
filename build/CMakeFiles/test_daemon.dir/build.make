@@ -60,15 +60,15 @@ include CMakeFiles/test_daemon.dir/flags.make
 CMakeFiles/test_daemon.dir/tests/test_daemon.cc.o: CMakeFiles/test_daemon.dir/flags.make
 CMakeFiles/test_daemon.dir/tests/test_daemon.cc.o: ../tests/test_daemon.cc
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/qiu/cppws/Myproject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/test_daemon.dir/tests/test_daemon.cc.o"
-	/bin/x86_64-linux-gnu-g++-9  $(CXX_DEFINES) -D__FILE__=\"tests/test_daemon.cc\" $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test_daemon.dir/tests/test_daemon.cc.o -c /home/qiu/cppws/Myproject/tests/test_daemon.cc
+	/usr/bin/c++  $(CXX_DEFINES) -D__FILE__=\"tests/test_daemon.cc\" $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test_daemon.dir/tests/test_daemon.cc.o -c /home/qiu/cppws/Myproject/tests/test_daemon.cc
 
 CMakeFiles/test_daemon.dir/tests/test_daemon.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test_daemon.dir/tests/test_daemon.cc.i"
-	/bin/x86_64-linux-gnu-g++-9 $(CXX_DEFINES) -D__FILE__=\"tests/test_daemon.cc\" $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/qiu/cppws/Myproject/tests/test_daemon.cc > CMakeFiles/test_daemon.dir/tests/test_daemon.cc.i
+	/usr/bin/c++ $(CXX_DEFINES) -D__FILE__=\"tests/test_daemon.cc\" $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/qiu/cppws/Myproject/tests/test_daemon.cc > CMakeFiles/test_daemon.dir/tests/test_daemon.cc.i
 
 CMakeFiles/test_daemon.dir/tests/test_daemon.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test_daemon.dir/tests/test_daemon.cc.s"
-	/bin/x86_64-linux-gnu-g++-9 $(CXX_DEFINES) -D__FILE__=\"tests/test_daemon.cc\" $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/qiu/cppws/Myproject/tests/test_daemon.cc -o CMakeFiles/test_daemon.dir/tests/test_daemon.cc.s
+	/usr/bin/c++ $(CXX_DEFINES) -D__FILE__=\"tests/test_daemon.cc\" $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/qiu/cppws/Myproject/tests/test_daemon.cc -o CMakeFiles/test_daemon.dir/tests/test_daemon.cc.s
 
 # Object files for target test_daemon
 test_daemon_OBJECTS = \

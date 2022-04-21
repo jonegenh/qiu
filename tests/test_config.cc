@@ -212,6 +212,10 @@ int main(int argc, char** argv){
     // test_log();
     qiu::EnvMgr::GetInstance()->init(argc, argv);
     test_loadconf();
+    std::cout << " ==== " << std::endl;
+    sleep(10);
+    test_loadconf();
+    return 0;
     qiu::Config::Visit([](qiu::ConfigVarBase::ptr var){
         QIU_LOG_INFO(QIU_LOG_ROOT()) << "name=" << var->getName()
         << " description=" << var->getDescription()

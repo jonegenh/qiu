@@ -2,6 +2,9 @@
 #include "env.h"
 #include "util.h"
 #include "log.h"
+#include <sys/types.h>
+#include <sys/stat.h>
+#include <unistd.h>
 
 namespace qiu{
 // Config::ConfigVarMap Config::s_datas;
@@ -31,7 +34,7 @@ static void ListAllMember(const std::string& prefix,
 
 void Config::LoadFromYaml(const YAML::Node& root){
     std::list<std::pair<std::string, const YAML::Node> > all_nodes;
-    ListAllMember("",root,all_nodes);
+    ListAllMember("", root, all_nodes);
 
     for(auto& i : all_nodes){
         std::string key = i.first;
@@ -54,12 +57,26 @@ void Config::LoadFromYaml(const YAML::Node& root){
     }
 }
 
+static std::map<std::string, uint64_t> s_file2modifytime;
+static qiu::Mutex s_mutex;
+
 void Config::LoadFromConfDir(const std::string& path){
     std::string absolute_path = qiu::EnvMgr::GetInstance()->getAbsolutePath(path);
     std::vector<std::string> files;
     FSUtil::ListAllFile(files, absolute_path, ".yml");
 
     for(auto& i : files){
+        struct stat st;
+        lstat(i.c_str(), &st);
+        {
+            qiu::Mutex::Lock lock(s_mutex);
+            if(s_file2modifytime[i] == (uint64_t)st.st_mtime){
+                continue;
+            }
+            s_file2modifytime[i] = st.st_mtime;
+        }
+
+        std::cout << i << std::endl;
         try{
             YAML::Node root = YAML::LoadFile(i);
             LoadFromYaml(root);

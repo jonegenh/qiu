@@ -10,6 +10,17 @@ CMakeFiles/scripts.dir/scripts/address.cc.o
  /home/qiu/cppws/Myproject/scripts/singleton.h
  /home/qiu/cppws/Myproject/scripts/thread.h
  /home/qiu/cppws/Myproject/scripts/util.h
+CMakeFiles/scripts.dir/scripts/application.cc.o
+ /home/qiu/cppws/Myproject/scripts/application.cc
+ /home/qiu/cppws/Myproject/scripts/application.h
+ /home/qiu/cppws/Myproject/scripts/config.h
+ /home/qiu/cppws/Myproject/scripts/daemon.h
+ /home/qiu/cppws/Myproject/scripts/env.h
+ /home/qiu/cppws/Myproject/scripts/log.h
+ /home/qiu/cppws/Myproject/scripts/noncopyable.h
+ /home/qiu/cppws/Myproject/scripts/singleton.h
+ /home/qiu/cppws/Myproject/scripts/thread.h
+ /home/qiu/cppws/Myproject/scripts/util.h
 CMakeFiles/scripts.dir/scripts/bytearray.cc.o
  /home/qiu/cppws/Myproject/scripts/bytearray.cc
  /home/qiu/cppws/Myproject/scripts/bytearray.h
